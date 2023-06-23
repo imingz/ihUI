@@ -18,13 +18,13 @@ const state = reactive({
     { label: "Node", value: "Node" },
     { label: "CSS", value: "CSS" },
     { label: "javascript", value: "javascript" },
-    { label: "mzl-ui", value: "mzl-ui" },
-    { label: "mzl-vi", value: "mzl-vi" },
+    { label: "ih-ui", value: "ih-ui" },
+    { label: "ih-vi", value: "ih-vi" },
     { label: "Npm", value: "Npm" },
     { label: "HTML", value: "HTML", disabled: true },
     { label: "java", value: "java" },
     { label: "XML", value: "XML" },
-    { label: "mzl-ci", value: "mzl-ci" },
+    { label: "ih-ci", value: "ih-ci" },
   ],
 });
 const { selOptions } = state;

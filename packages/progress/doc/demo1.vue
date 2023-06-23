@@ -7,7 +7,7 @@
     <m-progress :percent="100" currentStatus="SUCCESS"></m-progress>
 </template>
 <style scoped>
-.mzl-progress {
+.ih-progress {
   margin-bottom: 10px;
 }
 </style>

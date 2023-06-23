@@ -1,11 +1,11 @@
 <template>
-  <div :class="['mzl-optfile-default',customClass]">
+  <div :class="['ih-optfile-default',customClass]">
     <input type="file" :accept="accept" :multiple="multiple" @change="testchange" hidden ref="refInp">
-    <div class="mzl-preview-img-box">
+    <div class="ih-preview-img-box">
       <transition-group name="list-img">
         <template  v-if="targetType=='box'&&imgListShow&&!showFileList">
-          <div class="mzl-preview-img-img" v-for="(item,index) in File" :key="index">
-            <div class="mzl-previre-img-actions">
+          <div class="ih-preview-img-img" v-for="(item,index) in File" :key="index">
+            <div class="ih-previre-img-actions">
               <img :src="item.preImgUrl" alt="">
               <div class="customArea">
                 <slot v-if="$slot['defalut']"></slot>
@@ -16,9 +16,9 @@
         </template>
       </transition-group>
       <m-button :type="type" :leftIcon="icon" @click="changeFile" v-if="targetType=='btn'">{{label}}</m-button>
-      <div :class="['mzl-optfie-area',{'mzl-optfie-area-big':size=='big','mzl-opfile-area-active':activeFile}]" v-if="targetType=='box'" ref="refDiv">
-        <div class="mzl-optfile-area-text" @click="changeFile">
-          <div class="mzl-optfile-text-pos">
+      <div :class="['ih-optfie-area',{'ih-optfie-area-big':size=='big','ih-opfile-area-active':activeFile}]" v-if="targetType=='box'" ref="refDiv">
+        <div class="ih-optfile-area-text" @click="changeFile">
+          <div class="ih-optfile-text-pos">
             <i :class="icon" class="icon-file"></i>
             <p v-if="label!=''">{{lableText}}</p>
           </div>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <!-- <img :src="imgSrc" alt=""> -->
-    <div class="mzl-optfile-filelist" v-if="FileList.length>0&&showFileList">
+    <div class="ih-optfile-filelist" v-if="FileList.length>0&&showFileList">
       <ul>
         <transition-group name="list">
           <li v-for="(item,index) in FileList" :key="index">
@@ -149,15 +149,15 @@ onMounted(()=>{
 </script>
 
 <style lang="scss" scoped>
-.mzl-optfile-default{
+.ih-optfile-default{
   width: 100%;
   height: auto;
   overflow: hidden;
-  .mzl-preview-img-box{
+  .ih-preview-img-box{
     width:auto;
     height:auto;
     overflow: hidden;
-    .mzl-preview-img-img{
+    .ih-preview-img-img{
       width:130px;
       height:130px;
       float: left;
@@ -168,7 +168,7 @@ onMounted(()=>{
       box-sizing: border-box;
       overflow: hidden;
       margin-bottom:10px;
-      .mzl-previre-img-actions{
+      .ih-previre-img-actions{
         width: 100%;
         height: 100%;
         position: relative;
@@ -205,7 +205,7 @@ onMounted(()=>{
         }
       }
     }
-    .mzl-optfie-area{
+    .ih-optfie-area{
       width:130px;
       height: 130px;
       border:1px dashed #d9d9d9;
@@ -218,7 +218,7 @@ onMounted(()=>{
         transition: all .4s;
         border-color:#0e80eb ;
       }
-      .mzl-optfile-area-text{
+      .ih-optfile-area-text{
         width:100%;
         height:100%;
         overflow: hidden;
@@ -228,7 +228,7 @@ onMounted(()=>{
         font-size:14px;
         text-align: center;
         position: relative;
-        .mzl-optfile-text-pos{
+        .ih-optfile-text-pos{
           width:100%;
           height:auto;
           position: absolute;
@@ -250,11 +250,11 @@ onMounted(()=>{
         
       }
     }
-    .mzl-optfie-area-big{
+    .ih-optfie-area-big{
       width:300px;
       height: 130px;
-      .mzl-optfile-area-text{
-        .mzl-optfile-text-pos{
+      .ih-optfile-area-text{
+        .ih-optfile-text-pos{
           .icon-file{
             font-size:28px;
             margin:0 auto;
@@ -263,12 +263,12 @@ onMounted(()=>{
         
       }
     }
-    .mzl-opfile-area-active{
+    .ih-opfile-area-active{
       transition: all .4s;
       border-color:#0e80eb ;
     }
   }
-  .mzl-optfile-filelist{
+  .ih-optfile-filelist{
       width: 100%;
       height: auto;
       overflow: hidden;

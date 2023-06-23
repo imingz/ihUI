@@ -46,7 +46,7 @@ export default {
 <style lang="scss">
 .m-breadcrumb {
   font-size: 16px;
-  .mzl-breadcrumb-item {
+  .ih-breadcrumb-item {
     display: inline;
   }
 }

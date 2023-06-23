@@ -1,5 +1,5 @@
 <template>
-  <div class="mzl-menu-div-box" :style="{ width: index != 0 ? '100%' : '' }">
+  <div class="ih-menu-div-box" :style="{ width: index != 0 ? '100%' : '' }">
     <li
       @mouseover="toggler(items)"
       @mouseleave="hide(items)"
@@ -11,7 +11,7 @@
         menitemDisabled: items.disabled,
       }"
     >
-      <div class="mzl-menu-item-title-box">
+      <div class="ih-menu-item-title-box">
         <span class="menu-icon" :class="spanClass" :style="activeColots">
           <i :class="items.icon" v-if="items.icon"></i>
         </span>
@@ -30,7 +30,7 @@
       <!-- v-show="items.isOpen" v-if="items.children&&items.children.length" -->
       <transition name="slide-fade">
         <div
-          class="mzl-menu-item-position-box"
+          class="ih-menu-item-position-box"
           :style="mentItemStyle"
           v-show="items.isOpen"
           v-if="items.children && items.children.length"
@@ -211,7 +211,7 @@ const handelClick = (item) => {
   transform: translateY(-20px);
   opacity: 0.5;
 }
-.mzl-menu-div-box {
+.ih-menu-div-box {
   box-sizing: border-box;
   height: 100%;
   float: v-bind(float);
@@ -227,7 +227,7 @@ const handelClick = (item) => {
     transition: all 0.1s ease;
     font-size: 14px;
     position: relative;
-    .mzl-menu-item-title-box {
+    .ih-menu-item-title-box {
       span {
         color: v-bind("themes.color");
       }
@@ -256,7 +256,7 @@ const handelClick = (item) => {
     &:hover {
       background: v-bind("themes.activeBgColor");
     }
-    .mzl-menu-item-position-box {
+    .ih-menu-item-position-box {
       width: 240px;
       position: absolute;
       top: 60px;

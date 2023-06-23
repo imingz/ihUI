@@ -18,10 +18,10 @@ const textMethod = (percent) => {
 }
 </script>
 <style scoped>
-.mzl-progress {
+.ih-progress {
   margin-bottom: 10px;
 }
-.mzl-button-mini {
+.ih-button-mini {
   padding: 3px;
   font-size: 12px;
 }

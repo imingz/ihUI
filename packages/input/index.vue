@@ -1,5 +1,5 @@
 <template>
-  <div :class="[`mzl-group-input-${size}`]" :style="{'min-width':'auto'}">
+  <div :class="[`ih-group-input-${size}`]" :style="{'min-width':'auto'}">
     <div :class="isClass" :style="isStyle" style="">
       <i :class="['left-icon','iconfont',leftIcon]" v-if="!showPassword&&leftIcon!=''"></i>
       <input :type="inptype" @focus="focus" @blur="blur" :value="modelValue"  @input="iptChange" :disabled="disabled" @change="change" :placeholder="placeholder" :autofocus="autofocus" :readonly="readonly" :form="form"/>
@@ -99,15 +99,15 @@ const showPwd = (e) =>{
 }
 const isClass = computed(()=>{
   return [
-    props.clearable?'mzl-input-clearable':props.size=='default'?'mzl-input-default':`mzl-input-${props.size}`,
-    props.leftIcon!=""?`mzl-input-left-icon-${props.size}`:!props.clearable?props.rightIcon!=""?`mzl-input-right-icon-${props.size}`:'':'',
-    props.disabled?'mzl-input-disabled':'',
-    props.type=='password'?props.showPassword?`mzl-input-password-showpassword-${props.size}`:`mzl-input-password-${props.size}`:''
+    props.clearable?'ih-input-clearable':props.size=='default'?'ih-input-default':`ih-input-${props.size}`,
+    props.leftIcon!=""?`ih-input-left-icon-${props.size}`:!props.clearable?props.rightIcon!=""?`ih-input-right-icon-${props.size}`:'':'',
+    props.disabled?'ih-input-disabled':'',
+    props.type=='password'?props.showPassword?`ih-input-password-showpassword-${props.size}`:`ih-input-password-${props.size}`:''
   ]
 })
 </script>
 <style scoped lang="scss">
-.mzl-input-default,.mzl-input-password-default,.mzl-input-password-showpassword-default,.mzl-group-input-default{
+.ih-input-default,.ih-input-password-default,.ih-input-password-showpassword-default,.ih-group-input-default{
   width:100%;
   height:35px;
   border:1px solid #dcdfe6f6;
@@ -139,12 +139,12 @@ const isClass = computed(()=>{
     cursor: pointer;
   }
 }
-.mzl-input-password-showpassword-default{
+.ih-input-password-showpassword-default{
   input{
     padding-right:30px
   }
 }
-.mzl-input-clearable{
+.ih-input-clearable{
   width:100%;
   height:35px;
   border:1px solid #dcdfe6f6;
@@ -176,7 +176,7 @@ const isClass = computed(()=>{
     cursor: pointer;
   }
 }
-.mzl-input-small,.mzl-input-password-small,.mzl-input-password-showpassword-small,.mzl-group-input-small{
+.ih-input-small,.ih-input-password-small,.ih-input-password-showpassword-small,.ih-group-input-small{
   width:100%;
   height:30px;
   border:1px solid #dcdfe6f6;
@@ -208,12 +208,12 @@ const isClass = computed(()=>{
     cursor: pointer;
   }
 }
-.mzl-input-password-showpassword-small{
+.ih-input-password-showpassword-small{
   input{
     padding-right:30px
   }
 }
-.mzl-input-mini,.mzl-input-password-mini,.mzl-input-password-showpassword-mini,.mzl-group-input-mini{
+.ih-input-mini,.ih-input-password-mini,.ih-input-password-showpassword-mini,.ih-group-input-mini{
   width:100%;
   height:28px;
   border:1px solid #dcdfe6f6;
@@ -245,12 +245,12 @@ const isClass = computed(()=>{
     cursor: pointer;
   }
 }
-.mzl-input-password-showpassword-mini{
+.ih-input-password-showpassword-mini{
   input{
     padding-right:30px
   }
 }
-.mzl-input-left-icon-default{
+.ih-input-left-icon-default{
   height:35px;
   input{
     padding:10px 25px 10px 32px;
@@ -266,7 +266,7 @@ const isClass = computed(()=>{
     color:#94969b;
   }
 }
-.mzl-input-left-icon-small{
+.ih-input-left-icon-small{
   height:30px;
   input{
     padding:7px 25px 7px 32px;
@@ -288,7 +288,7 @@ const isClass = computed(()=>{
     top:8px;
   }
 }
-.mzl-input-left-icon-mini{
+.ih-input-left-icon-mini{
   height:28px;
   input{
     padding:6px 25px 6px 32px;
@@ -310,7 +310,7 @@ const isClass = computed(()=>{
     top:7px;
   }
 }
-.mzl-input-right-icon-default{
+.ih-input-right-icon-default{
   height:35px;
   input{
     padding:10px 32px 10px 10px;
@@ -325,7 +325,7 @@ const isClass = computed(()=>{
     color:#94969b;
   }
 }
-.mzl-input-right-icon-small{
+.ih-input-right-icon-small{
   height:30px;
   input{
     padding:7px 32px 7px 10px;
@@ -343,7 +343,7 @@ const isClass = computed(()=>{
     color:#94969b;
   }
 }
-.mzl-input-right-icon-mini{
+.ih-input-right-icon-mini{
   height:28px;
   input{
     padding:6px 32px 6px 10px;
@@ -361,7 +361,7 @@ const isClass = computed(()=>{
     color:#94969b;
   }
 }
-.mzl-input-disabled{
+.ih-input-disabled{
   input{
     cursor: no-drop;
     color:#c3bfbf;
@@ -382,14 +382,14 @@ const isClass = computed(()=>{
     color:#c6c8cc;
   }
 }
-.mzl-group-input-default{
+.ih-group-input-default{
 	border: none;
 	height: auto;
 }
-.mzl-group-input-small{
+.ih-group-input-small{
 	border: none;
 	height: auto;
-	.mzl-input-clearable{
+	.ih-input-clearable{
 		height: 30px;
 		.clearable-icon{
 			top:7px;
@@ -397,9 +397,9 @@ const isClass = computed(()=>{
 		}
 	}
 }
-.mzl-group-input-mini{
+.ih-group-input-mini{
 	border: none;
-	.mzl-input-clearable{
+	.ih-input-clearable{
 		height: 28px;
 		.clearable-icon{
 			top:8px;
@@ -407,15 +407,15 @@ const isClass = computed(()=>{
 		}
 	}
 }
-.mzl-group-input-default :deep(.mzl-button){
+.ih-group-input-default :deep(.ih-button){
   padding:9px 20px !important;
 	border-radius: 0 2px 2px 0;
 }
-.mzl-group-input-small :deep(.mzl-button){
+.ih-group-input-small :deep(.ih-button){
   padding:6.6px 15px !important;
 	border-radius: 0 2px 2px 0;
 }
-.mzl-group-input-mini :deep(.mzl-button){
+.ih-group-input-mini :deep(.ih-button){
 	padding:7px 15px !important;
   font-size: 12px;
 	border-radius: 0 2px 2px 0;

@@ -1,5 +1,5 @@
 <template>
-  <div :class="['mzl-breadcrumb-item', customClass]">
+  <div :class="['ih-breadcrumb-item', customClass]">
     <slot />
   </div>
 </template>

@@ -1,13 +1,13 @@
 <template>
-  <div class="mzl-default-collapse-item-box">
-    <div class="mzl-collapse-item-title"  @click="togger(this)">
+  <div class="ih-default-collapse-item-box">
+    <div class="ih-collapse-item-title"  @click="togger(this)">
       <span>标题</span>
       <i class="m-icon-arrow-right" :class="{rotate:boxshow}"></i>
     </div>
      <!-- v-show="boxshow" -->
     <transition name="slide-fade">
-      <div class="mzl-collapse-slot-box" v-show="boxshow">
-        <div class="mzl-slot-item-box">
+      <div class="ih-collapse-slot-box" v-show="boxshow">
+        <div class="ih-slot-item-box">
           <slot></slot>
         </div>
       </div>
@@ -50,10 +50,10 @@ const togger = (e) =>{
   transition: all .2s ease;
   height:0px;
 }
-.mzl-default-collapse-item-box{
+.ih-default-collapse-item-box{
   height:auto;
   
-  .mzl-collapse-item-title{
+  .ih-collapse-item-title{
     width:100%;
     height:40px;
     padding:0 10px;
@@ -78,11 +78,11 @@ const togger = (e) =>{
       transform: rotate(90deg);
     }
   }
-  .mzl-collapse-slot-box{
+  .ih-collapse-slot-box{
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    .mzl-slot-item-box{
+    .ih-slot-item-box{
       padding:10px 10px;
     }
   }

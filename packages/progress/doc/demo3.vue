@@ -16,7 +16,7 @@ const customColorMethod = (percent) => {
 }
 </script>
 <style scoped>
-.mzl-progress {
+.ih-progress {
   margin-bottom: 10px;
 }
 </style>

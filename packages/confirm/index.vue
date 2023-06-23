@@ -1,16 +1,16 @@
 <template>
 <Transition name="fade">
-  <div :class="['mzl-confirm',customClass]" v-if="isShow">
-      <div class="mzl-wrapper">
-        <div class="mzl-header">
+  <div :class="['ih-confirm',customClass]" v-if="isShow">
+      <div class="ih-wrapper">
+        <div class="ih-header">
           <h3>{{title}}</h3>
           <a href="JavaScript:;" class="m-icon-close" @click="cancelCallback" v-if="closeShow"></a>
         </div>
-        <div class="mzl-body">
+        <div class="ih-body">
           <i :class="['icon-warning',icon]"></i>
           <span>{{text}}</span>
         </div>
-        <div class="mzl-footer">
+        <div class="ih-footer">
           <m-button @click="cancelCallback" size="small" style="margin-right:10px" v-if="cancelShow">{{cancelText}}</m-button>
           <m-button @click="confirmCallback" size="small" type="primary" v-if="confirmShow">{{confirmText}}</m-button>
         </div>
@@ -82,7 +82,7 @@ onMounted(() => {
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
-.mzl-confirm {
+.ih-confirm {
   position: fixed;
   left: 0;
   top: 0;
@@ -90,7 +90,7 @@ onMounted(() => {
   height: 100%;
   z-index: 8888;
   background: rgba(0, 0, 0, 0.4);
-  .mzl-wrapper {
+  .ih-wrapper {
     width: 400px;
     background: #fff;
     border-radius: 4px;
@@ -99,18 +99,18 @@ onMounted(() => {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 12px 0 rgba(7, 7, 7, 0.1);
-    .mzl-header{
+    .ih-header{
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
       color:#2e2e2e
     }
-    .mzl-footer {
+    .ih-footer {
       height: 50px;
       line-height: 50px;
       padding: 0 20px;
     }
-    .mzl-body {
+    .ih-body {
       padding: 20px 20px;
       font-size: 14px;
       color:#505050;
@@ -122,13 +122,13 @@ onMounted(() => {
         font-size: 16px;
       }
     }
-    .mzl-footer {
+    .ih-footer {
       text-align: right;
       .xtx-button {
         margin-left: 20px;
       }
     }
-    .mzl-header {
+    .ih-header {
       position: relative;
       h3 {
         font-weight: normal;

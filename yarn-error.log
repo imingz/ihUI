@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: F:\其他项目\vue3组件库项目\mzl-ui\package.json: Unexpected token } in JSON at position 973
+  SyntaxError: F:\其他项目\vue3组件库项目\ih-ui\package.json: Unexpected token } in JSON at position 973
       at JSON.parse (<anonymous>)
       at C:\Users\lining\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -23,25 +23,25 @@ Trace:
 
 npm manifest: 
   {
-    "name": "mzl-ui",
+    "name": "ih-ui",
     "author": "style'me",
     "version": "0.8.2",
     "private": false,
-    "main": "./dist/mzl-ui.umd.js",
-    "module": "./dist/mzl-ui.es.js",
+    "main": "./dist/ih-ui.umd.js",
+    "module": "./dist/ih-ui.es.js",
     "exports": {
       ".": {
-        "import": "./dist/mzl-ui.es.js",
-        "require": "./dist/mzl-ui.umd.js"
+        "import": "./dist/ih-ui.es.js",
+        "require": "./dist/ih-ui.umd.js"
       }
     },
-    "description": "mzl-ui",
+    "description": "ih-ui",
     "keywords": [
       "vue",
       "vue3",
       "vuejs",
       "vite",
-      "mzl-ui",
+      "ih-ui",
       "ui",
       "vueui",
       "vertical",
@@ -51,16 +51,16 @@ npm manifest:
       "dist/*"
     ],
     "license": "MIT",
-    "homepage": "https://mzlui.codeym.com/",
+    "homepage": "https://ihui.codeym.com/",
     "bugs": {
-      "url": "https://mzlui.codeym.com/",
+      "url": "https://ihui.codeym.com/",
       "email": "1046674804@qq.com"
     },
     "scripts": {
       "dev": "vite --port 3002",
       "build": "vite build",
       "preview": "vite preview",
-      "mzl-ui": "vite build"
+      "ih-ui": "vite build"
     },
     "dependencies": {
       "pinia": "^2.0.12",

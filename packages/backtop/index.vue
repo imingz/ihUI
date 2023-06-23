@@ -1,8 +1,8 @@
 <template>
   <transition name="fade">
-    <div :class="['mzl-backtop-box',customClass]" v-if="backtopShow" @click="backtop">
+    <div :class="['ih-backtop-box',customClass]" v-if="backtopShow" @click="backtop">
       <slot v-if="slot['default']"></slot>
-      <div class="mzl-backtop-default-box" v-else>
+      <div class="ih-backtop-default-box" v-else>
         <span class="default-backtop-icon">
           <i class="m-icon-arrow-up-filling"></i>
         </span>
@@ -106,7 +106,7 @@ onBeforeUnmount(()=>{
 .fade-leave-to {
   opacity: 0;
 }
-.mzl-backtop-box,.mzl-backtop-default-box{
+.ih-backtop-box,.ih-backtop-default-box{
   width: auto;
   overflow: auto;
   position: fixed;

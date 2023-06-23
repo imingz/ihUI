@@ -5,7 +5,7 @@ const router = createRouter({
   scrollBehavior: (to, from, savedPosition) => {
     document.title = to.name;
     if (to.fullPath != "/") {
-      document.querySelector(".mzluirightView").scrollTop = 0;
+      document.querySelector(".ihuirightView").scrollTop = 0;
     }
   },
   routes: [...pagesRouter],

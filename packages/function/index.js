@@ -1,7 +1,7 @@
 function padLeftZero(str) {
   return ('00' + str).substr(str.length)
 }
-const $mzl = {
+const $ih = {
   formatDate:(date, fmt)=>{
 		if (/(y+)/.test(fmt)) {
 		    fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
@@ -26,4 +26,4 @@ const $mzl = {
 		return (new Date(strtime.replace(/-/g, '/'))).getTime();
 	},
 }
-export default $mzl
+export default $ih

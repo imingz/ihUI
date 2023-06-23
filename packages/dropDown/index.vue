@@ -1,11 +1,11 @@
 <template>
-  <div :class="[`mzl-dropdown-${size}`,customClass]" @mouseover="mouseover" @mouseleave="mouseleave" @click="handleClick">
-    <div :class="[`mzl-dropdown-${size}-menu`]">
+  <div :class="[`ih-dropdown-${size}`,customClass]" @mouseover="mouseover" @mouseleave="mouseleave" @click="handleClick">
+    <div :class="[`ih-dropdown-${size}-menu`]">
 			<slot name="Img"></slot><span>{{title}}</span> <i class="m-icon-arrow-down"></i>
 		</div>
 		<transition name="slide-fade">
-			<div class="mzl-dropdown-item" v-if="isShow">
-				<div class="mzl-dropdown-item-child">
+			<div class="ih-dropdown-item" v-if="isShow">
+				<div class="ih-dropdown-item-child">
 					<ul>
 						<li v-for="(item,index) in options" :key="index" @click.stop="handleChange(item,index)">
 							<i :class="item.icon"></i>
@@ -75,33 +75,33 @@ const { isOpenStyles } = state
 </script>
 
 <style lang="scss" scoped>
-.mzl-dropdown-default{
+.ih-dropdown-default{
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
 	text-align: center;
 	user-select:none;
-	.mzl-dropdown-default-menu{
+	.ih-dropdown-default-menu{
 		font-size: 14px;
 		color:#0e80eb;
 		cursor: pointer;
 		line-height: 35px;
 	}
-	.mzl-dropdown-default-menu :slotted(img) {
+	.ih-dropdown-default-menu :slotted(img) {
 		width: 35px;
 		height: 35px;
 		float: left;
 		border-radius: 50%;
 		margin-right: 5px;
 	}
-	.mzl-dropdown-item{
+	.ih-dropdown-item{
 		position: absolute;;
 		height: auto;
 		overflow: hidden;
 		box-sizing: border-box;
 		left:0;
 		z-index: 99;
-		.mzl-dropdown-item-child{
+		.ih-dropdown-item-child{
 			width: max-content;
 			max-height: 192px;
 			height: 100%;
@@ -194,33 +194,33 @@ const { isOpenStyles } = state
 	}
 }
 
-.mzl-dropdown-small{
+.ih-dropdown-small{
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
 	text-align: center;
 	user-select:none;
-	.mzl-dropdown-small-menu{
+	.ih-dropdown-small-menu{
 		font-size: 13px;
 		color:#0e80eb;
 		cursor: pointer;
 		line-height: 30px;
 	}
-	.mzl-dropdown-small-menu :slotted(img) {
+	.ih-dropdown-small-menu :slotted(img) {
 		width: 30px;
 		height: 30px;
 		float: left;
 		border-radius: 50%;
 		margin-right: 4px;
 	}
-	.mzl-dropdown-item{
+	.ih-dropdown-item{
 		position: absolute;;
 		height: auto;
 		overflow: hidden;
 		box-sizing: border-box;
 		left:0;
 		z-index: 999;
-		.mzl-dropdown-item-child{
+		.ih-dropdown-item-child{
 			width: max-content;
 			max-height: 182px;
 			height: 100%;
@@ -313,33 +313,33 @@ const { isOpenStyles } = state
 	}
 }
 
-.mzl-dropdown-mini{
+.ih-dropdown-mini{
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
 	text-align: center;
 	user-select:none;
-	.mzl-dropdown-mini-menu{
+	.ih-dropdown-mini-menu{
 		font-size: 12px;
 		color:#0e80eb;
 		cursor: pointer;
 		line-height: 25px;
 	}
-	.mzl-dropdown-mini-menu :slotted(img) {
+	.ih-dropdown-mini-menu :slotted(img) {
 		width: 25px;
 		height: 25px;
 		float: left;
 		border-radius: 50%;
 		margin-right: 3px;
 	}
-	.mzl-dropdown-item{
+	.ih-dropdown-item{
 		position: absolute;;
 		height: auto;
 		overflow: hidden;
 		box-sizing: border-box;
 		left:0;
 		z-index: 99;
-		.mzl-dropdown-item-child{
+		.ih-dropdown-item-child{
 			width: max-content;
 			max-height: 172px;
 			height: 100%;

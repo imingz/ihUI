@@ -1,5 +1,5 @@
 <template>
-  <div class="mzl-defalu-collapse-box" ref="collapseRef">
+  <div class="ih-defalu-collapse-box" ref="collapseRef">
     <slot></slot>
   </div>
 </template>
@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.mzl-defalu-collapse-box {
+.ih-defalu-collapse-box {
   width: 100%;
   height: auto;
   overflow: hidden;

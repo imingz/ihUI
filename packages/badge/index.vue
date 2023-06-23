@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-    <div class="mzl-badge">
+    <div class="ih-badge">
         <slot></slot>
         <div v-show="!hidden">
             <sup v-if="!isDot" :class='type' class="badge">
@@ -39,7 +39,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.mzl-badge {
+.ih-badge {
     position: relative;
     white-space: nowrap;
 }

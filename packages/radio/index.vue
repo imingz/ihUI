@@ -1,7 +1,7 @@
 <template>
-  <div :class="[`mzl-radio-${size}`,customClass]">
-    <label v-for="(item,index) in options" :key="index" :class="[{'mzl-radio-active':modelVal == item[valueFiled]},item.disabled?modelVal == item[valueFiled]?'mzl-radio-active-disabled':'mzl-radio-disabled':'']" @click="change(item,index)" :style="{'display':inline?'inline-block':'table','margin-bottom':inline?'0':size=='small'?'8px':size=='mini'?'6px':'10px'}">
-      <span class="mzl-radio-round" :style="{'border-color':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor,'background':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor}"></span>
+  <div :class="[`ih-radio-${size}`,customClass]">
+    <label v-for="(item,index) in options" :key="index" :class="[{'ih-radio-active':modelVal == item[valueFiled]},item.disabled?modelVal == item[valueFiled]?'ih-radio-active-disabled':'ih-radio-disabled':'']" @click="change(item,index)" :style="{'display':inline?'inline-block':'table','margin-bottom':inline?'0':size=='small'?'8px':size=='mini'?'6px':'10px'}">
+      <span class="ih-radio-round" :style="{'border-color':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor,'background':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor}"></span>
       <span :style="{'color':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor}">{{item[labelFiled]}}</span>
     </label>
   </div>
@@ -54,7 +54,7 @@ const radioIndex = ref(0)
 </script>
 
 <style lang="scss" scoped>
-.mzl-radio-default{
+.ih-radio-default{
   width: auto;
   height: auto;
   overflow: hidden;
@@ -73,7 +73,7 @@ const radioIndex = ref(0)
       color:#505050;
       font-size: 14px;
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
@@ -98,7 +98,7 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-disabled{
+  label.ih-radio-disabled{
      width: auto;
     height: auto;
     overflow: hidden;
@@ -111,7 +111,7 @@ const radioIndex = ref(0)
       float: left;
       color:#b4b6b9
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
@@ -135,12 +135,12 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-active{
+  label.ih-radio-active{
     span{
       float: left;
       color:#0e80eb
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
@@ -164,13 +164,13 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-active-disabled{
+  label.ih-radio-active-disabled{
     cursor: no-drop;
     span{
       float: left;
       color:#b4b6b9
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
@@ -196,7 +196,7 @@ const radioIndex = ref(0)
   }
 }
 // small
-.mzl-radio-small{
+.ih-radio-small{
   width: auto;
   height: auto;
   overflow: hidden;
@@ -215,7 +215,7 @@ const radioIndex = ref(0)
       color:#505050;
       font-size: 13px;
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
@@ -240,7 +240,7 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-disabled{
+  label.ih-radio-disabled{
     display: inline-block;
     line-height: 20px;
     cursor: no-drop;
@@ -250,7 +250,7 @@ const radioIndex = ref(0)
       float: left;
       color:#b4b6b9
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
@@ -274,12 +274,12 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-active{
+  label.ih-radio-active{
     span{
       float: left;
       color:#0e80eb
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
@@ -303,13 +303,13 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-active-disabled{
+  label.ih-radio-active-disabled{
     cursor: no-drop;
     span{
       float: left;
       color:#b4b6b9
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
@@ -335,7 +335,7 @@ const radioIndex = ref(0)
   }
 }
 // mini
-.mzl-radio-mini{
+.ih-radio-mini{
   width: auto;
   height: auto;
   overflow: hidden;
@@ -354,7 +354,7 @@ const radioIndex = ref(0)
       color:#505050;
       font-size: 12px;
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;
@@ -379,7 +379,7 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-disabled{
+  label.ih-radio-disabled{
     display: inline-block;
     line-height: 20px;
     cursor: no-drop;
@@ -389,7 +389,7 @@ const radioIndex = ref(0)
       float: left;
       color:#b4b6b9
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;
@@ -413,12 +413,12 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-active{
+  label.ih-radio-active{
     span{
       float: left;
       color:#0e80eb
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;
@@ -442,13 +442,13 @@ const radioIndex = ref(0)
       }
     }
   }
-  label.mzl-radio-active-disabled{
+  label.ih-radio-active-disabled{
     cursor: no-drop;
     span{
       float: left;
       color:#b4b6b9
     }
-    span.mzl-radio-round{
+    span.ih-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;

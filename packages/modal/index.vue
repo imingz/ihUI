@@ -1,19 +1,19 @@
 <template>
   <Teleport to="body">
     <transition name="fade">
-      <div :class="['mzl-modal-default',customClass]" v-if="modelValue" @click="closeModal($event)">
-        <div class="mzl-modal-contentbox" :style="{'width':width,'top':top}">
-          <div class="mzl-modal-header">
-            <p class="mzl-modal-title" :style="{'text-align':align=='center'?align:''}">
+      <div :class="['ih-modal-default',customClass]" v-if="modelValue" @click="closeModal($event)">
+        <div class="ih-modal-contentbox" :style="{'width':width,'top':top}">
+          <div class="ih-modal-header">
+            <p class="ih-modal-title" :style="{'text-align':align=='center'?align:''}">
               <slot name="header" v-if="$slot['header']"></slot>
               <span v-else>{{title}}</span>
             </p>
-            <i class="mzl-modal-close m-icon-close" @click="close" v-if="showClose"></i>
+            <i class="ih-modal-close m-icon-close" @click="close" v-if="showClose"></i>
           </div>
-          <div class="mzl-modal-content">
+          <div class="ih-modal-content">
             <slot name="content"></slot>
           </div>
-          <div class="mzl-modal-footer" :style="{'text-align':align=='center'?align:''}">
+          <div class="ih-modal-footer" :style="{'text-align':align=='center'?align:''}">
             <slot name="footer"></slot>
           </div>
         </div>
@@ -83,7 +83,7 @@ onMounted(() => {
 })
 const closeModal = (e) =>{
   if(props.closeOnModal){
-    if(e.target.className=='mzl-modal-default'){
+    if(e.target.className=='ih-modal-default'){
       emit('update:modelValue',false)
       emit('close')
     }
@@ -98,7 +98,7 @@ const closeModal = (e) =>{
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
-.mzl-modal-default{
+.ih-modal-default{
   width:100%;
   height:100%;
   position: fixed;
@@ -106,7 +106,7 @@ const closeModal = (e) =>{
   left:0;
   background: rgba(0,0,0,.4);
   z-index: 8880;
-  .mzl-modal-contentbox{
+  .ih-modal-contentbox{
     width:35%;
     background: #fff;
     border-radius: 4px;
@@ -115,20 +115,20 @@ const closeModal = (e) =>{
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 12px 0 rgba(7, 7, 7, 0.1);
-    .mzl-modal-header{
+    .ih-modal-header{
       width:100%;
       height: 50px;
       position: relative;
       padding:0 20px;
       box-sizing: border-box;
       border-bottom:1px solid #f0f0f0;
-      .mzl-modal-title{
+      .ih-modal-title{
         margin:0;
         line-height: 50px;
         color:#505050;
         font-size:17px;
       }
-      i.mzl-modal-close{
+      i.ih-modal-close{
         line-height: 50px;
         font-size:17px;
         position: absolute;
@@ -137,11 +137,11 @@ const closeModal = (e) =>{
         cursor: pointer;
       }
     }
-    .mzl-modal-content{
+    .ih-modal-content{
       padding:20px;
       box-sizing: border-box;
     }
-    .mzl-modal-footer{
+    .ih-modal-footer{
       border-top:1px solid #f0f0f0;
       text-align: right;
       padding:10px 20px;

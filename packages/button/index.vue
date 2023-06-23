@@ -48,18 +48,18 @@ const $slot = useSlots();
 const isClass = computed(() => {
   return [
     props.size == "default"
-      ? "mzl-button"
+      ? "ih-button"
       : props.size == "medium"
-      ? "mzl-button-medium"
+      ? "ih-button-medium"
       : props.size == "small"
-      ? "mzl-button-small"
+      ? "ih-button-small"
       : props.size == "mini"
-      ? "mzl-button-mini"
-      : "mzl-button",
-    props.type ? (props.disabled ? "" : `mzl-button-${props.type}`) : "",
-    props.disabled ? `mzl-button-${props.type}-disabled` : "",
+      ? "ih-button-mini"
+      : "ih-button",
+    props.type ? (props.disabled ? "" : `ih-button-${props.type}`) : "",
+    props.disabled ? `ih-button-${props.type}-disabled` : "",
     {
-      "mzl-button-round": props.round,
+      "ih-button-round": props.round,
     },
   ];
 });
@@ -80,7 +80,7 @@ const isIconClass = computed(() => {
         props.rightIcon == "m-icon-loading4" ||
         props.rightIcon == "m-icon-loading5" ||
         props.rightIcon == "m-icon-loading6"
-        ? "mzl-icon-loading"
+        ? "ih-icon-loading"
         : ""
       : "",
   ];
@@ -100,7 +100,7 @@ const styles = computed(() => {
 @import url("../../styles/main.css");
 </style>
 <style scoped lang="scss">
-.mzl-button {
+.ih-button {
   padding: 10px 20px;
   outline: none;
   cursor: pointer;
@@ -118,7 +118,7 @@ const styles = computed(() => {
     display: inline-block;
   }
 }
-.mzl-button-medium {
+.ih-button-medium {
   padding: 8px 18px;
   outline: none;
   cursor: pointer;
@@ -134,7 +134,7 @@ const styles = computed(() => {
     font-size: 14px;
   }
 }
-.mzl-button-small {
+.ih-button-small {
   padding: 7px 13px;
   outline: none;
   cursor: pointer;
@@ -150,7 +150,7 @@ const styles = computed(() => {
     font-size: 13px;
   }
 }
-.mzl-button-mini {
+.ih-button-mini {
   padding: 7px 13px;
   outline: none;
   cursor: pointer;
@@ -166,10 +166,10 @@ const styles = computed(() => {
     font-size: 12px;
   }
 }
-.mzl-button-round {
+.ih-button-round {
   border-radius: 22px;
 }
-.mzl-button-default {
+.ih-button-default {
   border: 1px solid #d9d9d9;
   background: #fff;
   color: #333;
@@ -182,7 +182,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-custom {
+.ih-button-custom {
   color: #333;
   &:hover {
     opacity: 0.8;
@@ -191,7 +191,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-primary {
+.ih-button-primary {
   border: 1px solid $primary;
   color: #fff;
   background-color: $primary;
@@ -202,7 +202,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-success {
+.ih-button-success {
   border: 1px solid #09b63d;
   color: #fff;
   background-color: #09b63d;
@@ -213,7 +213,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-danger {
+.ih-button-danger {
   border: 1px solid #ec3437;
   background: #ec3437;
   color: #fff;
@@ -226,7 +226,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-warning {
+.ih-button-warning {
   border: 1px solid #f57b29;
   background: #f57b29;
   color: #fff;
@@ -239,7 +239,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-text {
+.ih-button-text {
   border: 1px solid #fff;
   background: none;
   color: #0e80eb;
@@ -251,7 +251,7 @@ const styles = computed(() => {
     opacity: 1;
   }
 }
-.mzl-button-dashed {
+.ih-button-dashed {
   border: 1px dashed #d9d9d9;
   background: #fff;
   color: #333;
@@ -265,61 +265,61 @@ const styles = computed(() => {
   }
 }
 
-.mzl-button-default-disabled {
+.ih-button-default-disabled {
   cursor: no-drop;
   border: 1px solid #d9d9d9;
   background: #fff;
   opacity: 0.5;
   color: #333;
 }
-.mzl-button-primary-disabled {
+.ih-button-primary-disabled {
   cursor: no-drop;
   border: 1px solid #0e80eb;
   background: #0e80eb;
   opacity: 0.5;
   color: #fff;
 }
-.mzl-button-success-disabled {
+.ih-button-success-disabled {
   cursor: no-drop;
   border: 1px solid #09b63d;
   background: #09b63d;
   opacity: 0.5;
   color: #fff;
 }
-.mzl-button-danger-disabled {
+.ih-button-danger-disabled {
   cursor: no-drop;
   border: 1px solid #ec3437;
   background: #ec3437;
   opacity: 0.5;
   color: #fff;
 }
-.mzl-button-warning-disabled {
+.ih-button-warning-disabled {
   cursor: no-drop;
   border: 1px solid #f57b29;
   background: #f57b29;
   opacity: 0.5;
   color: #fff;
 }
-.mzl-button-dashed-disabled {
+.ih-button-dashed-disabled {
   cursor: no-drop;
   border: 1px solid #d9d9d9;
   background: #fff;
   opacity: 0.5;
   color: #333;
 }
-.mzl-button-text-disabled {
+.ih-button-text-disabled {
   cursor: no-drop;
   border: 1px solid #fff;
   background: none;
   opacity: 0.5;
   color: #0e80eb;
 }
-.mzl-button-custom-disabled {
+.ih-button-custom-disabled {
   cursor: no-drop;
   opacity: 0.5;
 }
 
-.mzl-icon-loading {
+.ih-icon-loading {
   animation: icon-loading 1.5s linear infinite;
   -webkit-animation: icon-loading 1.5s linear infinite;
 }

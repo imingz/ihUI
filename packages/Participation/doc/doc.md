@@ -5,7 +5,7 @@ title: radio
 
 # Mzl UI 贡献指南
 
-### 首先非常感谢您能选择使用 mzl-ui。mzl-ui 是基于 vue3.2 开发，mzl-ui 旨在秉承数据驱动视图，力求更小的体积、更快的相应、更强的拓展性、更完美的支持、更友好的渲染。任何一个开源库都离不开大家的共同贡献和维护，如果您愿意参与贡献，请阅读以下内容。
+### 首先非常感谢您能选择使用 ih-ui。ih-ui 是基于 vue3.2 开发，ih-ui 旨在秉承数据驱动视图，力求更小的体积、更快的相应、更强的拓展性、更完美的支持、更友好的渲染。任何一个开源库都离不开大家的共同贡献和维护，如果您愿意参与贡献，请阅读以下内容。
 
 ## 问题反馈
 
@@ -66,7 +66,7 @@ title: radio
 ## Issue 规范
 
 - ### 在提交 *issue* 之前，请搜索相关内容是否已被提出。
-- ### 请说明 *mzl-ui* 和 *Vue* 的版本号，并提供操作系统和浏览器信息。推荐使用 *JSFiddle* 生成在线 *demo*，这能够更直观地重现问题。
+- ### 请说明 *ih-ui* 和 *Vue* 的版本号，并提供操作系统和浏览器信息。推荐使用 *JSFiddle* 生成在线 *demo*，这能够更直观地重现问题。
 
 ## Pull Request 规范
 
@@ -122,7 +122,7 @@ title: radio
 ## 代码规范
 
 - ### 避免过多的 html 代码累赘，秉承数据驱动视图思想，简化使用繁琐度，提供更强的拓展性。
-- ### 组件色彩范围请参考：[点击跳转：组件色彩参考链接](https://mzlui.codeym.com/#/mzlui/color)
+- ### 组件色彩范围请参考：[点击跳转：组件色彩参考链接](https://ihui.codeym.com/#/ihui/color)
 - ### 其他请参考 eslint [standard](https://github.com/standard/standard/blob/master/RULES.md#javascript-standard-style)
 <br/>
 <br/>

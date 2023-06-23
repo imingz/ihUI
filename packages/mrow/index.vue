@@ -1,5 +1,5 @@
 <template>
-  <div class="mzl-row-default"><slot></slot></div>
+  <div class="ih-row-default"><slot></slot></div>
 </template>
 <script>
 export default{
@@ -11,7 +11,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
-.mzl-row-default{
+.ih-row-default{
   width:100%;
   height:auto;
   box-sizing: border-box;

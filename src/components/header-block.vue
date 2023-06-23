@@ -1,7 +1,7 @@
 <template>
   <div class="header-block-box">
     <div class="logoBox">
-      <img src="../assets/logo.png" alt="mzl-ui" @click="toHome" />
+      <img src="../assets/logo.png" alt="ih-ui" @click="toHome" />
       <m-badge type="primary" value="V 0.8.8">
         <a href="javascript:;" @click="toHome">Mzl UI</a>
       </m-badge>
@@ -20,7 +20,7 @@ const { push, currentRoute } = useRouter();
 const toHome = () => push("/");
 const fullPath = ref(currentRoute.value.fullPath)
 const tabIndex = ref(
-  fullPath == "/mzlui"
+  fullPath == "/ihui"
     ? 1
     : sessionStorage.getItem("tabIndex") || 0
 );
@@ -33,20 +33,20 @@ const state = reactive({
     },
     {
       name: "组件",
-      path: "/mzlui",
+      path: "/ihui",
     },
     // {
-    //   name:"支持mzlUI",
+    //   name:"支持ihUI",
     //   path:'open',
     // },
     {
       name: "更新日志",
-      path: "/mzlui/updatelog",
+      path: "/ihui/updatelog",
     },
     {
       name: "问题反馈",
       path: "open",
-      url: "https://github.com/Ningstyle/mzl-ui/issues",
+      url: "https://github.com/Ningstyle/ih-ui/issues",
     },
   ],
 });
@@ -63,7 +63,7 @@ const pageView = (item, index) => {
   }
 };
 onMounted(() => {
-  if (fullPath == "/mzlui") {
+  if (fullPath == "/ihui") {
     sessionStorage.setItem("tabIndex", 1);
   }
 });

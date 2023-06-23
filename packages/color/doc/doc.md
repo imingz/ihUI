@@ -5,7 +5,7 @@ title: button
 
 # Color 颜色
 
-#### mzl-ui 主要颜色搭配
+#### ih-ui 主要颜色搭配
 
 ## 主要颜色
 

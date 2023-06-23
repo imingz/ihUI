@@ -9,7 +9,7 @@ export default ({ text, type, timeout, icon, textColor, bgColor, customClass }) 
         ? document.createElement('div')
         : ''
       : ''
-  div.setAttribute('class', 'mzlui-meassage-container')
+  div.setAttribute('class', 'ihui-meassage-container')
   if (typeof document !== 'undefined') {
     document.body.appendChild(div)
   }

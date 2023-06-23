@@ -1,5 +1,5 @@
 <template>
-  <div class="mzl-menu-default-box">
+  <div class="ih-menu-default-box">
     <template v-for="(item, index) in options" :key="index">
       <menu-item
         :items="item"
@@ -58,7 +58,7 @@ const themes = ref({
 </script>
 
 <style lang="scss" scoped>
-.mzl-menu-default-box {
+.ih-menu-default-box {
   width: 100%;
   height: v-bind(height);
   background: v-bind("themes.backgroundColor");

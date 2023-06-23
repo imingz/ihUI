@@ -6,7 +6,7 @@ describe('Divider组件初始化----', () => {
   })
   it('分割线组件应该可以被渲染', () => {
     const wrapper = mount(DividerTest)
-    expect(wrapper.find('.mzl-divider').exists()).toBe(true)
+    expect(wrapper.find('.ih-divider').exists()).toBe(true)
   })
   it('测试divider插槽是否正常', () => {
     const wrapper = mount(DividerTest, {

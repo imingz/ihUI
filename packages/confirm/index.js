@@ -1,6 +1,6 @@
 import { createVNode, render } from 'vue'
 import mConfirm from './index.vue'
-const divNode = createVNode('div', { class: 'mzlui-confirm-container' })
+const divNode = createVNode('div', { class: 'ihui-confirm-container' })
 render(divNode, typeof document !== 'undefined'?document.body:'')
 const container = divNode.el
 const Confirm = ({ title, text,icon,confirmText,cancelText,confirmShow,cancelShow,closeShow,customClass }) => {

@@ -1,5 +1,5 @@
 <template>
-  <div :class="[`mzl-table-${size}`,customClass]">
+  <div :class="[`ih-table-${size}`,customClass]">
     <table>
       <thead v-if="showHeader">
         <tr>
@@ -63,7 +63,7 @@ const $slot = useSlots()
 </script>
 
 <style lang="scss" scoped>
-.mzl-table-default{
+.ih-table-default{
   width:100%;
   height:auto;
   overflow:hidden;
@@ -122,7 +122,7 @@ const $slot = useSlots()
     }
   }
 }
-.mzl-table-small{
+.ih-table-small{
   width:100%;
   height:auto;
   overflow:hidden;
@@ -180,7 +180,7 @@ const $slot = useSlots()
     }
   }
 }
-.mzl-table-mini{
+.ih-table-mini{
   width:100%;
   height:auto;
   overflow:hidden;

@@ -6,7 +6,7 @@ describe('Progress组件初始化----', () => {
   })
   it('进度条组件应该可以被渲染', () => {
     const wrapper = mount(ProgressTest)
-    expect(wrapper.find('.mzl-progress').exists()).toBe(true)
+    expect(wrapper.find('.ih-progress').exists()).toBe(true)
   })
   it('测试进度条插槽是否正常', () => {
     const wrapper = mount(ProgressTest, {

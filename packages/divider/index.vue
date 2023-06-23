@@ -21,15 +21,15 @@ export default {
 </script>
 
 <template>
-    <div class="mzl-divider"  :class="{ 'mzl-vertical': direction === 'vertical' }" :style="{ 'justify-content': position, 'border-top': `1px ${lineStyle} #dcdfe6` }">
-        <div class="mzl-divider-title" v-if="position">
+    <div class="ih-divider"  :class="{ 'ih-vertical': direction === 'vertical' }" :style="{ 'justify-content': position, 'border-top': `1px ${lineStyle} #dcdfe6` }">
+        <div class="ih-divider-title" v-if="position">
             <slot></slot>
         </div>
     </div>
 </template> 
 
 <style scoped>
-.mzl-divider {
+.ih-divider {
     width: 100%;
     height: 1px;
     margin: 24px 0;
@@ -40,7 +40,7 @@ export default {
     box-sizing: border-box;
 }
 
-.mzl-vertical {
+.ih-vertical {
     display: inline-block;
     width: 1px;
     height: 1em;
@@ -50,7 +50,7 @@ export default {
     padding: 0;
 }
 
-.mzl-divider-title {
+.ih-divider-title {
     border-left: 20px solid white;
     border-right: 20px solid white;
     background-color: white;

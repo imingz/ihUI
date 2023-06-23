@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-backtop target=".mzluirightView" :bottom="100">
+  <m-backtop target=".ihuirightView" :bottom="100">
     <span class="backtop">
       <i class="m-icon-direction-up"></i>
     </span>

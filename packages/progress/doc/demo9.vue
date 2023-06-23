@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-<div class="mzl-style">
+<div class="ih-style">
     <m-progress
       :percent="percent"
       progressType="dashboard"
@@ -38,11 +38,11 @@
   },500)
 </script>
 <style scoped>
-.mzl-style{
+.ih-style{
   display: flex;
   flex-wrap: wrap;
 }
-.mzl-progress {
+.ih-progress {
   margin-bottom: 10px;
   margin-right: 10px;
 }

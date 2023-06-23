@@ -1,14 +1,14 @@
 <template>
-  <div :class="['mzl-tree-item-box']">
+  <div :class="['ih-tree-item-box']">
     <li>
        <!-- :style="{'padding-left':index*15+'px'}" -->
-      <div :class="['mzl-tree-lable-box',{'label-active':tabIndexs === items.key,'mzl-tree-lable-disabled':items.disabled}]" @click.stop.prevent="toggle(items)" :data-key="dataKey" :style="{'padding-left':index*15+'px'}">
-        <span :class="[{rotate:icon!='m-icon-arrow-right-filling'?false:items.isOpen},'mzl-tree-lable-span']"><i :class="[{'m-icon-arrow-right-filling':items.children&&items.children.length}]"></i></span>
-        <span :class="['mzl-tree-label-select-span',{'mzl-tree-label-select-span-active':items.isSelected,'mzl-tree-label-select-span-active-1':items.semiSelected}]" @click.stop="selectClick(items,index)" v-if="multiple"></span>
-        <span class="mzl-tree-label">{{items.label}}</span>
+      <div :class="['ih-tree-lable-box',{'label-active':tabIndexs === items.key,'ih-tree-lable-disabled':items.disabled}]" @click.stop.prevent="toggle(items)" :data-key="dataKey" :style="{'padding-left':index*15+'px'}">
+        <span :class="[{rotate:icon!='m-icon-arrow-right-filling'?false:items.isOpen},'ih-tree-lable-span']"><i :class="[{'m-icon-arrow-right-filling':items.children&&items.children.length}]"></i></span>
+        <span :class="['ih-tree-label-select-span',{'ih-tree-label-select-span-active':items.isSelected,'ih-tree-label-select-span-active-1':items.semiSelected}]" @click.stop="selectClick(items,index)" v-if="multiple"></span>
+        <span class="ih-tree-label">{{items.label}}</span>
       </div>
       <transition name="slide-fade">
-        <div class="mzl-tree-ul-box" v-show="items.isOpen" v-if="items.children&&items.children.length">
+        <div class="ih-tree-ul-box" v-show="items.isOpen" v-if="items.children&&items.children.length">
           <tree-item v-for="(v,i) in items.children" :key="i" :items="v" :data-key="dataKey+'-'+i" :defaultOpenNodes="defaultOpenNodes" :icon="icon" @nodeClick="outClick($event,items)" :options="options" :index="index+1" :tabIndexs="tabIndexs" @selectClick="emit('selectClick',$event)" :multiple="multiple" :defaultSelectNodes="defaultSelectNodes"></tree-item>
         </div>
       </transition>
@@ -253,7 +253,7 @@ onMounted(()=>{
   transition: all .3s ease;
   height:0px;
 }
-.mzl-tree-item-box{
+.ih-tree-item-box{
   width:100%;
   height:auto;
   overflow:hidden;
@@ -269,7 +269,7 @@ onMounted(()=>{
     user-select: none;
     position: relative;
     
-    .mzl-tree-lable-box{
+    .ih-tree-lable-box{
       width: 100%;
       height:100%;
       transition: all .1s ease;
@@ -280,7 +280,7 @@ onMounted(()=>{
       &:hover{
         background:#f5f5f5 ;
       }
-      span.mzl-tree-lable-span{
+      span.ih-tree-lable-span{
         width:14px;
         height:14px;
         display: inline-block;
@@ -298,7 +298,7 @@ onMounted(()=>{
       span.rotate{
         transform: rotate(90deg);
       }
-      .mzl-tree-label-select-span{
+      .ih-tree-label-select-span{
         width:14px;
         height: 14px;
         border-radius: 2px;
@@ -327,14 +327,14 @@ onMounted(()=>{
           left:3.5px;
         }
       }
-      .mzl-tree-label-select-span-active{
+      .ih-tree-label-select-span-active{
         border:1px solid #0e80eb;
         background: #0e80eb;
         &::after{
           border-color: #fff;
         }
       }
-      .mzl-tree-label-select-span-active-1{
+      .ih-tree-label-select-span-active-1{
         width:14px;
         height: 14px;
         border-radius: 2px;
@@ -357,17 +357,17 @@ onMounted(()=>{
         }
       }
     }
-    .mzl-tree-lable-disabled{
+    .ih-tree-lable-disabled{
       cursor: no-drop;
-      .mzl-tree-label{
+      .ih-tree-label{
         color:#b4b6b9;
       }
-      span.mzl-tree-lable-span{
+      span.ih-tree-lable-span{
         i{
           color:#b4b6b9;
         }
       }
-      .mzl-tree-label-select-span{
+      .ih-tree-label-select-span{
         border: 1px solid #b9b9b9;
         background: #ebebeb;
         &:hover{
@@ -387,14 +387,14 @@ onMounted(()=>{
           left:3.5px;
         }
       }
-      .mzl-tree-label-select-span-active{
+      .ih-tree-label-select-span-active{
         border:1px solid #b9b9b9;
         background: #ebebeb;
         &::after{
           border-color: #999999;
         }
       }
-      .mzl-tree-label-select-span-active-1{
+      .ih-tree-label-select-span-active-1{
         width:14px;
         height: 14px;
         border-radius: 2px;
@@ -420,12 +420,12 @@ onMounted(()=>{
     .label-active{
       background:#f5f5f5 ;
     }
-    .mzl-tree-ul-box{
+    .ih-tree-ul-box{
       margin:0;
       overflow: hidden;
       
       box-sizing: border-box;
-      .mzl-tree-item-box{
+      .ih-tree-item-box{
         // padding-left:15px;
         // margin-left: -15px;
         // padding-left:15px;

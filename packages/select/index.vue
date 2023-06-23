@@ -12,7 +12,7 @@
         :readonly="!searchable"
         :placeholder="selVal == '' ? placeholder : selVal"
         :style="[customClass ? {} : customStyle]"
-        :class="[selVal == '' ? 'mzl-select-input' : 'mzl-select-input-value']"
+        :class="[selVal == '' ? 'ih-select-input' : 'ih-select-input-value']"
         :disabled="disabled"
         @input="input"
         :value="selVal"
@@ -20,20 +20,20 @@
       <i :class="iconClass" :style="[{ transform: rotate }, fixIcon]"></i>
     </div>
     <transition name="slide-fade">
-      <div class="mzl-select-option" v-if="isShow">
-        <div class="mzl-select-option-find">
+      <div class="ih-select-option" v-if="isShow">
+        <div class="ih-select-option-find">
           <ul>
             <li
-              class="mzl-select-option-li"
+              class="ih-select-option-li"
               v-for="(item, index) in optionsData"
               :key="index"
               @click="selChange(item, index)"
               :class="{
-                'mzl-select-active':
+                'ih-select-active':
                   activeIndex == index ||
                   selVal == item[labelFiled] ||
                   item.selected,
-                'mzl-select-disabled': item.disabled,
+                'ih-select-disabled': item.disabled,
               }"
             >
               {{ item[labelFiled] }}
@@ -153,16 +153,16 @@ const customStyle = computed(() => {
 // selece class
 const selectClass = computed(() => {
   return [
-    `mzl-select-${props.size}`,
-    props.disabled ? `mzl-select-${props.size}-disabled` : "",
+    `ih-select-${props.size}`,
+    props.disabled ? `ih-select-${props.size}-disabled` : "",
   ];
 });
 // select input class
 const selectInputClass = computed(() => {
   return [
-    "mzl-select-input-box",
-    `mzl-select-input-${props.size}`,
-    props.disabled ? `mzl-select-input-${props.size}-disabled` : "",
+    "ih-select-input-box",
+    `ih-select-input-${props.size}`,
+    props.disabled ? `ih-select-input-${props.size}-disabled` : "",
   ];
 });
 const blur = (e) => {
@@ -187,7 +187,7 @@ const vClickOutside = {
         if (!props.multiple) {
           if (
             el.contains(e.target) &&
-            e.target.className.indexOf("mzl-select-option-li") == -1
+            e.target.className.indexOf("ih-select-option-li") == -1
           ) {
             if (!isShow.value) {
               isShow.value = !isShow.value;
@@ -270,20 +270,20 @@ const selChange = (item, index) => {
 
 <style lang="scss" scoped>
 // 默认
-.mzl-select-input-box,
-.mzl-select-default {
+.ih-select-input-box,
+.ih-select-default {
   width: 100%;
   height: 100%;
   margin: 0;
   position: relative;
-  .mzl-select-multiple {
+  .ih-select-multiple {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
   }
-  .mzl-select-input-default {
+  .ih-select-input-default {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -307,11 +307,11 @@ const selChange = (item, index) => {
         border-color: #0e80eb;
       }
     }
-    .mzl-select-input::placeholder {
+    .ih-select-input::placeholder {
       color: #c6c8cc;
       font-size: 14px;
     }
-    .mzl-select-input-value::placeholder {
+    .ih-select-input-value::placeholder {
       color: #626262;
       font-size: 14px;
     }
@@ -331,7 +331,7 @@ const selChange = (item, index) => {
       transform: rotate(0deg);
     }
   }
-  .mzl-select-option {
+  .ih-select-option {
     min-width: 100%;
     height: auto;
     position: absolute;
@@ -341,7 +341,7 @@ const selChange = (item, index) => {
     background-color: #fff;
     top: 100%;
     z-index: 99;
-    .mzl-select-option-find {
+    .ih-select-option-find {
       width: 100%;
       max-height: 211px;
       height: auto;
@@ -410,10 +410,10 @@ const selChange = (item, index) => {
             background: rgba(96, 98, 102, 0.1);
           }
         }
-        li.mzl-select-active {
+        li.ih-select-active {
           color: #0e80eb;
         }
-        li.mzl-select-disabled {
+        li.ih-select-disabled {
           color: #9d9d9d;
           cursor: no-drop;
           &:hover {
@@ -440,12 +440,12 @@ const selChange = (item, index) => {
 }
 
 // small
-.mzl-select-small {
+.ih-select-small {
   width: 100%;
   height: auto;
   margin: 0;
   position: relative;
-  .mzl-select-input-small {
+  .ih-select-input-small {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -469,11 +469,11 @@ const selChange = (item, index) => {
         border-color: #0e80eb;
       }
     }
-    .mzl-select-input::placeholder {
+    .ih-select-input::placeholder {
       color: #c6c8cc;
       font-size: 14px;
     }
-    .mzl-select-input-value::placeholder {
+    .ih-select-input-value::placeholder {
       color: #626262;
       font-size: 14px;
     }
@@ -493,7 +493,7 @@ const selChange = (item, index) => {
       transform: rotate(0deg);
     }
   }
-  .mzl-select-option {
+  .ih-select-option {
     min-width: 100%;
     height: auto;
     position: absolute;
@@ -503,7 +503,7 @@ const selChange = (item, index) => {
     background-color: #fff;
     top: 100%;
     z-index: 99;
-    .mzl-select-option-find {
+    .ih-select-option-find {
       width: 100%;
       max-height: 211px;
       height: auto;
@@ -572,10 +572,10 @@ const selChange = (item, index) => {
             background: rgba(96, 98, 102, 0.1);
           }
         }
-        li.mzl-select-active {
+        li.ih-select-active {
           color: #0e80eb;
         }
-        li.mzl-select-disabled {
+        li.ih-select-disabled {
           color: #9d9d9d;
           cursor: no-drop;
           &:hover {
@@ -602,12 +602,12 @@ const selChange = (item, index) => {
 }
 
 // mini
-.mzl-select-mini {
+.ih-select-mini {
   width: 100%;
   height: auto;
   margin: 0;
   position: relative;
-  .mzl-select-input-mini {
+  .ih-select-input-mini {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -631,11 +631,11 @@ const selChange = (item, index) => {
         border-color: #0e80eb;
       }
     }
-    .mzl-select-input::placeholder {
+    .ih-select-input::placeholder {
       color: #c6c8cc;
       font-size: 12px;
     }
-    .mzl-select-input-value::placeholder {
+    .ih-select-input-value::placeholder {
       color: #626262;
       font-size: 12px;
     }
@@ -655,7 +655,7 @@ const selChange = (item, index) => {
       transform: rotate(0deg);
     }
   }
-  .mzl-select-option {
+  .ih-select-option {
     min-width: 100%;
     height: auto;
     position: absolute;
@@ -665,7 +665,7 @@ const selChange = (item, index) => {
     background-color: #fff;
     top: 100%;
     z-index: 99;
-    .mzl-select-option-find {
+    .ih-select-option-find {
       width: 100%;
       max-height: 185px;
       height: auto;
@@ -734,10 +734,10 @@ const selChange = (item, index) => {
             background: rgba(96, 98, 102, 0.1);
           }
         }
-        li.mzl-select-active {
+        li.ih-select-active {
           color: #0e80eb;
         }
-        li.mzl-select-disabled {
+        li.ih-select-disabled {
           color: #9d9d9d;
           cursor: no-drop;
           &:hover {
@@ -763,41 +763,41 @@ const selChange = (item, index) => {
   }
 }
 
-.mzl-select-default-disabled {
+.ih-select-default-disabled {
   cursor: no-drop;
-  .mzl-select-input-default-disabled {
+  .ih-select-input-default-disabled {
     cursor: no-drop;
     input {
       cursor: no-drop;
     }
-    .mzl-select-input-value::placeholder {
+    .ih-select-input-value::placeholder {
       color: #c6c8cc;
       font-size: 14px;
     }
   }
 }
-.mzl-select-small-disabled {
+.ih-select-small-disabled {
   cursor: no-drop;
-  .mzl-select-input-small-disabled {
+  .ih-select-input-small-disabled {
     cursor: no-drop;
     input {
       cursor: no-drop;
       color: #c6c8cc;
     }
-    .mzl-select-input-value::placeholder {
+    .ih-select-input-value::placeholder {
       color: #c6c8cc;
       font-size: 14px;
     }
   }
 }
-.mzl-select-mini-disabled {
+.ih-select-mini-disabled {
   cursor: no-drop;
-  .mzl-select-input-mini-disabled {
+  .ih-select-input-mini-disabled {
     cursor: no-drop;
     input {
       cursor: no-drop;
     }
-    .mzl-select-input-value::placeholder {
+    .ih-select-input-value::placeholder {
       color: #c6c8cc;
       font-size: 12px;
     }

@@ -6,7 +6,7 @@ describe('Button组件初始化----', () => {
   })
   it('按钮组件应该可以被渲染', () => {
     const wrapper = mount(ButtonTest)
-    expect(wrapper.find('.mzl-button').exists()).toBe(true)
+    expect(wrapper.find('.ih-button').exists()).toBe(true)
   })
   it('测试button插槽是否正常', () => {
     const wrapper = mount(ButtonTest, {

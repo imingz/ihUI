@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-<div class="mzl-style">
+<div class="ih-style">
     <m-progress
       :percent="20"
       progressType="circle"
@@ -31,18 +31,18 @@
 </div>
 </template>
 <style scoped>
-.mzl-style{
+.ih-style{
   display: flex;
   flex-wrap: wrap;
 }
-.mzl-progress {
+.ih-progress {
   margin-bottom: 10px;
   margin-right: 10px;
 }
-.mzl-button-round {
+.ih-button-round {
   border-radius: 50%;
 }
-.mzl-button-mini {
+.ih-button-mini {
   padding: 4px;
 }
 </style>

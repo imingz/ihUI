@@ -7,7 +7,7 @@
 <script setup>
 import Confirm from "../index.js";
 import Message from "../../message/index.js";
-// 以上为本地示例，请使用import { Confirm, Message } from "mzl-ui";引入
+// 以上为本地示例，请使用import { Confirm, Message } from "ih-ui";引入
 const openConfirm = () => {
   Confirm({
     title: "提示信息",

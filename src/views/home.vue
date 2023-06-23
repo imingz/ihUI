@@ -1,5 +1,5 @@
 <template>
-  <div class="mzl-ui-doc">
+  <div class="ih-ui-doc">
     <aside>
       <div class="list-box">
         <div
@@ -29,10 +29,10 @@
         </div>
       </div>
     </aside>
-    <main class="mzluirightView">
+    <main class="ihuirightView">
       <router-view v-highlight></router-view>
     </main>
-    <m-backtop target=".mzluirightView"></m-backtop>
+    <m-backtop target=".ihuirightView"></m-backtop>
   </div>
 </template>
 
@@ -79,7 +79,7 @@ const { MenuLangList } = state;
 </script>
 
 <style lang="scss" scoped>
-.mzl-ui-doc {
+.ih-ui-doc {
   display: flex;
   height: calc(100vh - 64px - 2vh);
   margin-top: 2vh;

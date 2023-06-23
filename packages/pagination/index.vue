@@ -1,17 +1,17 @@
 <template>
-  <div :class="['mzl-pagination-box',`mzl-pagination-${size}`,{'mzl-pagination-disabled':disabled}]" :style="{'text-align':align}">
-    <div class="mzl-pagination-inlinebox">
-      <div class="mzl-pagination-pagebox">
-        <span class="mzl-total" v-if="showTotal">共 {{total}} 条</span>
-        <span :class="['mzl-prev-text-text',{'mzl-prev-text-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText!=''">{{prevText}}</span>
-        <span :class="['mzl-prev-text mzl-text-box',{'mzl-prev-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText==''||prevText==undefined"><i class="m-icon-arrow-left-bold"></i></span>
-        <div class="mzl-block-box" :style="{'width':(pageSize<=10&&Math.ceil(total/pageSize)<=10)?'auto':((size=='small'?32:36)*maxSize+'px')}">
-          <div class="mzl-block-margin-box" :style="{'width':(pageSize<=10&&Math.ceil(total/pageSize)<=10)?'auto':((size=='small'?32:36)*Math.ceil(total/pageSize)+'px'),'margin-left':marginLeft+'px'}">
-            <li :class="['mzl-block-li',{'mzl-block-li-active':currentPage-1==index}]" v-for="(item,index) in Math.ceil(total/pageSize)" :key="index" @click="change(index+1)">{{index+1}}</li>
+  <div :class="['ih-pagination-box',`ih-pagination-${size}`,{'ih-pagination-disabled':disabled}]" :style="{'text-align':align}">
+    <div class="ih-pagination-inlinebox">
+      <div class="ih-pagination-pagebox">
+        <span class="ih-total" v-if="showTotal">共 {{total}} 条</span>
+        <span :class="['ih-prev-text-text',{'ih-prev-text-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText!=''">{{prevText}}</span>
+        <span :class="['ih-prev-text ih-text-box',{'ih-prev-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText==''||prevText==undefined"><i class="m-icon-arrow-left-bold"></i></span>
+        <div class="ih-block-box" :style="{'width':(pageSize<=10&&Math.ceil(total/pageSize)<=10)?'auto':((size=='small'?32:36)*maxSize+'px')}">
+          <div class="ih-block-margin-box" :style="{'width':(pageSize<=10&&Math.ceil(total/pageSize)<=10)?'auto':((size=='small'?32:36)*Math.ceil(total/pageSize)+'px'),'margin-left':marginLeft+'px'}">
+            <li :class="['ih-block-li',{'ih-block-li-active':currentPage-1==index}]" v-for="(item,index) in Math.ceil(total/pageSize)" :key="index" @click="change(index+1)">{{index+1}}</li>
           </div>
         </div>
-        <span :class="['mzl-next-text mzl-text-box',{'mzl-next-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText==''||nextText==undefined"><i class="m-icon-arrow-right-bold"></i></span>
-        <span :class="['mzl-next-text-text',{'mzl-next-text-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText!=''">{{nextText}}</span>
+        <span :class="['ih-next-text ih-text-box',{'ih-next-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText==''||nextText==undefined"><i class="m-icon-arrow-right-bold"></i></span>
+        <span :class="['ih-next-text-text',{'ih-next-text-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText!=''">{{nextText}}</span>
         <div class="to-next-page-box" v-if="jumper">
           <span>跳至</span>
           <span class="input-span"><m-input :size="size=='small'?'mini':'small'" v-model="currentPage" @change="topage" :disabled="disabled"></m-input></span>
@@ -159,22 +159,22 @@ const topage = (e) =>{
 </script>
 
 <style lang="scss" scoped>
-.mzl-pagination-box,.mzl-pagination-default{
+.ih-pagination-box,.ih-pagination-default{
   width:100%;
   height:auto;
   overflow: hidden;
   text-align: left;
-  .mzl-pagination-inlinebox{
+  .ih-pagination-inlinebox{
     display: inline-block;
-    .mzl-pagination-pagebox{
+    .ih-pagination-pagebox{
       display: flex;
-      .mzl-total{
+      .ih-total{
         font-size:14px;
         color:#505050;
         line-height: 30px;
         margin-right:5px;
       }
-      .mzl-text-box{
+      .ih-text-box{
         width:30px;
         height:30px;
         float: left;
@@ -207,14 +207,14 @@ const topage = (e) =>{
         span.input-span{
           width:40px
         }
-        span.input-span:deep(.mzl-input-small input){
+        span.input-span:deep(.ih-input-small input){
           padding: 7px 10px 7px 10px;
         }
       }
-      .mzl-prev-text{
+      .ih-prev-text{
         margin-right:3px;
       }
-      .mzl-prev-text-text{
+      .ih-prev-text-text{
         line-height: 30px;
         font-size:14px;
         color:v-bind('colors.color');
@@ -225,7 +225,7 @@ const topage = (e) =>{
           color:v-bind('colors.hoverColor');
         }
       }
-      .mzl-next-text-text{
+      .ih-next-text-text{
         line-height: 30px;
         font-size:14px;
         color:v-bind('colors.color');
@@ -236,7 +236,7 @@ const topage = (e) =>{
           color:v-bind('colors.hoverColor');
         }
       }
-      .mzl-prev-text-text-disabled,.mzl-next-text-text-disabled{
+      .ih-prev-text-text-disabled,.ih-next-text-text-disabled{
         color:#808080;
         cursor: no-drop;
         &:hover{
@@ -244,10 +244,10 @@ const topage = (e) =>{
           background: v-bind('colors.hoverBackground');
         }
       }
-      .mzl-next-text{
+      .ih-next-text{
         margin-left:3px;
       }
-      .mzl-prev-text-disabled,.mzl-next-text-disabled{
+      .ih-prev-text-disabled,.ih-next-text-disabled{
         background: #f5f5f5;
         color:#808080;
         cursor: no-drop;
@@ -257,15 +257,15 @@ const topage = (e) =>{
           background: #f5f5f5;
         }
       }
-      .mzl-block-box{
+      .ih-block-box{
         float: left;
         overflow: hidden;
-        .mzl-block-margin-box{
+        .ih-block-margin-box{
           width: 100%;
           height: 32px;
           overflow: hidden;
         }
-        .mzl-block-li{
+        .ih-block-li{
           width:30px;
           height:30px;
           float: left;
@@ -287,7 +287,7 @@ const topage = (e) =>{
             background: v-bind('colors.hoverBackground');
           }
         }
-        .mzl-block-li-active{
+        .ih-block-li-active{
           border-color:v-bind('colors.hoverBorderColor');
           color:v-bind('colors.hoverColor');
           background: v-bind('colors.hoverBackground');
@@ -297,16 +297,16 @@ const topage = (e) =>{
   }
 }
 
-.mzl-pagination-small{
-  .mzl-pagination-inlinebox{
-    .mzl-pagination-pagebox{
-      .mzl-total{
+.ih-pagination-small{
+  .ih-pagination-inlinebox{
+    .ih-pagination-pagebox{
+      .ih-total{
         font-size:13px;
         color:#505050;
         line-height: 28px;
         margin-right:4px;
       }
-      .mzl-text-box{
+      .ih-text-box{
         width:28px;
         height:28px;
         line-height: 27px;
@@ -325,30 +325,30 @@ const topage = (e) =>{
         span.input-span{
           width:38px
         }
-        span.input-span:deep(.mzl-input-small input){
+        span.input-span:deep(.ih-input-small input){
           padding: 7px 10px 7px 10px;
         }
       }
-      .mzl-prev-text{
+      .ih-prev-text{
         margin-right:2px;
       }
-      .mzl-prev-text-text{
+      .ih-prev-text-text{
         line-height: 28px;
         margin-right:2px;
       }
-      .mzl-next-text-text{
+      .ih-next-text-text{
         line-height: 28px;
         font-size:14px;
         margin-left:2px;
       }
-      .mzl-next-text{
+      .ih-next-text{
         margin-left:2px;
       }
-      .mzl-block-box{
-        .mzl-block-margin-box{
+      .ih-block-box{
+        .ih-block-margin-box{
           height: 30px;
         }
-        .mzl-block-li{
+        .ih-block-li{
           width:28px;
           height:28px;
           margin:0 2px;
@@ -358,12 +358,12 @@ const topage = (e) =>{
     }
   }
 }
-.mzl-pagination-disabled{
-  .mzl-pagination-inlinebox{
+.ih-pagination-disabled{
+  .ih-pagination-inlinebox{
     
-    .mzl-pagination-pagebox{
+    .ih-pagination-pagebox{
       cursor: no-drop;
-      .mzl-text-box{
+      .ih-text-box{
         color:#808080
       }
       .to-next-page-box{
@@ -375,7 +375,7 @@ const topage = (e) =>{
          
         }
       }
-      .mzl-prev-text{
+      .ih-prev-text{
         color:#808080;
         cursor: no-drop;
         background: #f5f5f5;
@@ -385,21 +385,21 @@ const topage = (e) =>{
           background: #f5f5f5
         }
       }
-      .mzl-prev-text-text{
+      .ih-prev-text-text{
         color:#808080;
         cursor: no-drop;
         &:hover{
           color:#808080;
         }
       }
-      .mzl-next-text-text{
+      .ih-next-text-text{
         color:#808080;
         cursor: no-drop;
         &:hover{
           color:#808080
         }
       }
-      .mzl-next-text{
+      .ih-next-text{
         color:#808080;
         cursor: no-drop;
         background: #f5f5f5;
@@ -409,11 +409,11 @@ const topage = (e) =>{
           background: #f5f5f5
         }
       }
-      .mzl-block-box{
-        .mzl-block-margin-box{
+      .ih-block-box{
+        .ih-block-margin-box{
           
         }
-        .mzl-block-li{
+        .ih-block-li{
           color:#808080;
           cursor: no-drop;
           background: #f5f5f5;
@@ -423,7 +423,7 @@ const topage = (e) =>{
             background: #f5f5f5;
           }
         }
-        .mzl-block-li-active{
+        .ih-block-li-active{
           border-color:v-bind('colors.borderColor');
           color:#808080;
           background: #f5f5f5

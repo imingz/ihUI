@@ -1,7 +1,7 @@
 <template>
-  <div :class="[`mzl-checkbox-${size}`,customClass]">
-    <label v-for="(item,index) in checkOptions" :key="index" class="mzl-checkbox-label" :class="[{'mzl-checkbox-label-active':item.checked},item.checked?item.disabled?'mzl-checkbox-label-active-disabled':'':item.disabled?'mzl-checkbox-label-disabled':'']" @click="checkChange(item,index)"  :style="{'display':inline?'inline-block':'table','margin-bottom':inline?'0':size=='small'?'8px':size=='mini'?'6px':'10px'}">
-      <span class="mzl-checkbox-selectbox"  :style="{'border-color':customColor==''?'':item.disabled?'':item.checked?customColor:'','background':customColor==''?'':item.disabled?'':item.checked?customColor:''}"></span>
+  <div :class="[`ih-checkbox-${size}`,customClass]">
+    <label v-for="(item,index) in checkOptions" :key="index" class="ih-checkbox-label" :class="[{'ih-checkbox-label-active':item.checked},item.checked?item.disabled?'ih-checkbox-label-active-disabled':'':item.disabled?'ih-checkbox-label-disabled':'']" @click="checkChange(item,index)"  :style="{'display':inline?'inline-block':'table','margin-bottom':inline?'0':size=='small'?'8px':size=='mini'?'6px':'10px'}">
+      <span class="ih-checkbox-selectbox"  :style="{'border-color':customColor==''?'':item.disabled?'':item.checked?customColor:'','background':customColor==''?'':item.disabled?'':item.checked?customColor:''}"></span>
       <span :style="{'color':customColor==''?'':item.disabled?'':item.checked?customColor:''}">{{item[labelFiled]}}</span>
     </label>
   </div>
@@ -72,11 +72,11 @@ const checkChange = (item,index) =>{
 </script>
 
 <style lang="scss" scoped>
-.mzl-checkbox-default{
+.ih-checkbox-default{
   width: auto;
   height:auto;
   overflow: hidden;
-  .mzl-checkbox-label{
+  .ih-checkbox-label{
     width: auto;
     height: auto;
     overflow: hidden;
@@ -91,7 +91,7 @@ const checkChange = (item,index) =>{
       color: #505050;
       font-size: 14px;
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       width:14px;
       height: 14px;
       border-radius: 4px;
@@ -120,11 +120,11 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-active{
+  .ih-checkbox-label-active{
     span{
       color:#0e80eb
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #0e80eb;
       background: #0e80eb;
       &::after{
@@ -132,12 +132,12 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-active-disabled{
+  .ih-checkbox-label-active-disabled{
     cursor: no-drop;
     span{
       color:#b4b6b9
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #b9b9b9;
       background: #ebebeb;
       &::after{
@@ -145,12 +145,12 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-disabled{
+  .ih-checkbox-label-disabled{
     cursor: no-drop;
     span{
       color:#b4b6b9
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #b9b9b9;
       background: #ebebeb;
       &::after{
@@ -162,11 +162,11 @@ const checkChange = (item,index) =>{
 
 // small
 
-.mzl-checkbox-small{
+.ih-checkbox-small{
   width: auto;
   height:auto;
   overflow: hidden;
-  .mzl-checkbox-label{
+  .ih-checkbox-label{
     width: auto;
     height: auto;
     overflow: hidden;
@@ -181,7 +181,7 @@ const checkChange = (item,index) =>{
       color: #505050;
       font-size: 13px;
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       width:13px;
       height: 13px;
       border-radius: 3px;
@@ -210,11 +210,11 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-active{
+  .ih-checkbox-label-active{
     span{
       color:#0e80eb
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #0e80eb;
       background: #0e80eb;
       &::after{
@@ -222,12 +222,12 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-active-disabled{
+  .ih-checkbox-label-active-disabled{
     cursor: no-drop;
     span{
       color:#b4b6b9
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #b9b9b9;
       background: #ebebeb;
       &::after{
@@ -235,12 +235,12 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-disabled{
+  .ih-checkbox-label-disabled{
     cursor: no-drop;
     span{
       color:#b4b6b9
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #b9b9b9;
       background: #ebebeb;
       &::after{
@@ -252,11 +252,11 @@ const checkChange = (item,index) =>{
 
 // mini
 
-.mzl-checkbox-mini{
+.ih-checkbox-mini{
   width: auto;
   height:auto;
   overflow: hidden;
-  .mzl-checkbox-label{
+  .ih-checkbox-label{
     width: auto;
     height: auto;
     overflow: hidden;
@@ -271,7 +271,7 @@ const checkChange = (item,index) =>{
       color: #505050;
       font-size: 12px;
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       width:12px;
       height: 12px;
       border-radius: 2px;
@@ -300,11 +300,11 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-active{
+  .ih-checkbox-label-active{
     span{
       color:#0e80eb
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #0e80eb;
       background: #0e80eb;
       &::after{
@@ -312,12 +312,12 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-active-disabled{
+  .ih-checkbox-label-active-disabled{
     cursor: no-drop;
     span{
       color:#b4b6b9
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #b9b9b9;
       background: #ebebeb;
       &::after{
@@ -325,12 +325,12 @@ const checkChange = (item,index) =>{
       }
     }
   }
-  .mzl-checkbox-label-disabled{
+  .ih-checkbox-label-disabled{
     cursor: no-drop;
     span{
       color:#b4b6b9
     }
-    .mzl-checkbox-selectbox{
+    .ih-checkbox-selectbox{
       border:1px solid #b9b9b9;
       background: #ebebeb;
       &::after{

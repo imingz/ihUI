@@ -1,5 +1,5 @@
 <template>
-  <div :class="['mzl-textarea-default',customClass,{'mzl-textarea-disabled':disabled}]">
+  <div :class="['ih-textarea-default',customClass,{'ih-textarea-disabled':disabled}]">
     <textarea :form="form" :cols="cols" :rows="rows" :placeholder="placeholder" :maxlength="maxlength" :value="modelValue" @input="input" ref="textareaMzl" :disabled="disabled" :style="tStyle" @focus="focus" @blur="blur" :readonly="readonly"></textarea>
     <div class="max-length-box" v-if="maxlength!=undefined&&maxlength>0">{{`${n}/${maxlength}`}}</div>
   </div>
@@ -59,7 +59,7 @@ const blur = (e)=>{
 </script>
 
 <style lang="scss" scoped>
-.mzl-textarea-default{
+.ih-textarea-default{
   width:auto;
   height:auto;
   display: inline-block;
@@ -109,7 +109,7 @@ const blur = (e)=>{
     background: #fff;
   }
 }
-.mzl-textarea-disabled{
+.ih-textarea-disabled{
   textarea{
     cursor: no-drop;
     color:#c3bfbf;

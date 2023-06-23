@@ -32,23 +32,23 @@ const Loading = {
         if(data.target!=undefined){
           if(obj.scrollLock){
             if(typeof document !== 'undefined'){
-              document.querySelector(data.target).classList.add("mzl-loading-parentClass")
+              document.querySelector(data.target).classList.add("ih-loading-parentClass")
             }
           }else{
             setTimeout(()=>{
               if(typeof document !== 'undefined'){
-                document.querySelector(data.target).classList.remove("mzl-loading-parentClass")
+                document.querySelector(data.target).classList.remove("ih-loading-parentClass")
               }
             },500)
           }
         }else{
           if(obj.scrollLock){
             if(typeof document !== 'undefined'){
-              document.body.classList.add("mzl-loading-parentClass")
+              document.body.classList.add("ih-loading-parentClass")
             }
           }else{
             if(typeof document !== 'undefined'){
-              document.body.classList.remove("mzl-loading-parentClass")
+              document.body.classList.remove("ih-loading-parentClass")
             }
           }
         }
@@ -78,12 +78,12 @@ const Loading = {
     if(obj.target!='body'){
       setTimeout(()=>{
         if(typeof document !== 'undefined'){
-          document.querySelector(obj.target).classList.remove("mzl-loading-parentClass")
+          document.querySelector(obj.target).classList.remove("ih-loading-parentClass")
         }
       },500)
     }else{
       if(typeof document !== 'undefined'){
-        document.body.classList.remove("mzl-loading-parentClass")
+        document.body.classList.remove("ih-loading-parentClass")
       }
     }
   }

@@ -1,34 +1,34 @@
 <template>
-  <div :class="['mzl-date-box','mzl-date-default']" v-click-outside>
-    <div class="mzl-date-inner-box">
+  <div :class="['ih-date-box','ih-date-default']" v-click-outside>
+    <div class="ih-date-inner-box">
       <m-input v-model="dateVal" leftIcon="m-icon-calendar" @clear="clear" :size="size" :clearable="clearable" readonly :placeholder="placeholders" :disabled="disabled" :focusColor="customActiveColor" :form="form"></m-input>
       <transition name="slide-fade">
-        <div :class="['mzl-date-option',`mzl-date-option-${size}`,customClass]" v-if="show">
-          <div class="mzl-date-fipx-box">
+        <div :class="['ih-date-option',`ih-date-option-${size}`,customClass]" v-if="show">
+          <div class="ih-date-fipx-box">
             <!-- 年月日 -->
-            <div class="mzl-date-date-box">
-              <div :class="['mzl-date-header',`mzl-date-header-${size}`]">
-                <div class="mzl-date-btn-left">
+            <div class="ih-date-date-box">
+              <div :class="['ih-date-header',`ih-date-header-${size}`]">
+                <div class="ih-date-btn-left">
                   <span v-if="monthShow"><i class="m-icon-arrow-double-left" @click="onlyYearPrev"></i></span>
                   <span v-if="!dateShow&&!monthShow"><i class="m-icon-arrow-double-left" @click="getPrevYear"></i></span>
                   <span v-if="dateShow"><i class="m-icon-arrow-double-left" @click="prevYear"></i></span>
-                  <span v-if="dateShow&&type=='date'" class="mzl-i-rotate"><i class="m-icon-arrow-right" @click="prevMonth"></i></span>
+                  <span v-if="dateShow&&type=='date'" class="ih-i-rotate"><i class="m-icon-arrow-right" @click="prevMonth"></i></span>
                 </div>
-                <div class="mzl-date-btn-center">
+                <div class="ih-date-btn-center">
                   <span class="chooseYear" @click="chooseYear" v-show="dateShow&&type=='date'">{{selDate.year}} 年 </span>
                   <span class="chooseMonth" @click="chooseMonth" v-show="dateShow&&type=='date'"> {{selDate.month}} 月</span>
                   <span class="chooseMonth" v-show="monthShow" @click="showYaer">{{selDate.year}} 年 </span>
                   <span v-show="!dateShow&&!monthShow||type=='year'">{{yearList[0]+' 年 - '+yearList[yearList.length-1]+' 年'}}</span>
                 </div>
-                <div class="mzl-date-btn-right">
+                <div class="ih-date-btn-right">
                   <span v-if="dateShow&&type=='date'"><i class="m-icon-arrow-right" @click="nextMonth"></i></span>
                   <span v-if="dateShow"><i class="m-icon-arrow-double-right" @click="nextYear"></i></span>
                   <span v-if="!dateShow&&!monthShow"><i class="m-icon-arrow-double-right" @click="getNextYear"></i></span>
                   <span v-if="monthShow"><i class="m-icon-arrow-double-right" @click="onlyYearNext"></i></span>
                 </div>
               </div>
-              <div :class="['mzl-date-content-box',`mzl-date-content-box-${size}`]" v-show="dateShow&&type=='date'">
-                <div class="mzl-date-year-month-box">
+              <div :class="['ih-date-content-box',`ih-date-content-box-${size}`]" v-show="dateShow&&type=='date'">
+                <div class="ih-date-year-month-box">
                   <table>
                     <tbody>
                       <tr>
@@ -85,19 +85,19 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="mzl-today-box" v-if="showToday&&type=='date'"><span @click="today" class="mzl-today-span">今天</span></div>
+                <div class="ih-today-box" v-if="showToday&&type=='date'"><span @click="today" class="ih-today-span">今天</span></div>
               </div>
               <!-- year -->
-              <div :class="['mzl-choose-year-box',`mzl-choose-year-box-${size}`]" v-show="!dateShow&&!monthShow
+              <div :class="['ih-choose-year-box',`ih-choose-year-box-${size}`]" v-show="!dateShow&&!monthShow
               ||type=='year'">
                 <div v-for="(item,index) in yearList" :key="index">
-                  <span :class="[{'active':selDate.year==item},'mzl-chooseYear-span']" @click="dateYearSel(item)">{{item}}</span>
+                  <span :class="[{'active':selDate.year==item},'ih-chooseYear-span']" @click="dateYearSel(item)">{{item}}</span>
                 </div>
               </div>
               <!-- months -->
-              <div :class="['mzl-choose-month-box',`mzl-choose-month-box-${size}`]" v-show="monthShow">
+              <div :class="['ih-choose-month-box',`ih-choose-month-box-${size}`]" v-show="monthShow">
                 <div v-for="(item,index) in monthList" :key="index">
-                  <span :class="[{'active':selDate.month==item.m1},'mzl-chooseMonth-span']" @click="dateMonthSel(item)">{{item.m}}</span>
+                  <span :class="[{'active':selDate.month==item.m1},'ih-chooseMonth-span']" @click="dateMonthSel(item)">{{item.m}}</span>
                 </div>
               </div>
             </div>
@@ -281,7 +281,7 @@ const vClickOutside = {
     let handler = (e) =>{
       if(!props.disabled){
         if(props.type=='year'){
-          if(el.contains(e.target)&&e.target.className.indexOf("choosDateSpan")==-1&&e.target.className.indexOf('clearable-icon')==-1&&e.target.className.indexOf('mzl-chooseYear-span')==-1){
+          if(el.contains(e.target)&&e.target.className.indexOf("choosDateSpan")==-1&&e.target.className.indexOf('clearable-icon')==-1&&e.target.className.indexOf('ih-chooseYear-span')==-1){
             if(!show.value){
               focus()
             }
@@ -291,7 +291,7 @@ const vClickOutside = {
             }
           }
         }else if(props.type=='month'){
-          if(el.contains(e.target)&&e.target.className.indexOf("choosDateSpan")==-1&&e.target.className.indexOf('clearable-icon')==-1&&e.target.className.indexOf('mzl-chooseMonth-span')==-1){
+          if(el.contains(e.target)&&e.target.className.indexOf("choosDateSpan")==-1&&e.target.className.indexOf('clearable-icon')==-1&&e.target.className.indexOf('ih-chooseMonth-span')==-1){
             if(!show.value){
               focus()
             }
@@ -301,7 +301,7 @@ const vClickOutside = {
             }
           }
         }else{
-          if(el.contains(e.target)&&e.target.className.indexOf("choosDateSpan")==-1&&e.target.className.indexOf('clearable-icon')==-1&&e.target.className.indexOf('mzl-today-span')==-1){
+          if(el.contains(e.target)&&e.target.className.indexOf("choosDateSpan")==-1&&e.target.className.indexOf('clearable-icon')==-1&&e.target.className.indexOf('ih-today-span')==-1){
             if(!show.value){
               focus()
             }
@@ -461,14 +461,14 @@ onMounted(()=>{
   transform: translateY(-20px);
   opacity: 0;
 }
-.mzl-date-box,.mzl-date-default{
+.ih-date-box,.ih-date-default{
   width: 200px;
   display: inline-block;
-  .mzl-date-inner-box{
+  .ih-date-inner-box{
     width: 100%;
 		height: auto;
 		position: relative;
-    .mzl-date-option,.mzl-date-option-default{
+    .ih-date-option,.ih-date-option-default{
       width: 160%;
 		  height: auto;
       position: absolute;
@@ -478,7 +478,7 @@ onMounted(()=>{
       background-color: #fff;
       top:35px;
       z-index: 999999;
-      .mzl-date-fipx-box{
+      .ih-date-fipx-box{
         width: 100%;
         height: auto;
         position: relative;
@@ -523,26 +523,26 @@ onMounted(()=>{
           content:'';
           z-index:10
         }
-        .mzl-date-date-box{
+        .ih-date-date-box{
           width: 100%;
           height:auto;
           overflow: hidden;
         }
       }
     }
-    .mzl-date-option-small{
+    .ih-date-option-small{
       width: 140%;
       top:31px;
-      .mzl-date-fipx-box{
+      .ih-date-fipx-box{
         width: 100%;
         margin-top:13px;
         padding:4px 0px;
       }
     }
-    .mzl-date-option-mini{
+    .ih-date-option-mini{
       width: 120%;
       top:31px;
-      .mzl-date-fipx-box{
+      .ih-date-fipx-box{
         width: 100%;
         margin-top:12px;
         padding:4px 0px;
@@ -557,7 +557,7 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-date-header,.mzl-date-header-default{
+  .ih-date-header,.ih-date-header-default{
     width: 100%;
     height:38px;
     border-bottom: 1px solid #f0f0f0;
@@ -566,7 +566,7 @@ onMounted(()=>{
     box-sizing: border-box;
     line-height: 38px;
     font-size:14px;
-    .mzl-date-btn-left{
+    .ih-date-btn-left{
       width: 20%;
       float: left;
       text-align: left;
@@ -579,14 +579,14 @@ onMounted(()=>{
           font-weight: 600;
         }
       }
-      span.mzl-i-rotate{
+      span.ih-i-rotate{
         i{
           transform: rotateY(180deg);
         }
         
       }
     }
-    .mzl-date-btn-center{
+    .ih-date-btn-center{
       width: 60%;
       float: left;
       text-align: center;
@@ -606,7 +606,7 @@ onMounted(()=>{
         }
       }
     }
-    .mzl-date-btn-right{
+    .ih-date-btn-right{
       width: 20%;
       float: left;
       text-align: right;
@@ -621,12 +621,12 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-date-header-small{
+  .ih-date-header-small{
     height:34px;
     padding:0 10px;
     line-height: 34px;
     font-size:13px;
-    .mzl-date-btn-left{
+    .ih-date-btn-left{
       width: 20%;
       span{
         font-weight: 550;
@@ -639,11 +639,11 @@ onMounted(()=>{
         }
       }
     }
-    .mzl-date-btn-center{
+    .ih-date-btn-center{
       width: 60%;
       font-size: 13px;
     }
-    .mzl-date-btn-right{
+    .ih-date-btn-right{
       width: 20%;
       span{
         font-weight: 550;
@@ -656,12 +656,12 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-date-header-mini{
+  .ih-date-header-mini{
     height:28px;
     padding:0 10px;
     line-height: 28px;
     font-size:12px;
-    .mzl-date-btn-left{
+    .ih-date-btn-left{
       width: 20%;
       span{
         font-weight: 550;
@@ -674,11 +674,11 @@ onMounted(()=>{
         }
       }
     }
-    .mzl-date-btn-center{
+    .ih-date-btn-center{
       width: 60%;
       font-size: 12px;
     }
-    .mzl-date-btn-right{
+    .ih-date-btn-right{
       width: 20%;
       span{
         font-weight: 550;
@@ -691,13 +691,13 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-date-content-box,.mzl-date-content-box-default{
+  .ih-date-content-box,.ih-date-content-box-default{
     width: 100%;
     height:auto;
     overflow: hidden;
     padding:0 10px;
     box-sizing: border-box;
-    .mzl-date-year-month-box{
+    .ih-date-year-month-box{
       width:100%;
       height:auto;
       overflow: hidden;
@@ -774,7 +774,7 @@ onMounted(()=>{
         
       }
     }
-    .mzl-today-box{
+    .ih-today-box{
       width: 100%;
       height:30px;
       text-align: center;
@@ -787,10 +787,10 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-date-content-box-small{
+  .ih-date-content-box-small{
     width: 100%;
     padding:0 10px;
-    .mzl-date-year-month-box{
+    .ih-date-year-month-box{
       padding-bottom: 10px;
       padding-top:10px;
       table{
@@ -850,10 +850,10 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-date-content-box-mini{
+  .ih-date-content-box-mini{
     width: 100%;
     padding:0 8px;
-    .mzl-date-year-month-box{
+    .ih-date-year-month-box{
       padding-bottom: 10px;
       padding-top:6px;
       table{
@@ -914,7 +914,7 @@ onMounted(()=>{
     }
   }
 
-  .mzl-choose-year-box,.mzl-choose-year-box-default{
+  .ih-choose-year-box,.ih-choose-year-box-default{
     width:100%;
     height:auto;
     overflow: hidden;
@@ -949,7 +949,7 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-choose-year-box-small{
+  .ih-choose-year-box-small{
     width:100%;
     height:auto;
     overflow: hidden;
@@ -970,7 +970,7 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-choose-year-box-mini{
+  .ih-choose-year-box-mini{
     width:100%;
     height:auto;
     overflow: hidden;
@@ -991,7 +991,7 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-choose-month-box,.mzl-choose-month-box-default{
+  .ih-choose-month-box,.ih-choose-month-box-default{
      width:100%;
     height:auto;
     overflow: hidden;
@@ -1025,7 +1025,7 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-choose-month-box-small{
+  .ih-choose-month-box-small{
     padding:18px 8px;
     div{
       height:55px;
@@ -1039,7 +1039,7 @@ onMounted(()=>{
       }
     }
   }
-  .mzl-choose-month-box-mini{
+  .ih-choose-month-box-mini{
     padding:16px 6px;
     div{
       height:50px;

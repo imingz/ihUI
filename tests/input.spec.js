@@ -6,6 +6,6 @@ describe('input组件初始化----', () => {
   })
   it('input组件应该可以被渲染', () => {
     const wrapper = mount(InputTest)
-    expect(wrapper.find('.mzl-group-input-default').exists()).toBe(true)
+    expect(wrapper.find('.ih-group-input-default').exists()).toBe(true)
   })
 })

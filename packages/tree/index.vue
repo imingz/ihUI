@@ -1,5 +1,5 @@
 <template>
-  <div :class="['mzl-tree-content-box',customClass]">
+  <div :class="['ih-tree-content-box',customClass]">
     <template v-for="(item,index) in options" :key="index">
       <tree-item  :items="item" :data-key="index" :icon="icon" :defaultOpenNodes="defaultOpenNodes" @nodeClick="nClick($event)" :options="options" :index="0" @change="changeKey($event)" :tabIndexs="tabKey" @selectClick="emit('selectClick',$event)" :multiple="multiple" :defaultSelectNodes="defaultSelectNodes"></tree-item>
     </template>

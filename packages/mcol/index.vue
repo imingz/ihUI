@@ -1,5 +1,5 @@
 <template>
-  <div class="mzl-col-default"><slot></slot></div>
+  <div class="ih-col-default"><slot></slot></div>
 </template>
 <script>
 export default{
@@ -20,7 +20,7 @@ const offset = ref(props.offset<=24?props.offset%1==0?(100/24)*props.offset+'%':
 </script>
 
 <style lang="scss" scoped>
-.mzl-col-default{
+.ih-col-default{
   width:v-bind(width);
   float: left;
   margin-left:v-bind(offset)

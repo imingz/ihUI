@@ -1,7 +1,7 @@
 <template>
   <div class="contentBox">
     <div class="imgLogo">
-      <img src="../assets/logo.png" alt="mzl-ui" />
+      <img src="../assets/logo.png" alt="ih-ui" />
     </div>
     <h3>一套适合开发者使用的轻量级UI组件库，完美支持vue3</h3>
     <div class="tiBox">
@@ -116,16 +116,16 @@ const state = reactive({
   ],
 });
 const toComponents = () => {
-  router.push("/mzlui");
+  router.push("/ihui");
 };
 const goGuthub = () => {
-  window.open("https://github.com/Ningstyle/mzl-ui");
+  window.open("https://github.com/Ningstyle/ih-ui");
 };
 const goToNpm = () => {
-  window.open("https://www.npmjs.com/package/mzl-ui");
+  window.open("https://www.npmjs.com/package/ih-ui");
 };
 const verSion = () => {
-  router.push("/mzlui/updatelog");
+  router.push("/ihui/updatelog");
 };
 const toDevoteGithub = (item) => {
   window.open(item.github);

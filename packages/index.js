@@ -18,7 +18,7 @@ import mTextarea from "./textarea/index";
 import mRow from "./mrow/index";
 import mCol from "./mcol/index";
 import mPagination from "./pagination/index";
-import $mzl from "./function/index";
+import $ih from "./function/index";
 import mDate from "./date/index";
 import mBacktop from "./backtop/index";
 import mCollapse from "./collapse/index";
@@ -71,9 +71,9 @@ const install = (app) => {
   app.config.globalProperties.$message = Message
   app.config.globalProperties.$Confirm = Confirm
   app.config.globalProperties.$Loading = Loading
-  app.config.globalProperties.$mzl = $mzl
+  app.config.globalProperties.$ih = $ih
 }
-const mzlUi = {
+const ihUi = {
   version: '0.4.1',
   install
 }
@@ -104,7 +104,7 @@ export {
   mRow,
   mCol,
   mPagination,
-  $mzl,
+  $ih,
   mDate,
   mBacktop,
   mCollapse,
@@ -119,4 +119,4 @@ export {
   mBadge,
   mDivider
 }
-export default mzlUi
+export default ihUi

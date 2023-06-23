@@ -1,11 +1,11 @@
 <template>
-  <div :class="['mzl-switch-default',customClass]">
-    <span class="mzl-switch-left-text"  v-if="textAlign=='left'&&closeText!=''&&activeText!=''" :style="{'color':modelValue?activeColor:closeColor}">{{switchText}}</span>
-    <div class="mzl-switch-content"  :class="{'mzl-switch-disabled':disabled}" @click="handleSwitch" :style="[switchStyle,{'width':width+'px'}]">
-      <span class="mzl-switch-round" :style="[roundStyle]"></span>
-      <span class="mzl-switch-flagtext" :style="flagTextStyle" v-if="showTipsText">{{flagText}}</span>
+  <div :class="['ih-switch-default',customClass]">
+    <span class="ih-switch-left-text"  v-if="textAlign=='left'&&closeText!=''&&activeText!=''" :style="{'color':modelValue?activeColor:closeColor}">{{switchText}}</span>
+    <div class="ih-switch-content"  :class="{'ih-switch-disabled':disabled}" @click="handleSwitch" :style="[switchStyle,{'width':width+'px'}]">
+      <span class="ih-switch-round" :style="[roundStyle]"></span>
+      <span class="ih-switch-flagtext" :style="flagTextStyle" v-if="showTipsText">{{flagText}}</span>
     </div>
-    <span class="mzl-switch-right-text" v-if="textAlign=='right'&&closeText!=''&&activeText!=''" :style="{'color':modelValue?activeColor:closeColor}">{{switchText}}</span>
+    <span class="ih-switch-right-text" v-if="textAlign=='right'&&closeText!=''&&activeText!=''" :style="{'color':modelValue?activeColor:closeColor}">{{switchText}}</span>
   </div>
 </template>
 <script>
@@ -75,21 +75,21 @@ watchEffect(()=>{
 </script>
 
 <style lang="scss" scoped>
-.mzl-switch-default{
+.ih-switch-default{
   display: flex;
   align-items: center;
-  .mzl-switch-left-text,.mzl-switch-right-text{
+  .ih-switch-left-text,.ih-switch-right-text{
     font-size:14px;
     transition: all .3s ease;
     color:#505050
   }
-  .mzl-switch-left-text{
+  .ih-switch-left-text{
     margin-right:7px;
   }
-  .mzl-switch-right-text{
+  .ih-switch-right-text{
     margin-left:7px;
   }
-  .mzl-switch-content{
+  .ih-switch-content{
     width: 40px;
     height: 20px;
     background:#BFBFBF;
@@ -97,7 +97,7 @@ watchEffect(()=>{
     cursor: pointer;
     position: relative;
     transition: all .3s ease;
-    .mzl-switch-round{
+    .ih-switch-round{
       width: 18px;
       height: 18px;
       display: inline-block;
@@ -107,7 +107,7 @@ watchEffect(()=>{
       top:1px;
       transition: all .3s ease;
     }
-    .mzl-switch-flagtext{
+    .ih-switch-flagtext{
       height: 18px;
       display: inline-block;
       border-radius: 50%;
@@ -119,7 +119,7 @@ watchEffect(()=>{
       line-height: 18px;
     }
   }
-  .mzl-switch-disabled{
+  .ih-switch-disabled{
     opacity: .5;
     cursor: no-drop;
   }

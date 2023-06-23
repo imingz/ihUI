@@ -1,6 +1,6 @@
 <template>
   <Transition name="slide-fade">
-    <div :class="['mzl-message', customClass]" :style="style[type]" v-show="isShow">
+    <div :class="['ih-message', customClass]" :style="style[type]" v-show="isShow">
       <template v-if="isText">
         <i :class="[style[type].icon]"></i>
         <span class="text">{{ text }}</span>
@@ -83,7 +83,7 @@ div.slide-fade-enter-from,
 div.slide-fade-leave-to {
   transform: translate3d(-50%, -75px, 0);
 }
-.mzl-message {
+.ih-message {
   position: fixed;
   z-index: 9999;
   left: 50%;

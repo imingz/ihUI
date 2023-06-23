@@ -1,7 +1,7 @@
 <template>
   <transition name="fade-pupop">
-    <div class="mzl-loading" v-if="obj.show" :style="{'position':obj.position,'background-color':obj.bgColor}">
-      <div :style="{color:obj.textColor}" class="mzl-loading-center">
+    <div class="ih-loading" v-if="obj.show" :style="{'position':obj.position,'background-color':obj.bgColor}">
+      <div :style="{color:obj.textColor}" class="ih-loading-center">
         <i :class="['loading-icon',obj.icon]" v-if="obj.showIcon&&obj.img==''"></i>
         <img :src="obj.img" alt="" v-if="obj.img!=''" class="loading-img">
         <span v-if="obj.text!=''">{{obj.text}}</span>
@@ -17,7 +17,7 @@ const props = defineProps({
 </script>
 
 <style scoped lang="scss">
-.mzl-loading {
+.ih-loading {
   width: 100%;
   height: 100%;
   top: 0;
@@ -27,7 +27,7 @@ const props = defineProps({
   justify-content: center;
   align-items: center;
   z-index: 99999;
-  .mzl-loading-center {
+  .ih-loading-center {
     color: #fff;
     padding: 6px 15px;
     text-align: center;
@@ -68,7 +68,7 @@ const props = defineProps({
 }
 </style>
 <style>
-.mzl-loading-parentClass{
+.ih-loading-parentClass{
   overflow: hidden !important;
   position: relative !important;
 }

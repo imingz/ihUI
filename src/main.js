@@ -1,15 +1,15 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import { createPinia } from "pinia";
-import mzlUI from "../packages/index";
+import ihUI from "../packages/index";
 import hljs from "highlight.js";
 // import "highlight.js/styles/color-brewer.css";
 
 import router from "@/router";
-// import mzlUI from '../dist/mzl-ui.es'
+// import ihUI from '../dist/ih-ui.es'
 // import '../dist/style.css'
 const app = createApp(App);
-app.use(mzlUI);
+app.use(ihUI);
 app.use(router);
 app.use(createPinia());
 hljs.configure({

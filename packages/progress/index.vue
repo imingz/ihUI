@@ -1,6 +1,6 @@
 <template>
-  <div class="mzl-progress">
-    <div v-if="progressType === 'line'" class="mzl-progress-default">
+  <div class="ih-progress">
+    <div v-if="progressType === 'line'" class="ih-progress-default">
       <div :class="backClass" :style="{ height: progressDefaultStyle.height }">
         <div
           :class="speedClass"
@@ -18,7 +18,7 @@
           </span>
         </div>
       </div>
-      <div class="mzl-progress-status" v-show="!isShowText">
+      <div class="ih-progress-status" v-show="!isShowText">
         <span>
           <slot>
             {{ formatPercent.text }}
@@ -28,7 +28,7 @@
     </div>
     <div
       v-else
-      class="mzl-progress-default-circle"
+      class="ih-progress-default-circle"
       :style="{ width: `${circleSize}px`, height: `${circleSize}px` }"
     >
       <svg
@@ -50,7 +50,7 @@
         ></circle>
       </svg>
 
-      <div v-if="isShowText" class="mzl-progress-circle-slot" :style="progressDashboardStyle">
+      <div v-if="isShowText" class="ih-progress-circle-slot" :style="progressDashboardStyle">
         <slot>
           {{ progressCircleText }}
         </slot>
@@ -140,19 +140,19 @@ const progressCircleText = computed(() => {
   return props.percent >= 100 ? 100 + "%" : props.percent + "%";
 });
 const backClass = computed(() => {
-  return ["mzl-progress-back", props.roundCorner ? "mzl-progress-b-r" : ""];
+  return ["ih-progress-back", props.roundCorner ? "ih-progress-b-r" : ""];
 });
 const speedClass = computed(() => {
   return props.progressType === "line"
     ? [
-        "mzl-progress-speed",
-        props.isAnimation ? "mzl-progress-animation" : "",
-        props.roundCorner ? "mzl-progress-b-r" : "",
+        "ih-progress-speed",
+        props.isAnimation ? "ih-progress-animation" : "",
+        props.roundCorner ? "ih-progress-b-r" : "",
       ]
     : [
-        "mzl-progress-circle",
-        props.isAnimation ? "mzl-progress-circle-animation" : "",
-        props.roundCorner ? "mzl-progress-circle-b-r" : "",
+        "ih-progress-circle",
+        props.isAnimation ? "ih-progress-circle-animation" : "",
+        props.roundCorner ? "ih-progress-circle-b-r" : "",
       ];
 });
 let girth = "";
@@ -290,13 +290,13 @@ const findNoLinkSheet = () => {
 </script>
 
 <style scoped lang="scss">
-.mzl-progress-default {
+.ih-progress-default {
   width: 100%;
   display: flex;
   align-items: center;
   color: #505050;
   font-size: 14px;
-  .mzl-progress-back {
+  .ih-progress-back {
     height: 8px;
     display: flex;
     align-items: center;
@@ -304,7 +304,7 @@ const findNoLinkSheet = () => {
     overflow: hidden;
     position: relative;
     flex-grow: 1;
-    .mzl-progress-speed {
+    .ih-progress-speed {
       position: absolute;
       left: 0;
       top: 0;
@@ -321,16 +321,16 @@ const findNoLinkSheet = () => {
       }
     }
   }
-  .mzl-progress-status {
+  .ih-progress-status {
     min-width: 50px;
     padding-left: 8px;
     line-height: 1;
   }
 }
-.mzl-progress-default-circle {
+.ih-progress-default-circle {
   display: inline-block;
   position: relative;
-  .mzl-progress-circle-slot {
+  .ih-progress-circle-slot {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -339,20 +339,20 @@ const findNoLinkSheet = () => {
     flex-direction: column;
   }
 }
-.mzl-progress-circle {
+.ih-progress-circle {
   -webkit-transition: stroke-dasharray 0.25s;
   transition: stroke-dasharray 0.25s;
 }
-.mzl-progress-b-r {
+.ih-progress-b-r {
   border-radius: 100px;
 }
-.mzl-progress-circle-b-r {
+.ih-progress-circle-b-r {
   stroke-linecap: round;
 }
-.mzl-progress-animation {
+.ih-progress-animation {
   animation: infiniteLine 3s ease-out infinite;
 }
-.mzl-progress-circle-animation {
+.ih-progress-circle-animation {
   animation: rotateAnimation 1.5s linear infinite;
 }
 // @keyframes rotateAnimation {

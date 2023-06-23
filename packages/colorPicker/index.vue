@@ -1,12 +1,12 @@
 <template>
   <transition name="fade">
-    <div v-if="isShow" ref="colorPicker" :class="['mzl-color-picker', customClass]">
+    <div v-if="isShow" ref="colorPicker" :class="['ih-color-picker', customClass]">
       <!-- 显示颜色的小方块 -->
-      <div class="mzl-color-picker-hd">
+      <div class="ih-color-picker-hd">
         <span class="hd-color-preview"></span>
         <span class="default-color-text" @click="setColor(props.defaultColor)">默认颜色</span>
       </div>
-      <div class="mzl-color-picker-bd">
+      <div class="ih-color-picker-bd">
         <p>主题颜色</p>
         <ul class="t-color">
           <li
@@ -230,13 +230,13 @@ defineExpose({
 .fade-leave-to {
   opacity: 0;
 }
-.mzl-color-picker {
+.ih-color-picker {
   min-width: 120px;
   width: 190px;
   padding: 8px;
   background: #fff;
   box-shadow: 0 0 5px rgb(0 0 0 / 15%);
-  .mzl-color-picker-hd {
+  .ih-color-picker-hd {
     display: flex;
     .hd-color-preview {
       flex: 1;
@@ -252,7 +252,7 @@ defineExpose({
       cursor: pointer;
     }
   }
-  .mzl-color-picker-bd {
+  .ih-color-picker-bd {
     ul {
       list-style: none;
       padding: 0;

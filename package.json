@@ -1,23 +1,23 @@
 {
-  "name": "mzl-ui",
+  "name": "ih-ui",
   "author": "style'me",
   "version": "0.8.8",
   "private": false,
-  "main": "./dist/mzl-ui.umd.js",
-  "module": "./dist/mzl-ui.es.js",
+  "main": "./dist/ih-ui.umd.js",
+  "module": "./dist/ih-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/mzl-ui.es.js",
-      "require": "./dist/mzl-ui.umd.js"
+      "import": "./dist/ih-ui.es.js",
+      "require": "./dist/ih-ui.umd.js"
     }
   },
-  "description": "mzl-ui",
+  "description": "ih-ui",
   "keywords": [
     "vue",
     "vue3",
     "vuejs",
     "vite",
-    "mzl-ui",
+    "ih-ui",
     "ui",
     "vueui",
     "vertical",
@@ -30,9 +30,9 @@
     "dist/*"
   ],
   "license": "MIT",
-  "homepage": "https://mzlui.codeym.com/",
+  "homepage": "https://ihui.codeym.com/",
   "bugs": {
-    "url": "https://mzlui.codeym.com/",
+    "url": "https://ihui.codeym.com/",
     "email": "1046674804@qq.com"
   },
   "scripts": {
@@ -40,7 +40,7 @@
     "build": "vite build",
     "build:html": "vite build --config ./build/build.js",
     "preview": "vite preview",
-    "mzl-ui": "vite build",
+    "ih-ui": "vite build",
     "test": "jest --runInBand",
     "cz": "git-cz"
   },

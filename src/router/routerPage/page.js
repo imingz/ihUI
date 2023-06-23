@@ -5,7 +5,7 @@ export default [
     component: () => import('@/views/index.vue')
   },
   {
-    path: '/mzlui',
+    path: '/ihui',
     name: '组件页面',
     component: () => import('@/views/home.vue'),
     children: [
