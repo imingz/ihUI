@@ -37,7 +37,7 @@ import { mButton, mInput } from 'ih-ui'
 <m-button type="primary">主要按钮</m-button>
 ```
 
-## Mzl UI 贡献指南
+## ih UI 贡献指南
 
 首先非常感谢您能选择使用 ih-ui。ih-ui 是基于 vue3.2 开发，ih-ui 旨在秉承数据驱动视图，力求更小的体积、更快的相应、更强的拓展性、更完美的支持、更友好的渲染。任何一个开源库都离不开大家的共同贡献和维护，如果您愿意参与贡献，请阅读以下内容。
 
@@ -140,11 +140,11 @@ import { mButton, mInput } from 'ih-ui'
 -  通过在 *packages* 目录下创建组件目录结构，包含测试代码、入口文件、文档。
 -  组件入口文件必须以 *index.js* 命名，并包含 *install* 方法,参考代码：
   ```javascript
-  import mButton from "./index.vue";
-  mButton.install = (app) => {
-    app.component(mButton.name, mButton);
+  import iButton from "./index.vue";
+  iButton.install = (app) => {
+    app.component(iButton.name, iButton);
   };
-  export default mButton;
+  export default iButton;
   ```
   
 - *packages* 文件夹下 *index.js* 作为整体入口文件，须包含所有组件，若需要绑定全局变量或提供组件实例调用，参考代码：
@@ -158,7 +158,7 @@ import { mButton, mInput } from 'ih-ui'
 ### 代码规范
 
 -  避免过多的 html 代码累赘，秉承数据驱动视图思想，简化使用繁琐度，提供更强的拓展性。
--  组件色彩范围请参考：[点击跳转：组件色彩参考链接](https://ihui.codeym.com/#/ihui/color)
+-  组件色彩范围请参考：[点击跳转：组件色彩参考链接](todo:)
 -  其他请参考 eslint [standard](https://github.com/standard/standard/blob/master/RULES.md#javascript-standard-style)
 <br/>
 
