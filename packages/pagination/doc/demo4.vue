@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
-  <m-pagination
+  <i-pagination
     :total="100"
     :current="1"
     :pageSize="10"
     :border="false"
-  ></m-pagination>
+  ></i-pagination>
 </template>

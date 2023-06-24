@@ -1,22 +1,22 @@
 <!-- html -->
 <template>
-  <m-space>
-    <m-date
+  <i-space>
+    <i-date
       v-model="dateVal"
       placeholder="请选择日期"
       format="yyyy年MM月dd日"
-    ></m-date>
-    <m-date
+    ></i-date>
+    <i-date
       v-model="dateVal"
       placeholder="请选择日期"
       format="yyyy/MM/dd"
-    ></m-date>
-    <m-date
+    ></i-date>
+    <i-date
       v-model="dateVal"
       placeholder="请选择日期"
       format="yyyy-MM-dd"
-    ></m-date>
-  </m-space>
+    ></i-date>
+  </i-space>
 </template>
 
 <!-- js -->

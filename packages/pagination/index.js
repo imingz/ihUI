@@ -1,5 +1,5 @@
-import mPagination from './index.vue';
-mPagination.install = app => {
-  app.component(mPagination.name, mPagination)
+import iPagination from './index.vue';
+iPagination.install = app => {
+  app.component(iPagination.name, iPagination)
 } 
-export default mPagination
+export default iPagination

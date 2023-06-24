@@ -1,7 +1,7 @@
 <!-- html -->
 <template>
-  <m-button @click="openDrawer">基本使用</m-button>
-  <m-drawer
+  <i-button @click="openDrawer">基本使用</i-button>
+  <i-drawer
     v-model="drawerShow"
     title="基本使用"
     @confirm="confirmFn"
@@ -12,21 +12,21 @@
       <div>这是内容区域...</div>
       <div>这是内容区域...</div>
     </template>
-  </m-drawer>
+  </i-drawer>
 </template>
 
 <!-- js -->
 <script setup>
 import { ref } from "vue";
-import Message from "../../message/index.js"; //此处为本地示例，请使用import {Message} from "ih-ui";引入
+import iMessage from "../../message/index.js"; //此处为本地示例，请使用import {iMessage} from "ih-ui";引入
 const drawerShow = ref(false);
 const openDrawer = () => {
   drawerShow.value = true;
 };
 const confirmFn = () => {
-  Message({ text: "确认事件" });
+  iMessage({ text: "确认事件" });
 };
 const cancelFn = () => {
-  Message({ text: "取消事件" });
+  iMessage({ text: "取消事件" });
 };
 </script>

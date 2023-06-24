@@ -70,7 +70,7 @@ import {
   onUpdated,
 } from "vue";
 export default {
-  name: "mProgress",
+  name: "iProgress",
 };
 </script>
 <script setup>

@@ -1,5 +1,5 @@
-import mInput from './index.vue';
-mInput.install = app => {
-  app.component(mInput.name, mInput)
+import iInput from './index.vue';
+iInput.install = app => {
+  app.component(iInput.name, iInput)
 } 
-export default mInput
+export default iInput

@@ -1,7 +1,7 @@
 <template>
 	<p class="titlep">所有图标</p>
 	<div class="">
-		<m-input v-model="keywords" leftIcon="m-icon-search" placeholder="输入图标关键词进行搜索" @input="search"></m-input>
+		<i-input v-model="keywords" leftIcon="m-icon-search" placeholder="输入图标关键词进行搜索" @input="search"></i-input>
 	</div>
 	<div class="iconListBox">
 		<ul>
@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-  import Message from '../../message/index'
+  import iMessage from '../../message/index'
 	import {ref,reactive} from 'vue'
 	import iconList from '@/const/iconList.js'
 	const keywords = ref('')
@@ -34,12 +34,12 @@
     input.select()
     if(document.execCommand('copy')){
       document.execCommand('copy')
-      Message({
+      iMessage({
         type: 'success',
         text: '复制成功'
       })
     }else{
-      Message({
+      iMessage({
         type: 'error',
         text: '复制失败'
       })

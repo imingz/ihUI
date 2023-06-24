@@ -10,8 +10,8 @@
           <i class="m-icon-close" v-if="showClose" @click="close"></i>
           <span v-if="!$slot['header']">{{title}}</span>
           <div class="ih-drawer-header-btn" v-if="!$slot['header']">
-            <m-button size="small" :style="{'margin-right':confirmShow?'10px':'0'}" v-if="cancelShow" @click="cancelBtn">{{cancelText}}</m-button>
-            <m-button size="small" type="primary" v-if="confirmShow" @click="confirmBtn">{{confirmText}}</m-button>
+            <i-button size="small" :style="{'margin-right':confirmShow?'10px':'0'}" v-if="cancelShow" @click="cancelBtn">{{cancelText}}</i-button>
+            <i-button size="small" type="primary" v-if="confirmShow" @click="confirmBtn">{{confirmText}}</i-button>
           </div>
         </div>
         <div class="ih-drawer-contain-box-content" :style="{'height':showHeader?(showFooter?'calc(100% - 110px)':'calc(100% - 55px)'):showFooter?'calc(100% - 55px)':'100%'}">
@@ -27,12 +27,12 @@
 </template>
 <script>
 export default{
-  name:"mDrawer"
+  name:"iDrawer"
 }
 </script>
 <script setup>
 import { computed, watchEffect, useSlots } from 'vue'
-import mButton from '../button/index'
+import iButton from '../button/index'
 const emit = defineEmits(['update:modelValue','close','confirm','cancel'])
 const props = defineProps({
   modelValue:Boolean,

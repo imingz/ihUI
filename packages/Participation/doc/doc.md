@@ -104,16 +104,16 @@ title: radio
 - ### 通过在 *packages* 目录下创建组件目录结构，包含测试代码、入口文件、文档。
 - ### 组件入口文件必须以 *index.js* 命名，并包含 *install* 方法,参考代码：
   ```javascript
-  import mButton from "./index.vue";
-  mButton.install = (app) => {
-    app.component(mButton.name, mButton);
+  import iButton from "./index.vue";
+  iButton.install = (app) => {
+    app.component(iButton.name, iButton);
   };
-  export default mButton;
+  export default iButton;
   ```
   <br/>
 - ### *packages* 文件夹下 *index.js* 作为整体入口文件，须包含所有组件，若需要绑定全局变量或提供组件实例调用，参考代码：
   ```
-  app.config.globalProperties.$message = Message;
+  app.config.globalProperties.$message = iMessage;
   ```
   <br/>
 - ### 任何组件禁止使用三方依赖库。

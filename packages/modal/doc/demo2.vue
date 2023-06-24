@@ -1,20 +1,20 @@
 <!-- html -->
 <template>
-  <m-button @click="openModal">打开模态框</m-button>
-  <m-modal v-model="modalShow" title="模态框标题" align="center" width="30%">
+  <i-button @click="openModal">打开模态框</i-button>
+  <i-modal v-model="modalShow" title="模态框标题" align="center" width="30%">
     <template #content> 这是内容区域 </template>
     <template #footer>
-      <m-button
+      <i-button
         size="small"
         style="margin-right: 15px"
         @click="modalShow = false"
-        >取消</m-button
+        >取消</i-button
       >
-      <m-button type="primary" size="small" @click="modalShow = false"
-        >确认</m-button
+      <i-button type="primary" size="small" @click="modalShow = false"
+        >确认</i-button
       >
     </template>
-  </m-modal>
+  </i-modal>
 </template>
 
 <!-- js -->

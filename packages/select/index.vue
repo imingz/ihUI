@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: "mSelect",
+  name: "iSelect",
 };
 </script>
 <script setup>

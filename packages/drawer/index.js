@@ -1,5 +1,5 @@
-import mDrawer from './index.vue';
-mDrawer.install = app => {
-  app.component(mDrawer.name, mDrawer)
+import iDrawer from './index.vue';
+iDrawer.install = app => {
+  app.component(iDrawer.name, iDrawer)
 } 
-export default mDrawer
+export default iDrawer

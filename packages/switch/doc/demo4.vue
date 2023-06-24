@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
-  <m-switch v-model="switchVal" closeText="关闭" activeText="开启"></m-switch>
-  <m-switch
+  <i-switch v-model="switchVal" closeText="关闭" activeText="开启"></i-switch>
+  <i-switch
     v-model="switchVal1"
     closeText="关闭"
     activeText="开启"
     textAlign="right"
-  ></m-switch>
+  ></i-switch>
 </template>
 
 <!-- js -->

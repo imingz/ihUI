@@ -1,5 +1,5 @@
-import mProgress from './index.vue';
-mProgress.install = app => {
-  app.component(mProgress.name, mProgress)
+import iProgress from './index.vue';
+iProgress.install = app => {
+  app.component(iProgress.name, iProgress)
 } 
-export default mProgress
+export default iProgress

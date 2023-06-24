@@ -1,13 +1,13 @@
 <!-- html -->
 <template>
-  <m-button @click="openConfirm">自定义配置</m-button>
+  <i-button @click="openConfirm">自定义配置</i-button>
 </template>
 
 <!-- js -->
 <script setup>
 import Confirm from "../index.js";
-import Message from "../../message/index.js";
-// 以上为本地示例，请使用import { Confirm, Message } from "ih-ui";引入
+import iMessage from "../../message/index.js";
+// 以上为本地示例，请使用import { Confirm, iMessage } from "ih-ui";引入
 const openConfirm = () => {
   Confirm({
     title: "提示信息",
@@ -18,10 +18,10 @@ const openConfirm = () => {
     closeShow: false,
   })
     .then(() => {
-      Message({ text: "是的" });
+      iMessage({ text: "是的" });
     })
     .catch(() => {
-      Message({ text: "不是" });
+      iMessage({ text: "不是" });
     });
 };
 </script>

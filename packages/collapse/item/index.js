@@ -1,5 +1,5 @@
-import mCollapseItem from './index.vue';
-mCollapseItem.install = app => {
-  app.component(mCollapseItem.name, mCollapseItem)
+import iCollapseItem from './index.vue';
+iCollapseItem.install = app => {
+  app.component(iCollapseItem.name, iCollapseItem)
 } 
-export default mCollapseItem
+export default iCollapseItem

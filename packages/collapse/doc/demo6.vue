@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-input v-model="value1" clearable>
+  <i-input v-model="value1" clearable>
     <template #btn>
-      <m-button type="primary" leftIcon="m-icon-search">搜索</m-button>
+      <i-button type="primary" leftIcon="m-icon-search">搜索</i-button>
     </template>
-  </m-input>
+  </i-input>
 </template>
 
 <!-- js -->

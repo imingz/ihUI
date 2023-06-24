@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-optfile
+  <i-optfile
     label="将文件拖拽到此处或点击选择文件"
     showFileList
     targetType="box"
@@ -9,5 +9,5 @@
     drop
     icon="m-icon-shangchuan"
   >
-  </m-optfile>
+  </i-optfile>
 </template>

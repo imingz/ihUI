@@ -1,5 +1,5 @@
-import mTextarea from './index.vue';
-mTextarea.install = app => {
-  app.component(mTextarea.name, mTextarea)
+import iTextarea from './index.vue';
+iTextarea.install = app => {
+  app.component(iTextarea.name, iTextarea)
 } 
-export default mTextarea
+export default iTextarea

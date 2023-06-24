@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  name: 'mColorPicker'
+  name: 'iColorPicker'
 }
 </script>
 

@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
-  <m-optfile
+  <i-optfile
     showFileList
     targetType="box"
     accept=".png,.jpg"
     multiple
-  ></m-optfile>
+  ></i-optfile>
 </template>

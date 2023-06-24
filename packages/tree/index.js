@@ -1,5 +1,5 @@
-import mTree from './index.vue';
-mTree.install = app => {
-  app.component(mTree.name, mTree)
+import iTree from './index.vue';
+iTree.install = app => {
+  app.component(iTree.name, iTree)
 } 
-export default mTree
+export default iTree

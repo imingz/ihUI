@@ -1,5 +1,5 @@
 <template>
-  <m-table :options="options"></m-table>
+  <i-table :options="options"></i-table>
 </template>
 
 <script setup>

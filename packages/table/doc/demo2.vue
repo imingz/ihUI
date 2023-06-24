@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
   <p>小的</p>
-  <m-table :options="options" size="small"></m-table>
+  <i-table :options="options" size="small"></i-table>
   <p>更小的</p>
-  <m-table :options="options" size="mini"></m-table>
+  <i-table :options="options" size="mini"></i-table>
 </template>
 
 <!-- js -->

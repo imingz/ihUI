@@ -7,7 +7,7 @@ import Attributes from './Attributes.vue'
 import preview from '@/components/preview.vue'
 </script>
 
-# Message 消息提示
+# iMessage 消息提示
 
 #### 常用于交互反馈提示场景
 
@@ -31,7 +31,7 @@ import preview from '@/components/preview.vue'
 
 ## 不同状态
 
-#### 可根据 _Message_ 参数的 _type_ 来定义显示不同的状态。
+#### 可根据 _iMessage_ 参数的 _type_ 来定义显示不同的状态。
 
 <div class="componetnsBox">
   <demo3/>

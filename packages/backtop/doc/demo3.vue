@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-backtop target=".ihuirightView" :bottom="100">
+  <i-backtop target=".ihuirightView" :bottom="100">
     <span class="backtop">
       <i class="m-icon-direction-up"></i>
     </span>
-  </m-backtop>
+  </i-backtop>
 </template>
 
 <style lang="scss" scoped>

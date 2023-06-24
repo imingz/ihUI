@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-menu :options="menuOptions" theme="black"></m-menu>
+  <i-menu :options="menuOptions" theme="black"></i-menu>
 </template>
 
 <!-- js -->

@@ -1,5 +1,5 @@
-import mRow from './index.vue';
-mRow.install = app => {
-  app.component(mRow.name, mRow)
+import iRow from './index.vue';
+iRow.install = app => {
+  app.component(iRow.name, iRow)
 } 
-export default mRow
+export default iRow

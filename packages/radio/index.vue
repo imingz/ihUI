@@ -1,15 +1,15 @@
 <template>
   <div :class="[`ih-radio-${size}`,customClass]">
     <label v-for="(item,index) in options" :key="index" :class="[{'ih-radio-active':modelVal == item[valueFiled]},item.disabled?modelVal == item[valueFiled]?'ih-radio-active-disabled':'ih-radio-disabled':'']" @click="change(item,index)" :style="{'display':inline?'inline-block':'table','margin-bottom':inline?'0':size=='small'?'8px':size=='mini'?'6px':'10px'}">
-      <span class="ih-radio-round" :style="{'border-color':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor,'background':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor}"></span>
-      <span :style="{'color':customColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':customColor}">{{item[labelFiled]}}</span>
+      <span class="ih-radio-round" :style="{'border-color':custoiColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':custoiColor,'background':custoiColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':custoiColor}"></span>
+      <span :style="{'color':custoiColor==''?'':item.disabled?'':modelVal != item[valueFiled]?'':custoiColor}">{{item[labelFiled]}}</span>
     </label>
   </div>
 </template>
 <script>
 import { ref } from '@vue/reactivity'
 export default{
-  name:"mRadio"
+  name:"iRadio"
 }
 </script>
 <script setup>
@@ -34,7 +34,7 @@ const props = defineProps({
     type:String,
     default:"value"
   },
-  customColor:String,
+  custoiColor:String,
   customClass:String,
   inline:{
     type:Boolean,

@@ -1,17 +1,17 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
-    <m-radio
+  <i-space :inline="false">
+    <i-radio
       v-model="radioVal"
       :options="radioOptions"
-      customColor="#09b63d"
-    ></m-radio>
-    <m-radio
+      custoiColor="#09b63d"
+    ></i-radio>
+    <i-radio
       v-model="radioVal"
       :options="radioOptions"
-      customColor="#25B0F8"
-    ></m-radio>
-  </m-space>
+      custoiColor="#25B0F8"
+    ></i-radio>
+  </i-space>
 </template>
 
 <!-- js -->

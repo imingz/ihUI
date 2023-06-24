@@ -1,5 +1,5 @@
-import mMenu from './index.vue';
-mMenu.install = app => {
-  app.component(mMenu.name, mMenu)
+import iMenu from './index.vue';
+iMenu.install = app => {
+  app.component(iMenu.name, iMenu)
 } 
-export default mMenu
+export default iMenu

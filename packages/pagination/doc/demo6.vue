@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-pagination
+  <i-pagination
     :total="100"
     :current="1"
     :pageSize="10"
@@ -8,5 +8,5 @@
     nextText="下一页"
     showTotal
     jumper
-  ></m-pagination>
+  ></i-pagination>
 </template>>

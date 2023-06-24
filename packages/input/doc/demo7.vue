@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-input v-model="password" type="password" showPassword placeholder="请输入密码"></m-input>
+  <i-input v-model="password" type="password" showPassword placeholder="请输入密码"></i-input>
 </template>
 
 <!-- js -->

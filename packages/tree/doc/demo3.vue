@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-tree :options="treeOptions" multiple :defaultOpenNodes="['0']"></m-tree>
+  <i-tree :options="treeOptions" multiple :defaultOpenNodes="['0']"></i-tree>
 </template>
 
 <!-- js -->

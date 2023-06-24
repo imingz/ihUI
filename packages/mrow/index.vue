@@ -3,7 +3,7 @@
 </template>
 <script>
 export default{
-  name:"mRow"
+  name:"iRow"
 }
 </script>
 <script setup>

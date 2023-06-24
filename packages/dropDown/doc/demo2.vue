@@ -1,18 +1,18 @@
 <!-- html -->
 <template>
-  <m-space>
-    <m-dropdown title="默认大小" :options="dorpoptions"></m-dropdown>
-    <m-dropdown
+  <i-space>
+    <i-dropdown title="默认大小" :options="dorpoptions"></i-dropdown>
+    <i-dropdown
       title="小一点的"
       :options="dorpoptions"
       size="small"
-    ></m-dropdown>
-    <m-dropdown
+    ></i-dropdown>
+    <i-dropdown
       title="更小点的"
       :options="dorpoptions"
       size="mini"
-    ></m-dropdown>
-  </m-space>
+    ></i-dropdown>
+  </i-space>
 </template>
 
 <!-- js -->

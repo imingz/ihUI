@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-optfile
+  <i-optfile
     label="选择文件"
     imgListShow
     targetType="box"
@@ -9,5 +9,5 @@
     accept=".png,.jpg,.gif,.jpeg"
     icon="m-icon-shangchuan"
   >
-  </m-optfile>
+  </i-optfile>
 </template>

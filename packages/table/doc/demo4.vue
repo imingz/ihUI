@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-table :options="options" :headStyle="headStyle" :rowStyle="rowStyle" size="mini" ></m-table>
+  <i-table :options="options" :headStyle="headStyle" :rowStyle="rowStyle" size="mini" ></i-table>
 </template>
 
 <!-- js -->

@@ -1,12 +1,12 @@
 <template>
-  <div class="m-space" ref="spaceRef">
+  <div class="i-space" ref="spaceRef">
     <!-- <slot></slot> -->
   </div>
 </template>
 <script>
 import { h, useSlots, ref, computed } from "vue";
 export default {
-  name: "mSpace",
+  name: "iSpace",
   props: {
     inline: {
       type: Boolean,
@@ -48,7 +48,7 @@ export default {
         h(
           "div",
           {
-            className: "m-space-item",
+            className: "i-space-item",
             style: "width:fit-content",
           },
           item
@@ -59,7 +59,7 @@ export default {
       h(
         "div",
         {
-          className: "m-space-box",
+          className: "i-space-box",
           style: styles.value,
         },
         slotList.value

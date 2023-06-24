@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <!-- <m-tree :options="treeOptions" labelFiled="name"></m-tree> -->
+  <!-- <i-tree :options="treeOptions" labelFiled="name"></i-tree> -->
   匹配不同格式正在完善...
 </template>
 

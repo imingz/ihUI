@@ -1,43 +1,43 @@
 <!-- html -->
 <template>
-  <m-space>
-    <m-button @click="openInfo">文本状态</m-button>
-    <m-button @click="openSuccess">成功状态</m-button>
-    <m-button @click="openWarn">警告状态</m-button>
-    <m-button @click="openError">错误状态</m-button>
-    <m-button @click="openCustom">自定义</m-button>
-  </m-space>
+  <i-space>
+    <i-button @click="openInfo">文本状态</i-button>
+    <i-button @click="openSuccess">成功状态</i-button>
+    <i-button @click="openWarn">警告状态</i-button>
+    <i-button @click="openError">错误状态</i-button>
+    <i-button @click="openCustom">自定义</i-button>
+  </i-space>
 </template>
 
 <!-- js -->
 <script setup>
-import Message from "../index.js"; //此处为本地示例，请使用import {Message} from "ih-ui";引入
+import iMessage from "../index.js"; //此处为本地示例，请使用import {iMessage} from "ih-ui";引入
 const openInfo = () => {
-  Message({
+  iMessage({
     type: "info",
     text: "文本消息提示!",
   });
 };
 const openSuccess = () => {
-  Message({
+  iMessage({
     type: "success",
     text: "成功状态消息提示!",
   });
 };
 const openWarn = () => {
-  Message({
+  iMessage({
     type: "warn",
     text: "警告状态消息提示!",
   });
 };
 const openError = () => {
-  Message({
+  iMessage({
     type: "error",
     text: "错误状态消息提示!",
   });
 };
 const openCustom = () => {
-  Message({
+  iMessage({
     type: "custom",
     text: "自定义消息弹窗样式",
     icon: "m-icon-file-common",

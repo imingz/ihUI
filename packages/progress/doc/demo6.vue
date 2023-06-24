@@ -1,38 +1,38 @@
 <!-- html -->
 <template>
-  <m-space>
-    <m-progress
+  <i-space>
+    <i-progress
       :percent="20"
       progressType="circle"
       :circleSize="120"
       isShowText
       roundCorner
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="40"
       bgColor="#505050"
       progressType="circle"
       :circleSize="120"
       isShowText
       roundCorner
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="60"
       currentStatus="OTHER"
       progressType="circle"
       :circleSize="120"
       isShowText
       roundCorner
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="90"
       currentStatus="FAIL"
       progressType="circle"
       :circleSize="120"
       :circleHeight="10"
       isShowText
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="100"
       currentStatus="SUCCESS"
       progressType="circle"
@@ -40,8 +40,8 @@
       :circleHeight="10"
       isShowText
     >
-    </m-progress>
-  </m-space>
+    </i-progress>
+  </i-space>
 </template>
 <style scoped>
 .ih-progress {

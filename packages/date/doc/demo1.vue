@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-date v-model="dateVal" @change="dateChange" placeholder="请选择日期"></m-date>
+  <i-date v-model="dateVal" @change="dateChange" placeholder="请选择日期"></i-date>
 </template>
 
 <!-- js -->

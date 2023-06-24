@@ -1,48 +1,48 @@
 <!-- html -->
 <template>
-  <m-popover
+  <i-popover
     trigger="click"
     placement="right"
     width="600"
     @after-enter="AfterEneter"
   >
     <div style="width:800px">
-      <m-table :options="options" size="default">
+      <i-table :options="options" size="default">
         <template #head-job="item">
-          <m-dropdown
+          <i-dropdown
             :title="item.scope.title"
             :options="dorpoptions1"
             @change="dropchange1"
             trigger="hover"
             size="mini"
-          ></m-dropdown>
+          ></i-dropdown>
         </template>
         <template #id="item">
           <div>{{ item.scope.row.id }}</div>
         </template>
         <template #action="item">
-          <m-button
+          <i-button
             type="text"
             leftIcon="m-icon-edit"
             size="small"
             :disabled="item.scope.rowIndex % 2 == 0"
-            >编辑</m-button
+            >编辑</i-button
           >
-          <m-button
+          <i-button
             type="text"
             leftIcon="m-icon-ashbin"
             style="color: #ec3437"
             size="small"
-            >删除</m-button
+            >删除</i-button
           >
         </template>
-      </m-table>
+      </i-table>
     </div>
     <!--  -->
     <template #reference>
-      <m-button size="medium">click激活</m-button>
+      <i-button size="medium">click激活</i-button>
     </template>
-  </m-popover>
+  </i-popover>
 </template>
 
 <!-- js -->

@@ -1,24 +1,24 @@
 <!-- html -->
 <template>
 <div class="ih-style">
-    <m-progress
+    <i-progress
       :percent="20"
       progressType="circle"
       :circleSize="120"
       isShowText
       roundCorner
     >
-     <m-button type="primary" size="mini" leftIcon="m-icon-prompt" round></m-button>
-    </m-progress>
-    <m-progress
+     <i-button type="primary" size="mini" leftIcon="m-icon-prompt" round></i-button>
+    </i-progress>
+    <i-progress
       :percent="40"
       bgColor="#505050"
       progressType="circle"
       :circleSize="120"
       isShowText
       roundCorner
-    >progress</m-progress>
-    <m-progress
+    >progress</i-progress>
+    <i-progress
       :percent="100"
       currentStatus="SUCCESS"
       progressType="circle"
@@ -27,7 +27,7 @@
       isShowText
     >
     FULL
-    </m-progress>
+    </i-progress>
 </div>
 </template>
 <style scoped>

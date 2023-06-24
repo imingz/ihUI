@@ -67,7 +67,7 @@ import preview from '@/components/preview.vue'
 
 ## 自定义颜色
 
-#### 可以自定义颜色的按钮类型——通过设置 _type_ 为 _custom_ 和 _customColor_ 属性设置实现。 tips：需要注意的是 _type_ 为 _default_、_dashed_、_text_ 类型的按钮不支持自定义
+#### 可以自定义颜色的按钮类型——通过设置 _type_ 为 _custom_ 和 _custoiColor_ 属性设置实现。 tips：需要注意的是 _type_ 为 _default_、_dashed_、_text_ 类型的按钮不支持自定义
 
 <br/>
 <div class="componetnsBox">

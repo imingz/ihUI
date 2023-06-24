@@ -15,7 +15,7 @@
 <script>
 import { reactive, ref,computed, useSlots} from 'vue'
 export default {
-  name:"mInput"
+  name:"iInput"
 }
 </script>
 <script setup>

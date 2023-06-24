@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-checkbox v-model="checkboxVal" :options="checkOptions"></m-checkbox>
+  <i-checkbox v-model="checkboxVal" :options="checkOptions"></i-checkbox>
 </template>
 
 <!-- js -->

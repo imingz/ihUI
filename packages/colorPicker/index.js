@@ -1,5 +1,5 @@
-import mColorPicker from './index.vue'
-mColorPicker.install = (app) => {
-  app.component(mColorPicker.name, mColorPicker)
+import iColorPicker from './index.vue'
+iColorPicker.install = (app) => {
+  app.component(iColorPicker.name, iColorPicker)
 }
-export default mColorPicker
+export default iColorPicker

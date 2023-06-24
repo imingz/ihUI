@@ -1,5 +1,5 @@
-import mSpace from "./index.vue";
-mSpace.install = (app) => {
-  app.component(mSpace.name, mSpace);
+import iSpace from "./index.vue";
+iSpace.install = (app) => {
+  app.component(iSpace.name, iSpace);
 };
-export default mSpace;
+export default iSpace;

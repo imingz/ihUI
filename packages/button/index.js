@@ -1,5 +1,5 @@
-import mButton from './index.vue'
-mButton.install = app => {
-  app.component(mButton.name, mButton)
+import iButton from './index.vue'
+iButton.install = app => {
+  app.component(iButton.name, iButton)
 } 
-export default mButton
+export default iButton

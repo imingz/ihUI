@@ -29,12 +29,12 @@ app.mount('#app')
 ```
 ### 按需引用
 ```
-import { mButton, mInput } from 'ih-ui'
+import { iButton, iInput } from 'ih-ui'
 ```
 ### 愉快开始
 ```
-<m-button>默认按钮</m-buttonn> 
-<m-button type="primary">主要按钮</m-button>
+<i-button>默认按钮</i-buttonn> 
+<i-button type="primary">主要按钮</i-button>
 ```
 
 ## ih UI 贡献指南
@@ -150,7 +150,7 @@ import { mButton, mInput } from 'ih-ui'
 - *packages* 文件夹下 *index.js* 作为整体入口文件，须包含所有组件，若需要绑定全局变量或提供组件实例调用，参考代码：
 
   ```
-  app.config.globalProperties.$message = Message;
+  app.config.globalProperties.$message = iMessage;
   ```
 -  任何组件禁止使用三方依赖库。
 -  组件内如果依赖了其他组件，需要在当前组件内引入，参考 *select*。

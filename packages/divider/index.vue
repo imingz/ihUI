@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 <script>
 export default {
-    name: "mDivider",
+    name: "iDivider",
 };
 </script>
 

@@ -14,7 +14,7 @@
         <span :class="['ih-next-text-text',{'ih-next-text-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText!=''">{{nextText}}</span>
         <div class="to-next-page-box" v-if="jumper">
           <span>跳至</span>
-          <span class="input-span"><m-input :size="size=='small'?'mini':'small'" v-model="currentPage" @change="topage" :disabled="disabled"></m-input></span>
+          <span class="input-span"><i-input :size="size=='small'?'mini':'small'" v-model="currentPage" @change="topage" :disabled="disabled"></i-input></span>
           <span>页</span>
         </div> 
       </div>
@@ -23,12 +23,12 @@
 </template>
 <script>
 export default{
-  name:"mPagination"
+  name:"iPagination"
 }
 </script>
 <script setup>
 import { ref } from 'vue';
-import mInput from '../input';
+import iInput from '../input';
 const emit = defineEmits(['update:current','change'])
 const props = defineProps({
   total:Number,

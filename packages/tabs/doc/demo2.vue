@@ -1,17 +1,17 @@
 <!-- html -->
 <template>
-  <m-button class="btn" type="primary" @click="switchType">切换样式</m-button>
+  <i-button class="btn" type="primary" @click="switchType">切换样式</i-button>
 
-  <m-tabs
+  <i-tabs
     :type="tabType"
     v-model="activeName"
     @onTabclick="handleClick"
     @onChangeTab="handleChange"
   >
-    <m-tab-pane label="选项卡一" name="one"> 选项卡一 </m-tab-pane>
-    <m-tab-pane label="选项卡二" name="tow"> 选项卡二 </m-tab-pane>
-    <m-tab-pane label="选项卡三" name="three"> 选项卡三 </m-tab-pane>
-  </m-tabs>
+    <i-tab-pane label="选项卡一" name="one"> 选项卡一 </i-tab-pane>
+    <i-tab-pane label="选项卡二" name="tow"> 选项卡二 </i-tab-pane>
+    <i-tab-pane label="选项卡三" name="three"> 选项卡三 </i-tab-pane>
+  </i-tabs>
 </template>
 
 <!-- js -->

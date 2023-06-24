@@ -16,7 +16,7 @@
 </template>
 <script>
 export default {
-  name: "mMenu",
+  name: "iMenu",
 };
 </script>
 <script setup>

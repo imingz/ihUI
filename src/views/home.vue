@@ -32,7 +32,7 @@
     <main class="ihuirightView">
       <router-view v-highlight></router-view>
     </main>
-    <m-backtop target=".ihuirightView"></m-backtop>
+    <i-backtop target=".ihuirightView"></i-backtop>
   </div>
 </template>
 

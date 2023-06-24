@@ -1,17 +1,17 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
-    <m-checkbox
+  <i-space :inline="false">
+    <i-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
-      customColor="#09b63d"
-    ></m-checkbox>
-    <m-checkbox
+      custoiColor="#09b63d"
+    ></i-checkbox>
+    <i-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
-      customColor="#25B0F8"
-    ></m-checkbox>
-  </m-space>
+      custoiColor="#25B0F8"
+    ></i-checkbox>
+  </i-space>
 </template>
 
 <!-- js -->

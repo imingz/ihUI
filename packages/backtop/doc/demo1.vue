@@ -1,4 +1,4 @@
 <!-- html -->
 <template>
-  <m-backtop></m-backtop>
+  <i-backtop></i-backtop>
 </template>

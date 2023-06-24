@@ -1,5 +1,5 @@
-import mModal from './index.vue';
-mModal.install = app => {
-  app.component(mModal.name, mModal)
+import iModal from './index.vue';
+iModal.install = app => {
+  app.component(iModal.name, iModal)
 } 
-export default mModal
+export default iModal

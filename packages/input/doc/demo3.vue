@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-input v-model="value1" clearable @clear="clear" placeholder="可清空"></m-input>
+  <i-input v-model="value1" clearable @clear="clear" placeholder="可清空"></i-input>
 </template>
 
 <!-- js -->

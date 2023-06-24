@@ -9,19 +9,19 @@
         完美支持vite+vue3版本，更小的体积，更快的响应，更强的拓展性，让我们一起向未来，拥抱这精彩的vue世界！
       </p>
       <div class="buttonGroups">
-        <m-button
+        <i-button
           type="primary"
           round
           style="padding: 15px 50px; margin-right: 2vw; font-size: 17px"
           @click="toComponents"
-          >立即上手</m-button
+          >立即上手</i-button
         >
-        <m-button
+        <i-button
           round
           icon="m-icon-github"
           style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
           @click="goGuthub"
-          >Github</m-button
+          >Github</i-button
         >
       </div>
       <div class="cardBox">
@@ -50,9 +50,7 @@
         <p class="titles">链接</p>
         <span @click="goGuthub">Github</span>
         <span @click="goToNpm">NPM</span>
-        <!-- <span>关于MZL_UI</span> -->
-        <span @click="verSion">更新日志</span>
-        <!-- <span>关于作者</span> -->
+        <!-- <span @click="verSion">更新日志</span> -->
         <p class="titles">贡献人员</p>
         <li
           v-for="(item, index) in devoteList"
@@ -79,47 +77,32 @@ const router = useRouter();
 const state = reactive({
   devoteList: [
     {
-      name: "Ningstyle",
-      github: "https://github.com/Ningstyle",
-      img: "https://avatars.githubusercontent.com/u/23306049?s=60&v=4",
+      name: "mingz-wang",
+      github: "https://github.com/mingz-wang",
+      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
     },
     {
-      name: "pakchoily",
-      github: "https://github.com/pakchoily",
-      img: "https://avatars.githubusercontent.com/u/59410698?s=60&v=4",
+      name: "Luffy-cy",
+      github: "https://github.com/Luffy-cy",
+      img: "https://avatars.githubusercontent.com/u/53420956?v=4",
     },
     {
-      name: "Potato-X",
-      github: "https://github.com/Potato-X",
-      img: "https://avatars.githubusercontent.com/u/68857645?s=60&v=4",
+      name: "mingz-wang",
+      github: "https://github.com/mingz-wang",
+      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
     },
     {
-      name: "wally94",
-      github: "https://github.com/wally94",
-      img: "https://avatars.githubusercontent.com/u/40847305?v=4",
-    },
-    {
-      name: "amifed",
-      github: "https://github.com/amifed",
-      img: "https://avatars.githubusercontent.com/u/36906371?s=60&v=4",
-    },
-    {
-      name: "zgx1996",
-      github: "https://github.com/zgx1996",
-      img: "https://avatars.githubusercontent.com/u/21330181?v=4",
-    },
-    {
-      name: "spark154204",
-      github: "https://github.com/spark154204",
-      img: "https://avatars.githubusercontent.com/u/48675578?s=60&v=4",
+      name: "mingz-wang",
+      github: "https://github.com/mingz-wang",
+      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
     },
   ],
 });
 const toComponents = () => {
-  router.push("/ihui");
+  router.push("/ihui/install");
 };
 const goGuthub = () => {
-  window.open("https://github.com/Ningstyle/ih-ui");
+  window.open("https://github.com/mingz-wang/ihUI");
 };
 const goToNpm = () => {
   window.open("https://www.npmjs.com/package/ih-ui");

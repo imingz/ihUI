@@ -1,5 +1,5 @@
 <template>
-  <m-table :options="options" size="small"></m-table>
+  <i-table :options="options" size="small"></i-table>
 </template>
 
 <script setup>
@@ -57,7 +57,7 @@ const state = reactive({
         def: "value",
       },
       {
-        attr: "customColor",
+        attr: "custoiColor",
         type: "String",
         red: "自定义选中颜色色值",
         sel: "——",

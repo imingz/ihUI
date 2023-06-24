@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-tree :options="treeOptions"></m-tree>
+  <i-tree :options="treeOptions"></i-tree>
 </template>
 
 <!-- js -->

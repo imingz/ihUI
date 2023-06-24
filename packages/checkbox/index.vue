@@ -1,14 +1,14 @@
 <template>
   <div :class="[`ih-checkbox-${size}`,customClass]">
     <label v-for="(item,index) in checkOptions" :key="index" class="ih-checkbox-label" :class="[{'ih-checkbox-label-active':item.checked},item.checked?item.disabled?'ih-checkbox-label-active-disabled':'':item.disabled?'ih-checkbox-label-disabled':'']" @click="checkChange(item,index)"  :style="{'display':inline?'inline-block':'table','margin-bottom':inline?'0':size=='small'?'8px':size=='mini'?'6px':'10px'}">
-      <span class="ih-checkbox-selectbox"  :style="{'border-color':customColor==''?'':item.disabled?'':item.checked?customColor:'','background':customColor==''?'':item.disabled?'':item.checked?customColor:''}"></span>
-      <span :style="{'color':customColor==''?'':item.disabled?'':item.checked?customColor:''}">{{item[labelFiled]}}</span>
+      <span class="ih-checkbox-selectbox"  :style="{'border-color':custoiColor==''?'':item.disabled?'':item.checked?custoiColor:'','background':custoiColor==''?'':item.disabled?'':item.checked?custoiColor:''}"></span>
+      <span :style="{'color':custoiColor==''?'':item.disabled?'':item.checked?custoiColor:''}">{{item[labelFiled]}}</span>
     </label>
   </div>
 </template>
 <script>
 export default{
-  name:"mCheckbox"
+  name:"iCheckbox"
 }
 </script>
 <script setup>
@@ -43,7 +43,7 @@ const props = defineProps({
     type:Boolean,
     default:true
   },
-  customColor:String,
+  custoiColor:String,
   customClass:String
 })
 const checkOptions = ref(props.options||[])

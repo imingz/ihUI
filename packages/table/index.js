@@ -1,5 +1,5 @@
-import mTable from './index.vue';
-mTable.install = app => {
-  app.component(mTable.name, mTable)
+import iTable from './index.vue';
+iTable.install = app => {
+  app.component(iTable.name, iTable)
 } 
-export default mTable
+export default iTable

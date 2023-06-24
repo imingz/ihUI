@@ -1,5 +1,5 @@
-import mBacktop from './index.vue';
-mBacktop.install = app => {
-  app.component(mBacktop.name, mBacktop)
+import iBacktop from './index.vue';
+iBacktop.install = app => {
+  app.component(iBacktop.name, iBacktop)
 } 
-export default mBacktop
+export default iBacktop

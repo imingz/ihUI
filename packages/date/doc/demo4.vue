@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-date v-model="dateVal" placeholder="请选择日期" type="year"> </m-date>
+  <i-date v-model="dateVal" placeholder="请选择日期" type="year"> </i-date>
 </template>
 
 <!-- js -->

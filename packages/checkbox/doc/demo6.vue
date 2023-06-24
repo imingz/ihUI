@@ -1,18 +1,18 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
-    <m-checkbox v-model="checkboxVal" :options="checkOptions"></m-checkbox>
-    <m-checkbox
+  <i-space :inline="false">
+    <i-checkbox v-model="checkboxVal" :options="checkOptions"></i-checkbox>
+    <i-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
       size="small"
-    ></m-checkbox>
-    <m-checkbox
+    ></i-checkbox>
+    <i-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
       size="mini"
-    ></m-checkbox>
-  </m-space>
+    ></i-checkbox>
+  </i-space>
 </template>
 
 <!-- js -->

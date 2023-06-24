@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-pagination
+  <i-pagination
     :total="200"
     :current="1"
     :pageSize="10"
     :activeColors="activeColors"
-  ></m-pagination>
+  ></i-pagination>
 </template>
 
 <!-- js -->
