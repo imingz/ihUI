@@ -14,7 +14,7 @@ import Loading from "./loading/index";
 import mSwitch from "./switch/index";
 import mTree from "./tree/index";
 import mOptfile from "./optfile/index";
-import mTextarea from "./textarea/index";
+import iTextarea from "./textarea/index";
 import iRow from "./mrow/index";
 import iCol from "./mcol/index";
 import mPagination from "./pagination/index";
@@ -46,7 +46,7 @@ const components = [
   mSwitch,
   mTree,
   mOptfile,
-  mTextarea,
+  iTextarea,
   iRow,
   iCol,
   mPagination,
@@ -100,7 +100,7 @@ export {
   mSwitch,
   mTree,
   mOptfile,
-  mTextarea,
+  iTextarea,
   iRow,
   iCol,
   mPagination,
