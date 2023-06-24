@@ -1,7 +1,7 @@
-import mTabs from './index.vue';
-import mTabPane from './pane.vue';
-mTabs.install = app => {
-  app.component(mTabs.name, mTabs)
-  app.component(mTabPane.name,mTabPane)
+import iTabs from './index.vue';
+import iTabPane from './pane.vue';
+iTabs.install = app => {
+  app.component(iTabs.name, iTabs)
+  app.component(iTabPane.name,iTabPane)
 }
-export default mTabs
+export default iTabs

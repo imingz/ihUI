@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "mTabPane",
+  name: "iTabPane",
 };
 </script>
 

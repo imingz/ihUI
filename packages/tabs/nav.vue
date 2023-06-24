@@ -41,7 +41,7 @@
 </template>
 <script>
 export default {
-  name: "mTabsNav",
+  name: "iTabsNav",
 };
 </script>
 <script setup>

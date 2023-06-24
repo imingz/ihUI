@@ -1,7 +1,7 @@
 <template>
   <div class="tabs">
     <!-- Nav -->
-    <m-tabs-nav
+    <i-tabs-nav
       :panes="panes"
       :currentName="currentName"
       :active_color="props.active_color"
@@ -9,7 +9,7 @@
       :color="props.color"
       :addable="props.addable"
       @onTabClick="handleTabClick"
-    ></m-tabs-nav>
+    ></i-tabs-nav>
     <!-- 内容区 -->
     <div class="tabs-content">
       <slot></slot>
@@ -19,12 +19,12 @@
 
 <script>
 export default {
-  name: "mTabs",
+  name: "iTabs",
 };
 </script>
 
 <script setup>
-import mTabsNav from "./nav.vue";
+import iTabsNav from "./nav.vue";
 import {
   reactive,
   ref,
@@ -100,7 +100,7 @@ function getTabPanes(content, paneInstanceList = []) {
   const children = content.children || [];
   children.forEach((node) => {
     let type = node.type.name || node.type;
-    if (type === "mTabPane" && node.component) {
+    if (type === "iTabPane" && node.component) {
       paneInstanceList.push(node.component);
     } else if (type === Fragment || type === "template") {
       getTabPanes(node, paneInstanceList);

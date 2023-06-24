@@ -1,21 +1,21 @@
 <!-- html -->
 <template>
-  <m-tabs
+  <i-tabs
     v-model="activeName"
     @onTabRemove="handleRemove"
     @onTabAdd="handleAdd"
     addable
     closable
   >
-    <m-tab-pane
+    <i-tab-pane
       v-for="tab in TabList"
       :key="tab.name"
       :label="tab.title"
       :name="tab.name"
     >
       {{ tab.content }}
-    </m-tab-pane>
-  </m-tabs>
+    </i-tab-pane>
+  </i-tabs>
 </template>
 
 <!-- js -->

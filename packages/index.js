@@ -24,7 +24,7 @@ import iBacktop from "./backtop/index";
 import iCollapse from "./collapse/index";
 import iCollapseItem from "./collapse/item/index";
 import iMenu from "./menu/index";
-import mTabs from "./tabs/index";
+import iTabs from "./tabs/index";
 import iSpace from "./Space/index";
 import mPopover from './popover/index';
 import mProgress from './progress/index'
@@ -55,7 +55,7 @@ const components = [
   iCollapse,
   iCollapseItem,
   iMenu,
-  mTabs,
+  iTabs,
   iSpace,
   mPopover,
   mProgress,
@@ -110,7 +110,7 @@ export {
   iCollapse,
   iCollapseItem,
   iMenu,
-  mTabs,
+  iTabs,
   mPopover,
   iSpace,
   mProgress,
