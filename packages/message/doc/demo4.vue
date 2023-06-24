@@ -8,15 +8,15 @@
 
 <!-- js -->
 <script setup>
-import Message from "../index.js"; //此处为本地示例，请使用import {Message} from "ih-ui";引入
+import iMessage from "../index.js"; //此处为本地示例，请使用import {iMessage} from "ih-ui";引入
 const openMsg1 = () => {
-  Message({
+  iMessage({
     text: "自定义Icon！",
     icon: "m-icon-collection_fill",
   });
 };
 const openMsg2 = () => {
-  Message({
+  iMessage({
     text: "5秒后消失！",
     icon: "m-icon-good",
     timeout: 5000,

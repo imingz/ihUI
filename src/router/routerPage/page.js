@@ -131,7 +131,7 @@ export default [
       },
       {
         path: 'message',
-        name: 'Message 消息提示',
+        name: 'iMessage 消息提示',
         component: () => import('/packages/message/doc/doc.md')
       },
       {

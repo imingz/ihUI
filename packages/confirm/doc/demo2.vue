@@ -7,8 +7,8 @@
 <script setup>
 import { getCurrentInstance } from "vue";
 import Confirm from "../index.js";
-import Message from "../../message/index.js";
-// 以上为本地示例，请使用import { Confirm, Message } from "ih-ui";引入
+import iMessage from "../../message/index.js";
+// 以上为本地示例，请使用import { Confirm, iMessage } from "ih-ui";引入
 const instance = getCurrentInstance();
 const openConfirm = () => {
   instance.proxy
@@ -16,10 +16,10 @@ const openConfirm = () => {
       text: "您确认要删除这条数据吗？",
     })
     .then(() => {
-      Message({ text: "点击了确定" });
+      iMessage({ text: "点击了确定" });
     })
     .catch(() => {
-      Message({ text: "点击了取消" });
+      iMessage({ text: "点击了取消" });
     });
 };
 </script>

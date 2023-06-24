@@ -23,7 +23,7 @@
 <!-- js -->
 <script setup>
 import { ref } from "vue";
-import Message from "../../message/index.js"; //此处为本地示例，请使用import {Message} from "ih-ui";引入
+import iMessage from "../../message/index.js"; //此处为本地示例，请使用import {iMessage} from "ih-ui";引入
 const modalShow = ref(false);
 const value = ref("");
 const openModal = () => {
@@ -31,11 +31,11 @@ const openModal = () => {
 };
 const send = () => {
   if (value.value == "") {
-    Message({ type: "warn", text: "请输入内容!" });
+    iMessage({ type: "warn", text: "请输入内容!" });
   } else {
     modalShow.value = false;
     setTimeout(() => {
-      Message({ type: "success", text: "发送成功!" });
+      iMessage({ type: "success", text: "发送成功!" });
     }, 500);
   }
 };

@@ -5,7 +5,7 @@
 
 <!-- js -->
 <script setup>
-import Message from "../index.js"; //此处为本地示例，请使用import {Message} from "ih-ui";引入
+import iMessage from "../index.js"; //此处为本地示例，请使用import {iMessage} from "ih-ui";引入
 import { getCurrentInstance } from "vue";
 const instance = getCurrentInstance();
 const openMsg = () => {

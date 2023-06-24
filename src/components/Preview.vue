@@ -20,7 +20,7 @@
 
 <script setup>
 import { onMounted, ref, nextTick } from "vue";
-import Message from "../../packages/message/index";
+import iMessage from "../../packages/message/index";
 const props = defineProps({
   compName: {
     type: String,
@@ -65,12 +65,12 @@ const copyCode = () => {
   input.select();
   if (document.execCommand("copy")) {
     document.execCommand("copy");
-    Message({
+    iMessage({
       type: "success",
       text: "代码复制成功",
     });
   } else {
-    Message({
+    iMessage({
       type: "error",
       text: "代码复制成功",
     });

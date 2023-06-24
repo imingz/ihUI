@@ -6,7 +6,7 @@ import iSelect from "./select/index";
 import iDropdown from "./dropDown/index";
 import iRadio from "./radio/index";
 import iCheckbox from "./checkbox/index";
-import Message from "./message/index";
+import iMessage from "./message/index";
 import Confirm from "./confirm/index";
 import iModal from "./modal/index";
 import iDrawer from "./drawer/index";
@@ -68,7 +68,7 @@ const install = (app) => {
   components.forEach((i) => {
     app.use(i)
   })
-  app.config.globalProperties.$message = Message
+  app.config.globalProperties.$message = iMessage
   app.config.globalProperties.$Confirm = Confirm
   app.config.globalProperties.$Loading = Loading
   app.config.globalProperties.$ih = $ih
@@ -92,7 +92,7 @@ export {
   iDropdown,
   iRadio,
   iCheckbox,
-  Message,
+  iMessage,
   Confirm,
   iModal,
   iDrawer,
