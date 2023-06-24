@@ -17,7 +17,7 @@
 <script>
 import { ref, useSlots,getCurrentInstance  } from 'vue';
 export default{
-  name:"mCollapseItem"
+  name:"iCollapseItem"
 }
 </script>
 <script setup>

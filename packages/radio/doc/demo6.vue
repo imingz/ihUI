@@ -4,12 +4,12 @@
     <m-radio
       v-model="radioVal"
       :options="radioOptions"
-      customColor="#09b63d"
+      custoiColor="#09b63d"
     ></m-radio>
     <m-radio
       v-model="radioVal"
       :options="radioOptions"
-      customColor="#25B0F8"
+      custoiColor="#25B0F8"
     ></m-radio>
   </i-space>
 </template>

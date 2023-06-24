@@ -1,9 +1,9 @@
 <template>
-  <m-row style="display: flex; align-items: center">
-    <m-col :span="4"><i-button @click.stop="showColorPicker">显示colorPicker面板</i-button></m-col>
-    <m-col :span="6"><div :style="{ color: color }">结果颜色</div></m-col>
-  </m-row>
-  <m-colorPicker ref="colorPicker" v-model="color" :autoClose="autoClose"></m-colorPicker>
+  <i-row style="display: flex; align-items: center">
+    <i-col :span="4"><i-button @click.stop="showColorPicker">显示colorPicker面板</i-button></i-col>
+    <i-col :span="6"><div :style="{ color: color }">结果颜色</div></i-col>
+  </i-row>
+  <i-colorPicker ref="colorPicker" v-model="color" :autoClose="autoClose"></i-colorPicker>
 </template>
 
 <script setup>

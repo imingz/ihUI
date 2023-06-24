@@ -15,20 +15,20 @@ import mSwitch from "./switch/index";
 import mTree from "./tree/index";
 import mOptfile from "./optfile/index";
 import mTextarea from "./textarea/index";
-import mRow from "./mrow/index";
-import mCol from "./mcol/index";
+import iRow from "./mrow/index";
+import iCol from "./mcol/index";
 import mPagination from "./pagination/index";
 import $ih from "./function/index";
 import mDate from "./date/index";
 import iBacktop from "./backtop/index";
-import mCollapse from "./collapse/index";
-import mCollapseItem from "./collapse/item/index";
+import iCollapse from "./collapse/index";
+import iCollapseItem from "./collapse/item/index";
 import mMenu from "./menu/index";
 import mTabs from "./tabs/index";
 import iSpace from "./Space/index";
 import mPopover from './popover/index';
 import mProgress from './progress/index'
-import mColorPicker from './colorPicker/index'
+import iColorPicker from './colorPicker/index'
 import mBreadcrumb from './breadcrumb/index'
 import iBadge from './badge/index'
 import mDivider from './divider/index'
@@ -47,19 +47,19 @@ const components = [
   mTree,
   mOptfile,
   mTextarea,
-  mRow,
-  mCol,
+  iRow,
+  iCol,
   mPagination,
   mDate,
   iBacktop,
-  mCollapse,
-  mCollapseItem,
+  iCollapse,
+  iCollapseItem,
   mMenu,
   mTabs,
   iSpace,
   mPopover,
   mProgress,
-  mColorPicker,
+  iColorPicker,
   mBreadcrumb,
   iBadge,
   mDivider
@@ -101,20 +101,20 @@ export {
   mTree,
   mOptfile,
   mTextarea,
-  mRow,
-  mCol,
+  iRow,
+  iCol,
   mPagination,
   $ih,
   mDate,
   iBacktop,
-  mCollapse,
-  mCollapseItem,
+  iCollapse,
+  iCollapseItem,
   mMenu,
   mTabs,
   mPopover,
   iSpace,
   mProgress,
-  mColorPicker,
+  iColorPicker,
   mBreadcrumb,
   iBadge,
   mDivider

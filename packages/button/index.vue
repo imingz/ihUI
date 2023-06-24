@@ -31,7 +31,7 @@ const props = defineProps({
     type: String,
     default: "default",
   },
-  customColor: {
+  custoiColor: {
     type: String,
     default: "",
   },
@@ -40,8 +40,8 @@ const props = defineProps({
   localing: Boolean,
 });
 const mBtnDeaultStyle = {
-  background: props.customColor,
-  border: props.customColor,
+  background: props.custoiColor,
+  border: props.custoiColor,
   color: "#fff",
 };
 const $slot = useSlots();
@@ -87,7 +87,7 @@ const isIconClass = computed(() => {
 });
 const styles = computed(() => {
   return [
-    props.customColor == ""
+    props.custoiColor == ""
       ? {}
       : props.type == "default"
       ? {}

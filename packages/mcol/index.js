@@ -1,5 +1,5 @@
-import mCol from './index.vue';
-mCol.install = app => {
-  app.component(mCol.name, mCol)
+import iCol from './index.vue';
+iCol.install = app => {
+  app.component(iCol.name, iCol)
 } 
-export default mCol
+export default iCol

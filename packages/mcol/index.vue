@@ -3,7 +3,7 @@
 </template>
 <script>
 export default{
-  name:"mCol"
+  name:"iCol"
 }
 </script>
 <script setup>

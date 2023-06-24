@@ -66,7 +66,7 @@ import preview from '@/components/preview.vue'
 
 ## 自定义颜色
 
-#### 可以通过设置 _customColor_ 属性为选中的选项自定义你喜欢的颜色。
+#### 可以通过设置 _custoiColor_ 属性为选中的选项自定义你喜欢的颜色。
 
 <div class="componetnsBox">
   <demo6/>

@@ -57,7 +57,7 @@ const state = reactive({
         def: "value",
       },
       {
-        attr: "customColor",
+        attr: "custoiColor",
         type: "String",
         red: "自定义选中颜色色值",
         sel: "——",

@@ -1,26 +1,26 @@
 <template>
-  <m-row>
-    <m-col :span="12"><div class="col-box-2 col-box">12</div></m-col>
-    <m-col :span="12"><div class="col-box-1 col-box">12</div></m-col>
-  </m-row>
-  <m-row>
-    <m-col :span="8"><div class="col-box-1 col-box">8</div></m-col>
-    <m-col :span="8"><div class="col-box-2 col-box">8</div></m-col>
-    <m-col :span="8"><div class="col-box-1 col-box">8</div></m-col>
-  </m-row>
-  <m-row>
-    <m-col :span="6"><div class="col-box-2 col-box">6</div></m-col>
-    <m-col :span="6"><div class="col-box-1 col-box">6</div></m-col>
-    <m-col :span="6"><div class="col-box-2 col-box">6</div></m-col>
-    <m-col :span="6"><div class="col-box-1 col-box">6</div></m-col>
-  </m-row>
-  <m-row>
-    <m-col :span="4"><div class="col-box-1 col-box">4</div></m-col>
-    <m-col :span="2"><div class="col-box-2 col-box">2</div></m-col>
-    <m-col :span="4"><div class="col-box-1 col-box">4</div></m-col>
-    <m-col :span="6"><div class="col-box-2 col-box">6</div></m-col>
-    <m-col :span="8"><div class="col-box-1 col-box">8</div></m-col>
-  </m-row>
+  <i-row>
+    <i-col :span="12"><div class="col-box-2 col-box">12</div></i-col>
+    <i-col :span="12"><div class="col-box-1 col-box">12</div></i-col>
+  </i-row>
+  <i-row>
+    <i-col :span="8"><div class="col-box-1 col-box">8</div></i-col>
+    <i-col :span="8"><div class="col-box-2 col-box">8</div></i-col>
+    <i-col :span="8"><div class="col-box-1 col-box">8</div></i-col>
+  </i-row>
+  <i-row>
+    <i-col :span="6"><div class="col-box-2 col-box">6</div></i-col>
+    <i-col :span="6"><div class="col-box-1 col-box">6</div></i-col>
+    <i-col :span="6"><div class="col-box-2 col-box">6</div></i-col>
+    <i-col :span="6"><div class="col-box-1 col-box">6</div></i-col>
+  </i-row>
+  <i-row>
+    <i-col :span="4"><div class="col-box-1 col-box">4</div></i-col>
+    <i-col :span="2"><div class="col-box-2 col-box">2</div></i-col>
+    <i-col :span="4"><div class="col-box-1 col-box">4</div></i-col>
+    <i-col :span="6"><div class="col-box-2 col-box">6</div></i-col>
+    <i-col :span="8"><div class="col-box-1 col-box">8</div></i-col>
+  </i-row>
 </template>
 
 <style lang="scss" scoped>

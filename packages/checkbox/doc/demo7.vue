@@ -4,12 +4,12 @@
     <m-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
-      customColor="#09b63d"
+      custoiColor="#09b63d"
     ></m-checkbox>
     <m-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
-      customColor="#25B0F8"
+      custoiColor="#25B0F8"
     ></m-checkbox>
   </i-space>
 </template>

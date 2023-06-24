@@ -8,7 +8,7 @@
 </template>
 <!-- js -->
 <script setup>
-const customColorMethod = (percent) => {
+const custoiColorMethod = (percent) => {
   if (percent < 70) {
     return '#909399'
   }
