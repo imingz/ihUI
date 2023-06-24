@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-dropdown title="下拉菜单" :options="dorpoptions"></m-dropdown>
+  <i-dropdown title="下拉菜单" :options="dorpoptions"></i-dropdown>
 </template>
 
 <!-- js -->

@@ -3,7 +3,7 @@
   <m-table :options="options">
     <!-- 自定标表头job(职业)的插槽内容，展示为下拉菜单 -->
     <template #head-job="item">
-      <m-dropdown :title="item.scope.title" :options="dorpoptions" @change="dropchange" size="mini" ></m-dropdown>
+      <i-dropdown :title="item.scope.title" :options="dorpoptions" @change="dropchange" size="mini" ></i-dropdown>
     </template>
     <!-- 自定义id列，插槽名为id，并接受item作为行数据 -->
     <template #id="item">

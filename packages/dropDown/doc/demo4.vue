@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
   <i-space>
-    <m-dropdown title="hover唤醒" :options="dorpoptions"></m-dropdown>
-    <m-dropdown
+    <i-dropdown title="hover唤醒" :options="dorpoptions"></i-dropdown>
+    <i-dropdown
       title="click唤醒"
       :options="dorpoptions"
       trigger="click"
-    ></m-dropdown>
+    ></i-dropdown>
   </i-space>
 </template>
 

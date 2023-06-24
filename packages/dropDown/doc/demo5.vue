@@ -1,13 +1,13 @@
 <!-- html -->
 <template>
   <i-space>
-    <m-dropdown title="下拉菜单" :options="dorpoptions">
+    <i-dropdown title="下拉菜单" :options="dorpoptions">
       <template #Img>
         <img src="https://ihui.codeym.com/head.png" alt="" />
       </template>
-    </m-dropdown>
+    </i-dropdown>
 
-    <m-dropdown
+    <i-dropdown
       title="下拉菜单"
       :options="dorpoptions"
       @change="dropchange"
@@ -16,9 +16,9 @@
       <template #Img>
         <img src="https://ihui.codeym.com/head.png" alt="" />
       </template>
-    </m-dropdown>
+    </i-dropdown>
 
-    <m-dropdown
+    <i-dropdown
       title="下拉菜单"
       :options="dorpoptions"
       @change="dropchange"
@@ -27,7 +27,7 @@
       <template #Img>
         <img src="https://ihui.codeym.com/head.png" alt="" />
       </template>
-    </m-dropdown>
+    </i-dropdown>
   </i-space>
 </template>
 

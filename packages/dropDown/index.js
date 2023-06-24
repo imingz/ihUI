@@ -1,5 +1,5 @@
-import mDropdown from './index.vue';
-mDropdown.install = app => {
-  app.component(mDropdown.name, mDropdown)
+import iDropdown from './index.vue';
+iDropdown.install = app => {
+  app.component(iDropdown.name, iDropdown)
 } 
-export default mDropdown;
+export default iDropdown;

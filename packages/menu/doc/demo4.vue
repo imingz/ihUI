@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
   <m-menu :options="menuOptions">
-    <m-dropdown
+    <i-dropdown
       title="下拉菜单"
       :options="dorpoptions"
       size="small"
-    ></m-dropdown>
+    ></i-dropdown>
   </m-menu>
 </template>
 

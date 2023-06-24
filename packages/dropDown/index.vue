@@ -20,7 +20,7 @@
 </template>
 <script>
 export default{
-  name:"mDropdown"
+  name:"iDropdown"
 }
 </script>
 <script setup>

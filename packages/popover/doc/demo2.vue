@@ -9,13 +9,13 @@
     <div style="width:800px">
       <m-table :options="options" size="default">
         <template #head-job="item">
-          <m-dropdown
+          <i-dropdown
             :title="item.scope.title"
             :options="dorpoptions1"
             @change="dropchange1"
             trigger="hover"
             size="mini"
-          ></m-dropdown>
+          ></i-dropdown>
         </template>
         <template #id="item">
           <div>{{ item.scope.row.id }}</div>
