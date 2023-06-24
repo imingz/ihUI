@@ -1,6 +1,6 @@
 {
   "name": "ih-ui",
-  "author": "style'me",
+  "author": "...",
   "version": "0.8.8",
   "private": false,
   "main": "./dist/ih-ui.umd.js",
@@ -30,13 +30,8 @@
     "dist/*"
   ],
   "license": "MIT",
-  "homepage": "https://ihui.codeym.com/",
-  "bugs": {
-    "url": "https://ihui.codeym.com/",
-    "email": "1046674804@qq.com"
-  },
   "scripts": {
-    "dev": "vite --port 3002",
+    "dev": "vite",
     "build": "vite build",
     "build:html": "vite build --config ./build/build.js",
     "preview": "vite preview",

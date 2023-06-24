@@ -7,9 +7,6 @@
 </div>
 <br/>
 
-
-
-官网主页: [ih-ui使用文档](https://ihui.codeym.com/)
 ***
 ### 快速使用
 ```
@@ -33,7 +30,7 @@ import { iButton, iInput } from 'ih-ui'
 ```
 ### 愉快开始
 ```
-<i-button>默认按钮</i-buttonn> 
+<i-button>默认按钮</i-buttonn>
 <i-button type="primary">主要按钮</i-button>
 ```
 
@@ -44,7 +41,6 @@ import { iButton, iInput } from 'ih-ui'
 ### 问题反馈
 
 -  如果您在使用中存在 *bug* 或者有更超前的思想及解决方案，不限于新的组件、新的模式、新的思想、新的方案，您可以在 *Issue* 提交问题，我们会定时进行维护并回复。
--  或您可发送邮件至 liningning@codeym.com 来反馈或参与贡献。
 
 ### 分支规范
 
@@ -75,8 +71,8 @@ import { iButton, iInput } from 'ih-ui'
   ```javascript
   //doc.md
   <script setup>
-    import demo1 from './demo1.vue'; 
-    import demo2 from './demo2.vue'; 
+    import demo1 from './demo1.vue';
+    import demo2 from './demo2.vue';
     import preview from '@/components/preview.vue'
     <div class="componetnsBox">
       <demo1/>
@@ -146,7 +142,7 @@ import { iButton, iInput } from 'ih-ui'
   };
   export default iButton;
   ```
-  
+
 - *packages* 文件夹下 *index.js* 作为整体入口文件，须包含所有组件，若需要绑定全局变量或提供组件实例调用，参考代码：
 
   ```
