@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
   <i-space>
-    <m-date v-model="dateVal" placeholder="请选择日期"> </m-date>
-    <m-date v-model="dateVal" placeholder="请选择日期" size="small"> </m-date>
-    <m-date v-model="dateVal" placeholder="请选择日期" size="mini"> </m-date>
+    <i-date v-model="dateVal" placeholder="请选择日期"> </i-date>
+    <i-date v-model="dateVal" placeholder="请选择日期" size="small"> </i-date>
+    <i-date v-model="dateVal" placeholder="请选择日期" size="mini"> </i-date>
   </i-space>
 </template>
 

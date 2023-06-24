@@ -109,7 +109,7 @@
 </template>
 <script>
 export default{
-  name:"mDate"
+  name:"iDate"
 }
 </script>
 <script setup>

@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
-  <m-date
+  <i-date
     v-model="dateVal"
     placeholder="请选择日期"
     :startDate="startDate"
     :endDate="endDate"
   >
-  </m-date>
+  </i-date>
 </template>
 
 <!-- js -->

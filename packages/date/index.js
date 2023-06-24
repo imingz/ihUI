@@ -1,5 +1,5 @@
-import mDate from './index.vue';
-mDate.install = app => {
-  app.component(mDate.name, mDate)
+import iDate from './index.vue';
+iDate.install = app => {
+  app.component(iDate.name, iDate)
 } 
-export default mDate
+export default iDate

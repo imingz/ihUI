@@ -1,19 +1,19 @@
 <!-- html -->
 <template>
   <i-space>
-    <m-date
+    <i-date
       v-model="dateVal"
       placeholder="请选择日期"
       customActiveColor="#09b63d"
     >
-    </m-date>
+    </i-date>
 
-    <m-date
+    <i-date
       v-model="dateVal"
       placeholder="请选择日期"
       customActiveColor="#f57b29"
     >
-    </m-date>
+    </i-date>
   </i-space>
 </template>
 

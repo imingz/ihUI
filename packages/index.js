@@ -19,7 +19,7 @@ import iRow from "./mrow/index";
 import iCol from "./mcol/index";
 import iPagination from "./pagination/index";
 import $ih from "./function/index";
-import mDate from "./date/index";
+import iDate from "./date/index";
 import iBacktop from "./backtop/index";
 import iCollapse from "./collapse/index";
 import iCollapseItem from "./collapse/item/index";
@@ -50,7 +50,7 @@ const components = [
   iRow,
   iCol,
   iPagination,
-  mDate,
+  iDate,
   iBacktop,
   iCollapse,
   iCollapseItem,
@@ -105,7 +105,7 @@ export {
   iCol,
   iPagination,
   $ih,
-  mDate,
+  iDate,
   iBacktop,
   iCollapse,
   iCollapseItem,
