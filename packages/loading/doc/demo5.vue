@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openLoading">更多自定义配置项</m-button>
+  <i-button @click="openLoading">更多自定义配置项</i-button>
 </template>
 
 <!-- js -->

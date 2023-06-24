@@ -11,8 +11,8 @@
           <span>{{text}}</span>
         </div>
         <div class="ih-footer">
-          <m-button @click="cancelCallback" size="small" style="margin-right:10px" v-if="cancelShow">{{cancelText}}</m-button>
-          <m-button @click="confirmCallback" size="small" type="primary" v-if="confirmShow">{{confirmText}}</m-button>
+          <i-button @click="cancelCallback" size="small" style="margin-right:10px" v-if="cancelShow">{{cancelText}}</i-button>
+          <i-button @click="confirmCallback" size="small" type="primary" v-if="confirmShow">{{confirmText}}</i-button>
         </div>
       </div>
     
@@ -22,7 +22,7 @@
 
 <script setup>
 import { ref, onMounted} from 'vue'
-import mButton from '../button/index'
+import iButton from '../button/index'
 const props = defineProps({
   title: {
     type: String,

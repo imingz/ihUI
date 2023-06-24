@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openConfirm">确认消息</m-button>
+  <i-button @click="openConfirm">确认消息</i-button>
 </template>
 
 <!-- js -->

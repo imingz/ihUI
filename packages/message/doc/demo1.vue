@@ -1,8 +1,8 @@
 <!-- html -->
 <template>
   <m-space>
-    <m-button @click="openMsg">消息提示</m-button>
-    <m-button @click="openVNodeMsg">消息提示(VNode)</m-button>
+    <i-button @click="openMsg">消息提示</i-button>
+    <i-button @click="openVNodeMsg">消息提示(VNode)</i-button>
   </m-space>
 </template>
 

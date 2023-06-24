@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openDrawer">基本使用</m-button>
+  <i-button @click="openDrawer">基本使用</i-button>
   <m-drawer
     v-model="drawerShow"
     title="基本使用"

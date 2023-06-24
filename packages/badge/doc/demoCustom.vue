@@ -4,7 +4,7 @@
             <img src="/src/assets/logo.png" alt="">
         </m-badge>
         <m-badge value="button按钮">
-            <m-button type="primary">button按钮</m-button>
+            <i-button type="primary">button按钮</i-button>
         </m-badge>
     </m-space>
 </template>

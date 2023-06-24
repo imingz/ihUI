@@ -36,8 +36,8 @@ app.mount("#app");
 
 ```html
 <!-- html -->
-<m-button>默认按钮</m-buttonn>
-<m-button type="primary">主要按钮</m-button>
+<i-button>默认按钮</i-buttonn>
+<i-button type="primary">主要按钮</i-button>
 ```
 
 <br/>
@@ -48,13 +48,13 @@ app.mount("#app");
 
 ```javascript
 /*js*/
-import { mButton, mInput } from "ih-ui";
+import { iButton, mInput } from "ih-ui";
 ```
 
 <br/>
 
 ```html
-<m-button>点击</m-button>
+<i-button>点击</i-button>
 <m-input v-model="value" placeholder="基本使用"></m-input>
 ```
 

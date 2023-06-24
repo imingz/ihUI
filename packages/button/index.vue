@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: "mButton",
+  name: "iButton",
 };
 </script>
 <script setup>

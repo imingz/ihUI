@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
   <m-space>
-    <m-button @click="openInfo">文本状态</m-button>
-    <m-button @click="openSuccess">成功状态</m-button>
-    <m-button @click="openWarn">警告状态</m-button>
-    <m-button @click="openError">错误状态</m-button>
-    <m-button @click="openCustom">自定义</m-button>
+    <i-button @click="openInfo">文本状态</i-button>
+    <i-button @click="openSuccess">成功状态</i-button>
+    <i-button @click="openWarn">警告状态</i-button>
+    <i-button @click="openError">错误状态</i-button>
+    <i-button @click="openCustom">自定义</i-button>
   </m-space>
 </template>
 

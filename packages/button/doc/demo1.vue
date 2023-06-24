@@ -1,29 +1,29 @@
 <!-- html -->
 <template>
   <m-space>
-    <m-button>默认按钮</m-button>
-    <m-button type="primary">主要按钮</m-button>
-    <m-button type="success">成功按钮</m-button>
-    <m-button type="danger">危险按钮</m-button>
-    <m-button type="warning">警告按钮</m-button>
-    <m-button type="dashed">虚线按钮</m-button>
-    <m-button type="text">文本按钮</m-button>
+    <i-button>默认按钮</i-button>
+    <i-button type="primary">主要按钮</i-button>
+    <i-button type="success">成功按钮</i-button>
+    <i-button type="danger">危险按钮</i-button>
+    <i-button type="warning">警告按钮</i-button>
+    <i-button type="dashed">虚线按钮</i-button>
+    <i-button type="text">文本按钮</i-button>
   </m-space>
   <m-space>
-    <m-button round>默认按钮</m-button>
-    <m-button type="primary" round>主要按钮</m-button>
-    <m-button type="success" round>成功按钮</m-button>
-    <m-button type="danger" round>危险按钮</m-button>
-    <m-button type="warning" round>警告按钮</m-button>
-    <m-button type="dashed" round>虚线按钮</m-button>
+    <i-button round>默认按钮</i-button>
+    <i-button type="primary" round>主要按钮</i-button>
+    <i-button type="success" round>成功按钮</i-button>
+    <i-button type="danger" round>危险按钮</i-button>
+    <i-button type="warning" round>警告按钮</i-button>
+    <i-button type="dashed" round>虚线按钮</i-button>
   </m-space>
   <m-space>
-    <m-button leftIcon="m-icon-electronics"></m-button>
-    <m-button type="primary" leftIcon="m-icon-edit"></m-button>
-    <m-button type="success" leftIcon="m-icon-add-circle" disabled></m-button>
-    <m-button type="danger" leftIcon="m-icon-home" disabled></m-button>
-    <m-button type="warning" leftIcon="m-icon-calendar"></m-button>
-    <m-button type="dashed" leftIcon="m-icon-upload"></m-button>
-    <m-button type="text" leftIcon="m-icon-ashbin">删除</m-button>
+    <i-button leftIcon="m-icon-electronics"></i-button>
+    <i-button type="primary" leftIcon="m-icon-edit"></i-button>
+    <i-button type="success" leftIcon="m-icon-add-circle" disabled></i-button>
+    <i-button type="danger" leftIcon="m-icon-home" disabled></i-button>
+    <i-button type="warning" leftIcon="m-icon-calendar"></i-button>
+    <i-button type="dashed" leftIcon="m-icon-upload"></i-button>
+    <i-button type="text" leftIcon="m-icon-ashbin">删除</i-button>
   </m-space>
 </template>

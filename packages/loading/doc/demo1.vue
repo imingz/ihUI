@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openLoading">开始加载</m-button>
+  <i-button @click="openLoading">开始加载</i-button>
 </template>
 
 <!-- js -->

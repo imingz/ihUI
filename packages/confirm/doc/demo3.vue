@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openConfirm">自定义配置</m-button>
+  <i-button @click="openConfirm">自定义配置</i-button>
 </template>
 
 <!-- js -->

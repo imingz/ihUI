@@ -29,12 +29,12 @@ app.mount('#app')
 ```
 ### 按需引用
 ```
-import { mButton, mInput } from 'ih-ui'
+import { iButton, mInput } from 'ih-ui'
 ```
 ### 愉快开始
 ```
-<m-button>默认按钮</m-buttonn> 
-<m-button type="primary">主要按钮</m-button>
+<i-button>默认按钮</i-buttonn> 
+<i-button type="primary">主要按钮</i-button>
 ```
 
 ## ih UI 贡献指南

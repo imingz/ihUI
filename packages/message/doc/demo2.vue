@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openMsg">消息提示</m-button>
+  <i-button @click="openMsg">消息提示</i-button>
 </template>
 
 <!-- js -->

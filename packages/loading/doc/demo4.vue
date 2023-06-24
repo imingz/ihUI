@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button @click="openLoading">自定义加载图片</m-button>
+  <i-button @click="openLoading">自定义加载图片</i-button>
 </template>
 
 <!-- js -->

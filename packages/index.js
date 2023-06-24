@@ -1,5 +1,5 @@
 //导入组件
-import mButton from "./button/index";
+import iButton from "./button/index";
 import mInput from "./input/index";
 import mTable from "./table/index";
 import mSelect from "./select/index";
@@ -34,7 +34,7 @@ import mBadge from './badge/index'
 import mDivider from './divider/index'
 //存在所有组件
 const components = [
-  mButton,
+  iButton,
   mInput,
   mTable,
   mSelect,
@@ -85,7 +85,7 @@ export {
   // 导出的对象必须具有 install，才能被 app.use() 方法安装
   install,
   // 以下是具体的组件列表
-  mButton,
+  iButton,
   mInput,
   mTable,
   mSelect,

@@ -1,14 +1,14 @@
 <!-- html -->
 <template>
-  <m-button @click="openDrawer">自定义</m-button>
+  <i-button @click="openDrawer">自定义</i-button>
   <m-drawer v-model="drawerShow">
     <template #header>
       这是头部自定义信息
-      <m-button
+      <i-button
         size="small"
         type="primary"
         style="position: absolute; right: 20px"
-        >自定义</m-button
+        >自定义</i-button
       >
     </template>
     <template #content>

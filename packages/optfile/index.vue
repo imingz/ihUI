@@ -15,7 +15,7 @@
           </div>
         </template>
       </transition-group>
-      <m-button :type="type" :leftIcon="icon" @click="changeFile" v-if="targetType=='btn'">{{label}}</m-button>
+      <i-button :type="type" :leftIcon="icon" @click="changeFile" v-if="targetType=='btn'">{{label}}</i-button>
       <div :class="['ih-optfie-area',{'ih-optfie-area-big':size=='big','ih-opfile-area-active':activeFile}]" v-if="targetType=='box'" ref="refDiv">
         <div class="ih-optfile-area-text" @click="changeFile">
           <div class="ih-optfile-text-pos">
@@ -48,7 +48,7 @@ export default{
 }
 </script>
 <script setup>
-import mButton from '../button/index'
+import iButton from '../button/index'
 const emit = defineEmits(['change','update:fileList','beforeChange'])
 const props = defineProps({
   accept:String,

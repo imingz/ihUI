@@ -50,7 +50,7 @@
     >
     </m-progress>
   </div>
-  <m-button type="primary" @click="startMethod" round>开始 / 暂停</m-button>
+  <i-button type="primary" @click="startMethod" round>开始 / 暂停</i-button>
 </template>
 <script setup>
 import {ref} from 'vue'

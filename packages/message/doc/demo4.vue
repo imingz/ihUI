@@ -1,8 +1,8 @@
 <!-- html -->
 <template>
   <m-space>
-    <m-button @click="openMsg1">消息提示</m-button>
-    <m-button @click="openMsg2">5秒后消失</m-button>
+    <i-button @click="openMsg1">消息提示</i-button>
+    <i-button @click="openMsg2">5秒后消失</i-button>
   </m-space>
 </template>
 

@@ -21,26 +21,26 @@
           <div>{{ item.scope.row.id }}</div>
         </template>
         <template #action="item">
-          <m-button
+          <i-button
             type="text"
             leftIcon="m-icon-edit"
             size="small"
             :disabled="item.scope.rowIndex % 2 == 0"
-            >编辑</m-button
+            >编辑</i-button
           >
-          <m-button
+          <i-button
             type="text"
             leftIcon="m-icon-ashbin"
             style="color: #ec3437"
             size="small"
-            >删除</m-button
+            >删除</i-button
           >
         </template>
       </m-table>
     </div>
     <!--  -->
     <template #reference>
-      <m-button size="medium">click激活</m-button>
+      <i-button size="medium">click激活</i-button>
     </template>
   </m-popover>
 </template>

@@ -5,7 +5,7 @@
     <m-progress :percent="60" currentStatus="OTHER" roundCorner><i class="m-icon-arrow-double-right"></i></m-progress>
     <m-progress :percent="90" :setPercentText="textMethod" currentStatus="FAIL" roundCorner></m-progress>
     <m-progress :percent="100" progressHeight="20" currentStatus="SUCCESS" roundCorner>
-      <m-button type="success" size="mini" round>完成</m-button>
+      <i-button type="success" size="mini" round>完成</i-button>
     </m-progress>
 </template>
 <!-- js -->

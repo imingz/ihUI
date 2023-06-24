@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-button class="btn" type="primary" @click="switchType">切换样式</m-button>
+  <i-button class="btn" type="primary" @click="switchType">切换样式</i-button>
 
   <m-tabs
     :type="tabType"

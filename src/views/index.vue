@@ -9,19 +9,19 @@
         完美支持vite+vue3版本，更小的体积，更快的响应，更强的拓展性，让我们一起向未来，拥抱这精彩的vue世界！
       </p>
       <div class="buttonGroups">
-        <m-button
+        <i-button
           type="primary"
           round
           style="padding: 15px 50px; margin-right: 2vw; font-size: 17px"
           @click="toComponents"
-          >立即上手</m-button
+          >立即上手</i-button
         >
-        <m-button
+        <i-button
           round
           icon="m-icon-github"
           style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
           @click="goGuthub"
-          >Github</m-button
+          >Github</i-button
         >
       </div>
       <div class="cardBox">
