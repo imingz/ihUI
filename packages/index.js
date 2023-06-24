@@ -8,7 +8,7 @@ import mRadio from "./radio/index";
 import mCheckbox from "./checkbox/index";
 import Message from "./message/index";
 import Confirm from "./confirm/index";
-import mModal from "./modal/index";
+import iModal from "./modal/index";
 import mDrawer from "./drawer/index";
 import Loading from "./loading/index";
 import mSwitch from "./switch/index";
@@ -41,7 +41,7 @@ const components = [
   mDropdown,
   mRadio,
   mCheckbox,
-  mModal,
+  iModal,
   mDrawer,
   mSwitch,
   mTree,
@@ -94,7 +94,7 @@ export {
   mCheckbox,
   Message,
   Confirm,
-  mModal,
+  iModal,
   mDrawer,
   Loading,
   mSwitch,

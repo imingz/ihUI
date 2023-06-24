@@ -23,7 +23,7 @@
 </template>
 <script>
 export default{
-  name:"mModal"
+  name:"iModal"
 }
 </script>
 <script setup>

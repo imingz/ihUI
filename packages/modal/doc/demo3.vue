@@ -1,23 +1,23 @@
 <!-- html -->
 <template>
-  <m-button @click="openModal">自定义</m-button>
-  <m-modal v-model="modalShow" :closeOnModal="false">
+  <i-button @click="openModal">自定义</i-button>
+  <i-modal v-model="modalShow" :closeOnModal="false">
     <template #header>
-      <i class="m-icon-email" style="font-size: 17px"></i> 新的邮件
+      <i class="i-icon-email" style="font-size: 17px"></i> 新的邮件
     </template>
     <template #content>
-      <m-input
+      <i-input
         v-model="value"
         clearable
         @clear="clear"
         placeholder="请输入"
-      ></m-input>
+      ></i-input>
       <p>输入的值为：{{ value }}</p>
     </template>
     <template #footer>
-      <m-button type="primary" size="small" @click="send">发送</m-button>
+      <i-button type="primary" size="small" @click="send">发送</i-button>
     </template>
-  </m-modal>
+  </i-modal>
 </template>
 
 <!-- js -->
