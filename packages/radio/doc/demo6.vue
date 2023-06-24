@@ -1,16 +1,16 @@
 <!-- html -->
 <template>
   <i-space :inline="false">
-    <m-radio
+    <i-radio
       v-model="radioVal"
       :options="radioOptions"
       custoiColor="#09b63d"
-    ></m-radio>
-    <m-radio
+    ></i-radio>
+    <i-radio
       v-model="radioVal"
       :options="radioOptions"
       custoiColor="#25B0F8"
-    ></m-radio>
+    ></i-radio>
   </i-space>
 </template>
 

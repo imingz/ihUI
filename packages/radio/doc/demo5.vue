@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
   <i-space :inline="false">
-    <m-radio v-model="radioVal" :options="radioOptions"></m-radio>
-    <m-radio v-model="radioVal" :options="radioOptions" size="small"></m-radio>
-    <m-radio v-model="radioVal" :options="radioOptions" size="mini"></m-radio>
+    <i-radio v-model="radioVal" :options="radioOptions"></i-radio>
+    <i-radio v-model="radioVal" :options="radioOptions" size="small"></i-radio>
+    <i-radio v-model="radioVal" :options="radioOptions" size="mini"></i-radio>
   </i-space>
 </template>
 

@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-radio v-model="radioVal" :options="radioOptions"></m-radio>
+  <i-radio v-model="radioVal" :options="radioOptions"></i-radio>
 </template>
 
 <!-- js -->

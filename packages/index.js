@@ -4,7 +4,7 @@ import iInput from "./input/index";
 import mTable from "./table/index";
 import iSelect from "./select/index";
 import iDropdown from "./dropDown/index";
-import mRadio from "./radio/index";
+import iRadio from "./radio/index";
 import mCheckbox from "./checkbox/index";
 import Message from "./message/index";
 import Confirm from "./confirm/index";
@@ -39,7 +39,7 @@ const components = [
   mTable,
   iSelect,
   iDropdown,
-  mRadio,
+  iRadio,
   mCheckbox,
   iModal,
   mDrawer,
@@ -90,7 +90,7 @@ export {
   mTable,
   iSelect,
   iDropdown,
-  mRadio,
+  iRadio,
   mCheckbox,
   Message,
   Confirm,

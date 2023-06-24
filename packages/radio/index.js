@@ -1,5 +1,5 @@
-import mRadio from './index.vue';
-mRadio.install = app => {
-  app.component(mRadio.name, mRadio)
+import iRadio from './index.vue';
+iRadio.install = app => {
+  app.component(iRadio.name, iRadio)
 } 
-export default mRadio
+export default iRadio

@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-radio
+  <i-radio
     v-model="radioVal"
     :options="radioOptions"
     @change="radioChange"
-  ></m-radio>
+  ></i-radio>
 </template>
 
 <!-- js -->

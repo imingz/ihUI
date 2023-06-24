@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-radio
+  <i-radio
     v-model="radioVal"
     :options="radioOptions"
     labelFiled="name"
     valueFiled="id"
-  ></m-radio>
+  ></i-radio>
 </template>
 
 <!-- js -->
