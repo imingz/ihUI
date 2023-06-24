@@ -1,4 +1,4 @@
 <!-- html -->
 <template>
-  <m-optfile label="选择文件"></m-optfile>
+  <i-optfile label="选择文件"></i-optfile>
 </template>

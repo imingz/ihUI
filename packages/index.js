@@ -13,7 +13,7 @@ import mDrawer from "./drawer/index";
 import Loading from "./loading/index";
 import iSwitch from "./switch/index";
 import mTree from "./tree/index";
-import mOptfile from "./optfile/index";
+import iOptfile from "./optfile/index";
 import iTextarea from "./textarea/index";
 import iRow from "./mrow/index";
 import iCol from "./mcol/index";
@@ -45,7 +45,7 @@ const components = [
   mDrawer,
   iSwitch,
   mTree,
-  mOptfile,
+  iOptfile,
   iTextarea,
   iRow,
   iCol,
@@ -99,7 +99,7 @@ export {
   Loading,
   iSwitch,
   mTree,
-  mOptfile,
+  iOptfile,
   iTextarea,
   iRow,
   iCol,

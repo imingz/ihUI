@@ -1,5 +1,5 @@
-import mOptfile from './index.vue';
-mOptfile.install = app => {
-  app.component(mOptfile.name, mOptfile)
+import iOptfile from './index.vue';
+iOptfile.install = app => {
+  app.component(iOptfile.name, iOptfile)
 } 
-export default mOptfile
+export default iOptfile

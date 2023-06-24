@@ -44,7 +44,7 @@
 <script>
 import { ref, reactive, onMounted, useSlots } from 'vue'
 export default{
-  name:"mOptfile"
+  name:"iOptfile"
 }
 </script>
 <script setup>
