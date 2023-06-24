@@ -1,5 +1,5 @@
-import mBadge from './index.vue'
-mBadge.install = app => {
-  app.component(mBadge.name, mBadge)
+import iBadge from './index.vue'
+iBadge.install = app => {
+  app.component(iBadge.name, iBadge)
 } 
-export default mBadge
+export default iBadge

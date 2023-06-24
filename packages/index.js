@@ -30,7 +30,7 @@ import mPopover from './popover/index';
 import mProgress from './progress/index'
 import mColorPicker from './colorPicker/index'
 import mBreadcrumb from './breadcrumb/index'
-import mBadge from './badge/index'
+import iBadge from './badge/index'
 import mDivider from './divider/index'
 //存在所有组件
 const components = [
@@ -61,7 +61,7 @@ const components = [
   mProgress,
   mColorPicker,
   mBreadcrumb,
-  mBadge,
+  iBadge,
   mDivider
 ];
 const install = (app) => {
@@ -116,7 +116,7 @@ export {
   mProgress,
   mColorPicker,
   mBreadcrumb,
-  mBadge,
+  iBadge,
   mDivider
 }
 export default ihUi

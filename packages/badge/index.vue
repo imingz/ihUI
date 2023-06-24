@@ -21,7 +21,7 @@ defineProps({
 </script>
 <script>
 export default {
-    name: "mBadge",
+    name: "iBadge",
 };
 </script>
 
