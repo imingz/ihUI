@@ -82,9 +82,9 @@ const state = reactive({
       img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
     },
     {
-      name: "mingz-wang",
-      github: "https://github.com/mingz-wang",
-      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
+      name: "Luffy-cy",
+      github: "https://github.com/Luffy-cy",
+      img: "https://avatars.githubusercontent.com/u/53420956?v=4",
     },
     {
       name: "mingz-wang",
