@@ -1,7 +1,7 @@
 //导入组件
 import iButton from "./button/index";
 import iInput from "./input/index";
-import mTable from "./table/index";
+import iTable from "./table/index";
 import iSelect from "./select/index";
 import iDropdown from "./dropDown/index";
 import iRadio from "./radio/index";
@@ -36,7 +36,7 @@ import mDivider from './divider/index'
 const components = [
   iButton,
   iInput,
-  mTable,
+  iTable,
   iSelect,
   iDropdown,
   iRadio,
@@ -87,7 +87,7 @@ export {
   // 以下是具体的组件列表
   iButton,
   iInput,
-  mTable,
+  iTable,
   iSelect,
   iDropdown,
   iRadio,

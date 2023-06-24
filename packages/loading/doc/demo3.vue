@@ -4,12 +4,12 @@
     <i-button @click="openLoading">点击加载</i-button>
   </i-space>
   <div id="loadingTextBox">
-    <m-table :options="options" size="small">
+    <i-table :options="options" size="small">
       <template #action>
         <i-button type="text" leftIcon="m-icon-edit" size="small">编辑</i-button>
         <i-button type="text" leftIcon="m-icon-ashbin" style="color:#ec3437"  size="small">删除</i-button>
       </template>
-    </m-table>
+    </i-table>
   </div>
 </template>
 

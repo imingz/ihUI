@@ -7,7 +7,7 @@
     @after-enter="AfterEneter"
   >
     <div style="width:800px">
-      <m-table :options="options" size="default">
+      <i-table :options="options" size="default">
         <template #head-job="item">
           <i-dropdown
             :title="item.scope.title"
@@ -36,7 +36,7 @@
             >删除</i-button
           >
         </template>
-      </m-table>
+      </i-table>
     </div>
     <!--  -->
     <template #reference>

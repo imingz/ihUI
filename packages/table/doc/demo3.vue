@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-table :options="options">
+  <i-table :options="options">
     <!-- 自定标表头job(职业)的插槽内容，展示为下拉菜单 -->
     <template #head-job="item">
       <i-dropdown :title="item.scope.title" :options="dorpoptions" @change="dropchange" size="mini" ></i-dropdown>
@@ -14,7 +14,7 @@
       <i-button type="text" leftIcon="m-icon-edit" size="small" :disabled="item.scope.rowIndex % 2 == 0" >编辑</i-button >
       <i-button type="text" leftIcon="m-icon-ashbin" style="color: #ec3437" size="small" >删除</i-button >
     </template>
-  </m-table>
+  </i-table>
 </template>
 
 <!-- js -->

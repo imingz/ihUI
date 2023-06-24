@@ -22,7 +22,7 @@
 </template>
 <script>
 export default{
-  name:'mTable'
+  name:'iTable'
 }
 </script>
 <script setup>
