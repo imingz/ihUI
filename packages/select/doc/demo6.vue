@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-select
+  <i-select
     v-model="selVal"
     placeholder="可搜索"
     :options="selOptions"
     searchable
-  ></m-select>
+  ></i-select>
 </template>
 
 <!-- js -->

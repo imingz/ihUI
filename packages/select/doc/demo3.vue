@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-select
+  <i-select
     v-model="selVal"
     placeholder="请选择"
     :options="selOptions"
-  ></m-select>
+  ></i-select>
 </template>
 
 <!-- js -->

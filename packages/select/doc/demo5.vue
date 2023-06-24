@@ -1,23 +1,23 @@
 <!-- html -->
 <template>
   <i-space>
-    <m-select
+    <i-select
       v-model="selVal1"
       placeholder="默认大小"
       :options="selOptions"
-    ></m-select>
-    <m-select
+    ></i-select>
+    <i-select
       v-model="selVal1"
       placeholder="小一点的"
       :options="selOptions"
       size="small"
-    ></m-select>
-    <m-select
+    ></i-select>
+    <i-select
       v-model="selVal1"
       placeholder="mini型的"
       :options="selOptions"
       size="mini"
-    ></m-select>
+    ></i-select>
   </i-space>
 </template>
 

@@ -1,13 +1,13 @@
 <!-- html -->
 <template>
-  <m-select
+  <i-select
     v-model="selVal"
     placeholder="请选择"
     :options="selOptions"
     labelFiled="cityName"
     valueFiled="cityCode"
     @change="selchange"
-  ></m-select>
+  ></i-select>
 </template>
 
 <!-- js -->

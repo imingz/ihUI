@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
-  <m-select
+  <i-select
     v-model="selVal"
     placeholder="请选择"
     :options="selOptions"
     @change="selchange"
     multiple
-  ></m-select>
+  ></i-select>
 </template>
 
 <!-- js -->

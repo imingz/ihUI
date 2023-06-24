@@ -1,5 +1,5 @@
-import mSelect from './index.vue';
-mSelect.install = app => {
-  app.component(mSelect.name, mSelect)
+import iSelect from './index.vue';
+iSelect.install = app => {
+  app.component(iSelect.name, iSelect)
 } 
-export default mSelect
+export default iSelect

@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-select
+  <i-select
     v-model="selVal"
     placeholder="请选择"
     :options="selOptions"
     @change="selchange"
-  ></m-select>
+  ></i-select>
 </template>
 
 <!-- js -->

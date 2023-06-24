@@ -2,7 +2,7 @@
 import iButton from "./button/index";
 import iInput from "./input/index";
 import mTable from "./table/index";
-import mSelect from "./select/index";
+import iSelect from "./select/index";
 import mDropdown from "./dropDown/index";
 import mRadio from "./radio/index";
 import mCheckbox from "./checkbox/index";
@@ -37,7 +37,7 @@ const components = [
   iButton,
   iInput,
   mTable,
-  mSelect,
+  iSelect,
   mDropdown,
   mRadio,
   mCheckbox,
@@ -88,7 +88,7 @@ export {
   iButton,
   iInput,
   mTable,
-  mSelect,
+  iSelect,
   mDropdown,
   mRadio,
   mCheckbox,
