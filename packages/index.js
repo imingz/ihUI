@@ -9,7 +9,7 @@ import iCheckbox from "./checkbox/index";
 import Message from "./message/index";
 import Confirm from "./confirm/index";
 import iModal from "./modal/index";
-import mDrawer from "./drawer/index";
+import iDrawer from "./drawer/index";
 import Loading from "./loading/index";
 import iSwitch from "./switch/index";
 import iTree from "./tree/index";
@@ -42,7 +42,7 @@ const components = [
   iRadio,
   iCheckbox,
   iModal,
-  mDrawer,
+  iDrawer,
   iSwitch,
   iTree,
   iOptfile,
@@ -95,7 +95,7 @@ export {
   Message,
   Confirm,
   iModal,
-  mDrawer,
+  iDrawer,
   Loading,
   iSwitch,
   iTree,

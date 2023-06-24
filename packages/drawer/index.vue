@@ -27,7 +27,7 @@
 </template>
 <script>
 export default{
-  name:"mDrawer"
+  name:"iDrawer"
 }
 </script>
 <script setup>
