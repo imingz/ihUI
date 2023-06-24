@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
-  <m-space>
+  <i-space>
     <i-button @click="openInfo">文本状态</i-button>
     <i-button @click="openSuccess">成功状态</i-button>
     <i-button @click="openWarn">警告状态</i-button>
     <i-button @click="openError">错误状态</i-button>
     <i-button @click="openCustom">自定义</i-button>
-  </m-space>
+  </i-space>
 </template>
 
 <!-- js -->

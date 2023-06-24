@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
-  <m-space>
+  <i-space>
     <i-button @click="openMsg1">消息提示</i-button>
     <i-button @click="openMsg2">5秒后消失</i-button>
-  </m-space>
+  </i-space>
 </template>
 
 <!-- js -->

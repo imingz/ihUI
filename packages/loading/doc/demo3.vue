@@ -1,8 +1,8 @@
 <!-- html -->
 <template>
-  <m-space>
+  <i-space>
     <i-button @click="openLoading">点击加载</i-button>
-  </m-space>
+  </i-space>
   <div id="loadingTextBox">
     <m-table :options="options" size="small">
       <template #action>

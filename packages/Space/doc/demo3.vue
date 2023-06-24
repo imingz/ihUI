@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space :size="[10, 10]">
+  <i-space :size="[10, 10]">
     <i-button>按钮</i-button>
     <i-button>按钮</i-button>
     <i-button>按钮</i-button>
@@ -27,5 +27,5 @@
     <i-button>按钮</i-button>
     <i-button>按钮</i-button>
     <i-button>按钮</i-button>
-  </m-space>
+  </i-space>
 </template>

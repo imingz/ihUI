@@ -1,5 +1,5 @@
 <template>
-  <m-space :size="[0, 60]">
+  <i-space :size="[0, 60]">
     <m-badge :value="99" type="primary">
       <i-button>默认</i-button>
     </m-badge>
@@ -18,5 +18,5 @@
     <m-badge :value="50" isDot>
       <i-button>小红点</i-button>
     </m-badge>
-  </m-space>
+  </i-space>
 </template>

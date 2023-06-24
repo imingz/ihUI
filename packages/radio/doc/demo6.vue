@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
+  <i-space :inline="false">
     <m-radio
       v-model="radioVal"
       :options="radioOptions"
@@ -11,7 +11,7 @@
       :options="radioOptions"
       customColor="#25B0F8"
     ></m-radio>
-  </m-space>
+  </i-space>
 </template>
 
 <!-- js -->
