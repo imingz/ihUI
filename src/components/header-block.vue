@@ -3,12 +3,18 @@
     <div class="logoBox">
       <img src="../assets/logo.png" alt="ih-ui" @click="toHome" />
       <i-badge type="primary" value="V 0.8.8">
-        <a href="javascript:;" @click="toHome">Mzl UI</a>
+        <a href="javascript:;" @click="toHome">ih UI</a>
       </i-badge>
     </div>
     <div class="toolsBox">
-      <a href="javascript:;" v-for="(item, index) in tools" :key="index" :class="{ active: tabIndex == index }"
-        @click="pageView(item, index)">{{ item.name }}</a>
+      <a
+        href="javascript:;"
+        v-for="(item, index) in tools"
+        :key="index"
+        :class="{ active: tabIndex == index }"
+        @click="pageView(item, index)"
+        >{{ item.name }}</a
+      >
     </div>
   </div>
 </template>
@@ -18,11 +24,9 @@ import { useRouter } from "vue-router";
 import { reactive, ref, onMounted } from "vue";
 const { push, currentRoute } = useRouter();
 const toHome = () => push("/");
-const fullPath = ref(currentRoute.value.fullPath)
+const fullPath = ref(currentRoute.value.fullPath);
 const tabIndex = ref(
-  fullPath == "/ihui"
-    ? 1
-    : sessionStorage.getItem("tabIndex") || 0
+  fullPath == "/ihui" ? 1 : sessionStorage.getItem("tabIndex") || 0
 );
 
 const state = reactive({
@@ -46,7 +50,7 @@ const state = reactive({
     {
       name: "问题反馈",
       path: "open",
-      url: "https://github.com/Ningstyle/ih-ui/issues",
+      url: "https://github.com/mingz-wang/ihUI/issues",
     },
   ],
 });
