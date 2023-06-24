@@ -1,7 +1,7 @@
 <!-- html -->
 <template>
 <div class="ih-style">
-    <m-progress
+    <i-progress
       :percent="percent"
       progressType="dashboard"
       :circleSize="120"
@@ -9,8 +9,8 @@
       currentStatus="SUCCESS"
       isShowText
     >
-    </m-progress>
-    <m-progress
+    </i-progress>
+    <i-progress
       :percent="percent"
       progressType="dashboard"
       :circleSize="150"
@@ -18,8 +18,8 @@
       currentStatus="OTHER"
       isShowText
     >
-    </m-progress>
-    <m-progress
+    </i-progress>
+    <i-progress
       :percent="percent"
       progressType="dashboard"
       :circleSize="200"
@@ -27,7 +27,7 @@
       currentStatus="FAIL"
       isShowText
     >
-    </m-progress>
+    </i-progress>
 </div>
 </template>
 <script setup>

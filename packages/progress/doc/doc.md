@@ -20,7 +20,7 @@ import preview from '@/components/preview.vue'
 ## 基本使用
 
 #### 直线进度条
-##### m-progress组件设置percent属性表示进度条百分比，默认为0，取值范围需0~100之间。
+##### i-progress组件设置percent属性表示进度条百分比，默认为0，取值范围需0~100之间。
 
 <br/>
 <div class="componetnsBox">

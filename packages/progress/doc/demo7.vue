@@ -1,7 +1,7 @@
 <!-- html -->
 <template>
   <div class="ih-style">
-    <m-progress
+    <i-progress
       :percent="20"
       progressType="circle"
       :circleSize="120"
@@ -9,8 +9,8 @@
       roundCorner
       :progressSpeed="1"
       :isAnimation="isStart"
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="40"
       bgColor="#505050"
       progressType="circle"
@@ -19,8 +19,8 @@
       roundCorner
       :progressSpeed="2"
       :isAnimation="isStart"
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="60"
       currentStatus="OTHER"
       progressType="circle"
@@ -29,8 +29,8 @@
       roundCorner
       :progressSpeed="3"
       :isAnimation="isStart"
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="90"
       currentStatus="FAIL"
       progressType="circle"
@@ -39,8 +39,8 @@
       isShowText
       :progressSpeed="4"
       :isAnimation="isStart"
-    ></m-progress>
-    <m-progress
+    ></i-progress>
+    <i-progress
       :percent="100"
       currentStatus="SUCCESS"
       progressType="circle"
@@ -48,7 +48,7 @@
       :circleHeight="10"
       isShowText
     >
-    </m-progress>
+    </i-progress>
   </div>
   <i-button type="primary" @click="startMethod" round>开始 / 暂停</i-button>
 </template>

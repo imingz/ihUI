@@ -27,7 +27,7 @@ import iMenu from "./menu/index";
 import iTabs from "./tabs/index";
 import iSpace from "./Space/index";
 import mPopover from './popover/index';
-import mProgress from './progress/index'
+import iProgress from './progress/index'
 import iColorPicker from './colorPicker/index'
 import mBreadcrumb from './breadcrumb/index'
 import iBadge from './badge/index'
@@ -58,7 +58,7 @@ const components = [
   iTabs,
   iSpace,
   mPopover,
-  mProgress,
+  iProgress,
   iColorPicker,
   mBreadcrumb,
   iBadge,
@@ -113,7 +113,7 @@ export {
   iTabs,
   mPopover,
   iSpace,
-  mProgress,
+  iProgress,
   iColorPicker,
   mBreadcrumb,
   iBadge,
