@@ -4,17 +4,17 @@ export default [
     'title-en': 'Quick start',
     list: [
       // {'title-cn':'使用须知','title-en':'Usage notice','path':'/ihui'},
-      {
-        'title-cn': '参与贡献',
-        'title-en': 'Participation and contribution',
-        path: '/ihui'
-      },
+      // {
+      //   'title-cn': '参与贡献',
+      //   'title-en': 'Participation and contribution',
+      //   path: '/ihui'
+      // },
       // {'title-cn':'支持Mzl-UI','title-en':'Participation and contribution','path':'/ihui/support'},
-      {
-        'title-cn': '更新日志',
-        'title-en': 'Participation and contribution',
-        path: '/ihui/updatelog'
-      },
+      // {
+      //   'title-cn': '更新日志',
+      //   'title-en': 'Participation and contribution',
+      //   path: '/ihui/updatelog'
+      // },
       {
         'title-cn': '安装使用',
         'title-en': 'Install and use',
