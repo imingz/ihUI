@@ -31,7 +31,7 @@ import iProgress from './progress/index'
 import iColorPicker from './colorPicker/index'
 import mBreadcrumb from './breadcrumb/index'
 import iBadge from './badge/index'
-import mDivider from './divider/index'
+import iDivider from './divider/index'
 //存在所有组件
 const components = [
   iButton,
@@ -62,7 +62,7 @@ const components = [
   iColorPicker,
   mBreadcrumb,
   iBadge,
-  mDivider
+  iDivider
 ];
 const install = (app) => {
   components.forEach((i) => {
@@ -117,6 +117,6 @@ export {
   iColorPicker,
   mBreadcrumb,
   iBadge,
-  mDivider
+  iDivider
 }
 export default ihUi

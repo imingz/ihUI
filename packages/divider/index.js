@@ -1,5 +1,5 @@
-import mDivider from './index.vue'
-mDivider.install = app => {
-  app.component(mDivider.name, mDivider)
+import iDivider from './index.vue'
+iDivider.install = app => {
+  app.component(iDivider.name, iDivider)
 } 
-export default mDivider
+export default iDivider
