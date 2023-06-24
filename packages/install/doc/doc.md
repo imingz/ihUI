@@ -48,14 +48,14 @@ app.mount("#app");
 
 ```javascript
 /*js*/
-import { iButton, mInput } from "ih-ui";
+import { iButton, iInput } from "ih-ui";
 ```
 
 <br/>
 
 ```html
 <i-button>点击</i-button>
-<m-input v-model="value" placeholder="基本使用"></m-input>
+<i-input v-model="value" placeholder="基本使用"></i-input>
 ```
 
 <br/>

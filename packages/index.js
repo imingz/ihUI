@@ -1,6 +1,6 @@
 //导入组件
 import iButton from "./button/index";
-import mInput from "./input/index";
+import iInput from "./input/index";
 import mTable from "./table/index";
 import mSelect from "./select/index";
 import mDropdown from "./dropDown/index";
@@ -35,7 +35,7 @@ import mDivider from './divider/index'
 //存在所有组件
 const components = [
   iButton,
-  mInput,
+  iInput,
   mTable,
   mSelect,
   mDropdown,
@@ -86,7 +86,7 @@ export {
   install,
   // 以下是具体的组件列表
   iButton,
-  mInput,
+  iInput,
   mTable,
   mSelect,
   mDropdown,

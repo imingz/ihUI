@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-input v-model="value1" disabled placeholder="禁用状态"></m-input>
+  <i-input v-model="value1" disabled placeholder="禁用状态"></i-input>
 </template>
 
 <!-- js -->

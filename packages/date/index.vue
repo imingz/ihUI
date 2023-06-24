@@ -1,7 +1,7 @@
 <template>
   <div :class="['ih-date-box','ih-date-default']" v-click-outside>
     <div class="ih-date-inner-box">
-      <m-input v-model="dateVal" leftIcon="m-icon-calendar" @clear="clear" :size="size" :clearable="clearable" readonly :placeholder="placeholders" :disabled="disabled" :focusColor="customActiveColor" :form="form"></m-input>
+      <i-input v-model="dateVal" leftIcon="m-icon-calendar" @clear="clear" :size="size" :clearable="clearable" readonly :placeholder="placeholders" :disabled="disabled" :focusColor="customActiveColor" :form="form"></i-input>
       <transition name="slide-fade">
         <div :class="['ih-date-option',`ih-date-option-${size}`,customClass]" v-if="show">
           <div class="ih-date-fipx-box">
@@ -114,7 +114,7 @@ export default{
 </script>
 <script setup>
 import { ref,onMounted } from 'vue'
-import mInput from '../input';
+import iInput from '../input';
 const emit = defineEmits(['update:modelValue','clear','open','close','change'])
 const props = defineProps({
   modelValue:String|Number,

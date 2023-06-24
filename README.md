@@ -29,7 +29,7 @@ app.mount('#app')
 ```
 ### 按需引用
 ```
-import { iButton, mInput } from 'ih-ui'
+import { iButton, iInput } from 'ih-ui'
 ```
 ### 愉快开始
 ```

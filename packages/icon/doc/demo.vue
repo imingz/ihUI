@@ -1,7 +1,7 @@
 <template>
 	<p class="titlep">所有图标</p>
 	<div class="">
-		<m-input v-model="keywords" leftIcon="m-icon-search" placeholder="输入图标关键词进行搜索" @input="search"></m-input>
+		<i-input v-model="keywords" leftIcon="m-icon-search" placeholder="输入图标关键词进行搜索" @input="search"></i-input>
 	</div>
 	<div class="iconListBox">
 		<ul>

@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
   <i-space>
-    <m-input v-model="value1"  placeholder="默认大小"></m-input>
-    <m-input v-model="value2"  placeholder="小的" size="small"></m-input>
-    <m-input v-model="value3"  placeholder="更小的" size="mini"></m-input>
+    <i-input v-model="value1"  placeholder="默认大小"></i-input>
+    <i-input v-model="value2"  placeholder="小的" size="small"></i-input>
+    <i-input v-model="value3"  placeholder="更小的" size="mini"></i-input>
   </i-space>
 </template>
 
