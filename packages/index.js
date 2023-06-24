@@ -23,7 +23,7 @@ import iDate from "./date/index";
 import iBacktop from "./backtop/index";
 import iCollapse from "./collapse/index";
 import iCollapseItem from "./collapse/item/index";
-import mMenu from "./menu/index";
+import iMenu from "./menu/index";
 import mTabs from "./tabs/index";
 import iSpace from "./Space/index";
 import mPopover from './popover/index';
@@ -54,7 +54,7 @@ const components = [
   iBacktop,
   iCollapse,
   iCollapseItem,
-  mMenu,
+  iMenu,
   mTabs,
   iSpace,
   mPopover,
@@ -109,7 +109,7 @@ export {
   iBacktop,
   iCollapse,
   iCollapseItem,
-  mMenu,
+  iMenu,
   mTabs,
   mPopover,
   iSpace,

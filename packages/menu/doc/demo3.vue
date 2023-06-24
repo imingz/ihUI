@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-menu
+  <i-menu
     :options="menuOptions"
     :theme="{
       bgColor: '#0e80eb',
@@ -8,7 +8,7 @@
       color: '#fff',
       activeColor: '#000',
     }"
-  ></m-menu>
+  ></i-menu>
 </template>
 
 <!-- js -->

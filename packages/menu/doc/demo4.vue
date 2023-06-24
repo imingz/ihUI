@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
-  <m-menu :options="menuOptions">
+  <i-menu :options="menuOptions">
     <i-dropdown
       title="下拉菜单"
       :options="dorpoptions"
       size="small"
     ></i-dropdown>
-  </m-menu>
+  </i-menu>
 </template>
 
 <!-- js -->
