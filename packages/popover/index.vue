@@ -34,7 +34,7 @@
 </template>
 <script>
 export default {
-  name: "mPopover",
+  name: "iPopover",
 };
 </script>
 <script setup>

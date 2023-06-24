@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-popover v-model="visible" trigger="manual" placement="top-start">
+  <i-popover v-model="visible" trigger="manual" placement="top-start">
     <p>这是一段内容这是一段内容确定删除吗？</p>
     <div style="text-align: right; margin: 0">
       <i-button size="mini" type="text" @click="visible = false">取消</i-button>
@@ -11,7 +11,7 @@
     <template #reference>
       <i-button size="medium" @click="handler">删除</i-button>
     </template>
-  </m-popover>
+  </i-popover>
 </template>
 <script setup>
 import { ref, reactive, getCurrentInstance, onMounted, computed } from "vue";

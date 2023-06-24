@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-popover
+  <i-popover
     trigger="click"
     placement="right"
     width="600"
@@ -42,7 +42,7 @@
     <template #reference>
       <i-button size="medium">click激活</i-button>
     </template>
-  </m-popover>
+  </i-popover>
 </template>
 
 <!-- js -->

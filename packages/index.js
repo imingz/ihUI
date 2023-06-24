@@ -26,7 +26,7 @@ import iCollapseItem from "./collapse/item/index";
 import iMenu from "./menu/index";
 import iTabs from "./tabs/index";
 import iSpace from "./Space/index";
-import mPopover from './popover/index';
+import iPopover from './popover/index';
 import iProgress from './progress/index'
 import iColorPicker from './colorPicker/index'
 import mBreadcrumb from './breadcrumb/index'
@@ -57,7 +57,7 @@ const components = [
   iMenu,
   iTabs,
   iSpace,
-  mPopover,
+  iPopover,
   iProgress,
   iColorPicker,
   mBreadcrumb,
@@ -111,7 +111,7 @@ export {
   iCollapseItem,
   iMenu,
   iTabs,
-  mPopover,
+  iPopover,
   iSpace,
   iProgress,
   iColorPicker,
