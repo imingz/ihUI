@@ -1,5 +1,5 @@
-import mSwitch from './index.vue';
-mSwitch.install = app => {
-  app.component(mSwitch.name, mSwitch)
+import iSwitch from './index.vue';
+iSwitch.install = app => {
+  app.component(iSwitch.name, iSwitch)
 } 
-export default mSwitch
+export default iSwitch

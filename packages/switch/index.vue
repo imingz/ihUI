@@ -11,7 +11,7 @@
 <script>
 import { computed, onMounted, reactive, ref, watchEffect } from 'vue'
 export default{
-  name:"mSwitch"
+  name:"iSwitch"
 }
 </script>
 <script setup>

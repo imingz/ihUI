@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-switch v-model="switchVal" :showTipsText="true"></m-switch>
+  <i-switch v-model="switchVal" :showTipsText="true"></i-switch>
 </template>
 
 <!-- js -->

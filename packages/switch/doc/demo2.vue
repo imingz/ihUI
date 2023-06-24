@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-switch v-model="switchVal" disabled></m-switch>
+  <i-switch v-model="switchVal" disabled></i-switch>
 </template>
 
 <!-- js -->

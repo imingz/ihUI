@@ -11,7 +11,7 @@ import Confirm from "./confirm/index";
 import iModal from "./modal/index";
 import mDrawer from "./drawer/index";
 import Loading from "./loading/index";
-import mSwitch from "./switch/index";
+import iSwitch from "./switch/index";
 import mTree from "./tree/index";
 import mOptfile from "./optfile/index";
 import iTextarea from "./textarea/index";
@@ -43,7 +43,7 @@ const components = [
   iCheckbox,
   iModal,
   mDrawer,
-  mSwitch,
+  iSwitch,
   mTree,
   mOptfile,
   iTextarea,
@@ -97,7 +97,7 @@ export {
   iModal,
   mDrawer,
   Loading,
-  mSwitch,
+  iSwitch,
   mTree,
   mOptfile,
   iTextarea,

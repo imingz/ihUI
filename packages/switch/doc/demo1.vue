@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-switch v-model="switchVal" @change="switchChange"></m-switch>
+  <i-switch v-model="switchVal" @change="switchChange"></i-switch>
 </template>
 
 <!-- js -->

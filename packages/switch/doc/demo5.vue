@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-switch
+  <i-switch
     v-model="switchVal"
     :showTipsText="true"
     closeColor="#ec3437"
     activeColor="#09b63d"
-  ></m-switch>
+  ></i-switch>
 </template>
 
 <!-- js -->
