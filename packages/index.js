@@ -17,7 +17,7 @@ import iOptfile from "./optfile/index";
 import iTextarea from "./textarea/index";
 import iRow from "./mrow/index";
 import iCol from "./mcol/index";
-import mPagination from "./pagination/index";
+import iPagination from "./pagination/index";
 import $ih from "./function/index";
 import mDate from "./date/index";
 import iBacktop from "./backtop/index";
@@ -49,7 +49,7 @@ const components = [
   iTextarea,
   iRow,
   iCol,
-  mPagination,
+  iPagination,
   mDate,
   iBacktop,
   iCollapse,
@@ -103,7 +103,7 @@ export {
   iTextarea,
   iRow,
   iCol,
-  mPagination,
+  iPagination,
   $ih,
   mDate,
   iBacktop,

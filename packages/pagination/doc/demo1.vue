@@ -1,4 +1,4 @@
 <!-- html -->
 <template>
-  <m-pagination :total="100" :current="1" :pageSize="10"></m-pagination>
+  <i-pagination :total="100" :current="1" :pageSize="10"></i-pagination>
 </template>

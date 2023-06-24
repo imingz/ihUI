@@ -23,7 +23,7 @@
 </template>
 <script>
 export default{
-  name:"mPagination"
+  name:"iPagination"
 }
 </script>
 <script setup>
