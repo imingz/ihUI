@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-tree
+  <i-tree
     :options="treeOptions"
     multiple
     :defaultSelectNodes="['0-1', '0-2-1-0']"
-  ></m-tree>
+  ></i-tree>
 </template>
 
 <!-- js -->

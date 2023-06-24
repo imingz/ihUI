@@ -12,7 +12,7 @@ import iModal from "./modal/index";
 import mDrawer from "./drawer/index";
 import Loading from "./loading/index";
 import iSwitch from "./switch/index";
-import mTree from "./tree/index";
+import iTree from "./tree/index";
 import iOptfile from "./optfile/index";
 import iTextarea from "./textarea/index";
 import iRow from "./mrow/index";
@@ -44,7 +44,7 @@ const components = [
   iModal,
   mDrawer,
   iSwitch,
-  mTree,
+  iTree,
   iOptfile,
   iTextarea,
   iRow,
@@ -98,7 +98,7 @@ export {
   mDrawer,
   Loading,
   iSwitch,
-  mTree,
+  iTree,
   iOptfile,
   iTextarea,
   iRow,
