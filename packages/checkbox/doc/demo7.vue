@@ -1,16 +1,16 @@
 <!-- html -->
 <template>
   <i-space :inline="false">
-    <m-checkbox
+    <i-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
       custoiColor="#09b63d"
-    ></m-checkbox>
-    <m-checkbox
+    ></i-checkbox>
+    <i-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
       custoiColor="#25B0F8"
-    ></m-checkbox>
+    ></i-checkbox>
   </i-space>
 </template>
 

@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-checkbox
+  <i-checkbox
     v-model="checkboxVal"
     :options="checkOptions"
     :inline="false"
-  ></m-checkbox>
+  ></i-checkbox>
 </template>
 
 <!-- js -->

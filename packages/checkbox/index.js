@@ -1,5 +1,5 @@
-import mCheckbox from './index.vue';
-mCheckbox.install = app => {
-  app.component(mCheckbox.name, mCheckbox)
+import iCheckbox from './index.vue';
+iCheckbox.install = app => {
+  app.component(iCheckbox.name, iCheckbox)
 } 
-export default mCheckbox
+export default iCheckbox

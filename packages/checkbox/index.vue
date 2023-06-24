@@ -8,7 +8,7 @@
 </template>
 <script>
 export default{
-  name:"mCheckbox"
+  name:"iCheckbox"
 }
 </script>
 <script setup>

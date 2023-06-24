@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-checkbox
+  <i-checkbox
     v-model="checkboxVal"
     :options="checkOptions"
     labelFiled="name"
     valueFiled="id"
-  ></m-checkbox>
+  ></i-checkbox>
 </template>
 
 <!-- js -->
