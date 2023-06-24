@@ -20,7 +20,7 @@ import mCol from "./mcol/index";
 import mPagination from "./pagination/index";
 import $ih from "./function/index";
 import mDate from "./date/index";
-import mBacktop from "./backtop/index";
+import iBacktop from "./backtop/index";
 import mCollapse from "./collapse/index";
 import mCollapseItem from "./collapse/item/index";
 import mMenu from "./menu/index";
@@ -51,7 +51,7 @@ const components = [
   mCol,
   mPagination,
   mDate,
-  mBacktop,
+  iBacktop,
   mCollapse,
   mCollapseItem,
   mMenu,
@@ -106,7 +106,7 @@ export {
   mPagination,
   $ih,
   mDate,
-  mBacktop,
+  iBacktop,
   mCollapse,
   mCollapseItem,
   mMenu,

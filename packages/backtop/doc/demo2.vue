@@ -2,7 +2,7 @@
 <template>
   <!-- html -->
   <div class="testBacktop" style="height: 400px; overflow-y: scroll"></div>
-  <m-backtop target=".testBacktop"></m-backtop>
+  <i-backtop target=".testBacktop"></i-backtop>
 </template>
 
 <!-- js -->
