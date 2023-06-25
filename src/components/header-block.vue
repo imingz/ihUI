@@ -37,16 +37,16 @@ const state = reactive({
     },
     {
       name: "组件",
-      path: "/ihui",
+      path: "/ihui/install",
     },
     // {
     //   name:"支持ihUI",
     //   path:'open',
     // },
-    {
-      name: "更新日志",
-      path: "/ihui/updatelog",
-    },
+    // {
+    //   name: "更新日志",
+    //   path: "/ihui/updatelog",
+    // },
     {
       name: "问题反馈",
       path: "open",
