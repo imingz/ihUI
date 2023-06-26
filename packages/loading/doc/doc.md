@@ -39,14 +39,14 @@ import preview from '@/components/preview.vue'
 </div>
 <preview compName="loading" demoName="demo3"/>
 
-## 自定义加载图片
+<!-- ## 自定义加载图片
 
 #### 可通过设置 _img_ 来自定义加载图片，自定义后 _icon_ 将失效。
 
 <div class="componetnsBox">
   <demo4/>
 </div>
-<preview compName="loading" demoName="demo4"/>
+<preview compName="loading" demoName="demo4"/> -->
 
 ## 更多自定义配置项
 

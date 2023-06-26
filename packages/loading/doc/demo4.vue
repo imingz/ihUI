@@ -9,7 +9,7 @@
   const openLoading = () => {
     Loading.show({
       text:"正在努力加载中...",
-      img:"https://ihui.codeym.com/logo.png"
+      // img:"https://ihui.codeym.com/logo.png"
     })
     setTimeout(()=>{
       Loading.hide()
