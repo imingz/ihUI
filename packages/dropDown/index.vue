@@ -1,7 +1,7 @@
 <template>
   <div :class="[`ih-dropdown-${size}`,customClass]" @mouseover="mouseover" @mouseleave="mouseleave" @click="handleClick">
     <div :class="[`ih-dropdown-${size}-menu`]">
-			<slot name="Img"></slot><span>{{title}}</span> <i class="m-icon-arrow-down"></i>
+			<slot name="Img"></slot><span>{{title}}</span> <i class="i-icon-arrow-down"></i>
 		</div>
 		<transition name="slide-fade">
 			<div class="ih-dropdown-item" v-if="isShow">

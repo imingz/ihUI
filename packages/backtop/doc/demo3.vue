@@ -2,7 +2,7 @@
 <template>
   <i-backtop target=".ihuirightView" :bottom="100">
     <span class="backtop">
-      <i class="m-icon-direction-up"></i>
+      <i class="i-icon-direction-up"></i>
     </span>
   </i-backtop>
 </template>

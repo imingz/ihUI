@@ -1,7 +1,7 @@
 <template>
   <div class="pre-code-box">
     <span class="m-copy" v-if="showCode" @click="copyCode"
-      ><i class="m-icon-copy"></i
+      ><i class="i-icon-copy"></i
     ></span>
     <transition name="slide-fade">
       <pre
@@ -12,7 +12,7 @@
     </transition>
     <div class="showCode" @click="showOrhideCode">
       <span>{{ showCode ? "隐藏代码" : "显示代码" }}</span>
-      <i class="m-icon-code"></i>
+      <i class="i-icon-code"></i>
     </div>
     <textarea id="inputCopy" />
   </div>

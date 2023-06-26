@@ -1,17 +1,17 @@
 <template>
   <div class="tabs_header " :class="typeClass">
     <div class="tab-nav-prev" v-if="scrollable" @click="scrollPrev">
-      <i class="m-icon-arrow-left-bold"></i>
+      <i class="i-icon-arrow-left-bold"></i>
     </div>
     <div
       class="tab_add_btn"
       v-if="props.addable"
       @click="tabsContext.emits('onTabAdd')"
     >
-      <i class="m-icon-add-bold add_icon"></i>
+      <i class="i-icon-add-bold add_icon"></i>
     </div>
     <div class="tab-nav-next" v-if="scrollable" @click="scrollNext">
-      <i class="m-icon-arrow-right-bold"></i>
+      <i class="i-icon-arrow-right-bold"></i>
     </div>
     <div
       class="tabs_nav_scroll"
@@ -114,7 +114,7 @@ const navWrap_offset = ref(0);
 
 function getLabelNode(pane) {
   const close_btn = h("i", {
-    class: { "m-icon-close": true, close_btn: true },
+    class: { "i-icon-close": true, close_btn: true },
     style: { display: props.type==="line"||props.type===""||pane.active ? "inline-block" : "" },
     onClick: (event) => {
       tabsContext.emits("onTabRemove", pane.props.name || pane.index);

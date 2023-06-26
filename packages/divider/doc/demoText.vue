@@ -4,7 +4,7 @@
         <i-divider position="left">Rabindranath Tagore</i-divider>
         <span>There little thoughts are the rustle of leaves; they have their whisper of joy in my mind.</span>
         <i-divider position="center">
-            <i class="m-icon-collection_fill"></i>
+            <i class="i-icon-collection_fill"></i>
         </i-divider>
         <span>There little thoughts are the rustle of leaves; they have their whisper of joy in my mind.</span>
         <i-divider position="right">Rabindranath Tagore</i-divider>

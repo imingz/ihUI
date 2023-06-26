@@ -1,7 +1,7 @@
 <template>
   <div :class="['ih-date-box','ih-date-default']" v-click-outside>
     <div class="ih-date-inner-box">
-      <i-input v-model="dateVal" leftIcon="m-icon-calendar" @clear="clear" :size="size" :clearable="clearable" readonly :placeholder="placeholders" :disabled="disabled" :focusColor="customActiveColor" :form="form"></i-input>
+      <i-input v-model="dateVal" leftIcon="i-icon-calendar" @clear="clear" :size="size" :clearable="clearable" readonly :placeholder="placeholders" :disabled="disabled" :focusColor="customActiveColor" :form="form"></i-input>
       <transition name="slide-fade">
         <div :class="['ih-date-option',`ih-date-option-${size}`,customClass]" v-if="show">
           <div class="ih-date-fipx-box">
@@ -9,10 +9,10 @@
             <div class="ih-date-date-box">
               <div :class="['ih-date-header',`ih-date-header-${size}`]">
                 <div class="ih-date-btn-left">
-                  <span v-if="monthShow"><i class="m-icon-arrow-double-left" @click="onlyYearPrev"></i></span>
-                  <span v-if="!dateShow&&!monthShow"><i class="m-icon-arrow-double-left" @click="getPrevYear"></i></span>
-                  <span v-if="dateShow"><i class="m-icon-arrow-double-left" @click="prevYear"></i></span>
-                  <span v-if="dateShow&&type=='date'" class="ih-i-rotate"><i class="m-icon-arrow-right" @click="prevMonth"></i></span>
+                  <span v-if="monthShow"><i class="i-icon-arrow-double-left" @click="onlyYearPrev"></i></span>
+                  <span v-if="!dateShow&&!monthShow"><i class="i-icon-arrow-double-left" @click="getPrevYear"></i></span>
+                  <span v-if="dateShow"><i class="i-icon-arrow-double-left" @click="prevYear"></i></span>
+                  <span v-if="dateShow&&type=='date'" class="ih-i-rotate"><i class="i-icon-arrow-right" @click="prevMonth"></i></span>
                 </div>
                 <div class="ih-date-btn-center">
                   <span class="chooseYear" @click="chooseYear" v-show="dateShow&&type=='date'">{{selDate.year}} 年 </span>
@@ -21,10 +21,10 @@
                   <span v-show="!dateShow&&!monthShow||type=='year'">{{yearList[0]+' 年 - '+yearList[yearList.length-1]+' 年'}}</span>
                 </div>
                 <div class="ih-date-btn-right">
-                  <span v-if="dateShow&&type=='date'"><i class="m-icon-arrow-right" @click="nextMonth"></i></span>
-                  <span v-if="dateShow"><i class="m-icon-arrow-double-right" @click="nextYear"></i></span>
-                  <span v-if="!dateShow&&!monthShow"><i class="m-icon-arrow-double-right" @click="getNextYear"></i></span>
-                  <span v-if="monthShow"><i class="m-icon-arrow-double-right" @click="onlyYearNext"></i></span>
+                  <span v-if="dateShow&&type=='date'"><i class="i-icon-arrow-right" @click="nextMonth"></i></span>
+                  <span v-if="dateShow"><i class="i-icon-arrow-double-right" @click="nextYear"></i></span>
+                  <span v-if="!dateShow&&!monthShow"><i class="i-icon-arrow-double-right" @click="getNextYear"></i></span>
+                  <span v-if="monthShow"><i class="i-icon-arrow-double-right" @click="onlyYearNext"></i></span>
                 </div>
               </div>
               <div :class="['ih-date-content-box',`ih-date-content-box-${size}`]" v-show="dateShow&&type=='date'">

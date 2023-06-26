@@ -38,7 +38,7 @@
             >
               {{ item[labelFiled] }}
               <i
-                class="iconfont m-icon-select-bold"
+                class="iconfont i-icon-select-bold"
                 v-if="multiple && item.selected"
               ></i>
             </li>
@@ -134,7 +134,7 @@ const fixIcon = reactive({});
 
 // icon class
 const iconClass = computed(() => {
-  return ["select-icon iconfont m-icon-arrow-down"];
+  return ["select-icon iconfont i-icon-arrow-down"];
 });
 
 //根据自定义的组件尺寸适配组件里面的下拉框相对位置以及图标居中

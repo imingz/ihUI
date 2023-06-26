@@ -4,7 +4,7 @@
       <slot v-if="slot['default']"></slot>
       <div class="ih-backtop-default-box" v-else>
         <span class="default-backtop-icon">
-          <i class="m-icon-arrow-up-filling"></i>
+          <i class="i-icon-arrow-up-filling"></i>
         </span>
       </div>
     </div>

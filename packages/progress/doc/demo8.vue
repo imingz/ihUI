@@ -8,7 +8,7 @@
       isShowText
       roundCorner
     >
-     <i-button type="primary" size="mini" leftIcon="m-icon-prompt" round></i-button>
+     <i-button type="primary" size="mini" leftIcon="i-icon-prompt" round></i-button>
     </i-progress>
     <i-progress
       :percent="40"

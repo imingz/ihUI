@@ -18,12 +18,12 @@
     <i-button type="dashed" round>虚线按钮</i-button>
   </i-space>
   <i-space>
-    <i-button leftIcon="m-icon-electronics"></i-button>
-    <i-button type="primary" leftIcon="m-icon-edit"></i-button>
-    <i-button type="success" leftIcon="m-icon-add-circle" disabled></i-button>
-    <i-button type="danger" leftIcon="m-icon-home" disabled></i-button>
-    <i-button type="warning" leftIcon="m-icon-calendar"></i-button>
-    <i-button type="dashed" leftIcon="m-icon-upload"></i-button>
-    <i-button type="text" leftIcon="m-icon-ashbin">删除</i-button>
+    <i-button leftIcon="i-icon-electronics"></i-button>
+    <i-button type="primary" leftIcon="i-icon-edit"></i-button>
+    <i-button type="success" leftIcon="i-icon-add-circle" disabled></i-button>
+    <i-button type="danger" leftIcon="i-icon-home" disabled></i-button>
+    <i-button type="warning" leftIcon="i-icon-calendar"></i-button>
+    <i-button type="dashed" leftIcon="i-icon-upload"></i-button>
+    <i-button type="text" leftIcon="i-icon-ashbin">删除</i-button>
   </i-space>
 </template>

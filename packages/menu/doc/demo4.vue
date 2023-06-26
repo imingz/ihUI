@@ -87,11 +87,11 @@ const state = reactive({
     },
   ],
   dorpoptions: [
-    { label: "下拉菜单", icon: "m-icon-file" },
-    { label: "下拉菜单", icon: "m-icon-keyboard-9" },
-    { label: "下拉菜单", icon: "m-icon-link" },
-    { label: "下拉菜单", icon: "m-icon-file" },
-    { label: "下拉菜单", icon: "m-icon-file" },
+    { label: "下拉菜单", icon: "i-icon-file" },
+    { label: "下拉菜单", icon: "i-icon-keyboard-9" },
+    { label: "下拉菜单", icon: "i-icon-link" },
+    { label: "下拉菜单", icon: "i-icon-file" },
+    { label: "下拉菜单", icon: "i-icon-file" },
   ],
 });
 const { menuOptions, dorpoptions } = state;

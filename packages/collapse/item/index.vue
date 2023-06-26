@@ -2,7 +2,7 @@
   <div class="ih-default-collapse-item-box">
     <div class="ih-collapse-item-title"  @click="togger(this)">
       <span>标题</span>
-      <i class="m-icon-arrow-right" :class="{rotate:boxshow}"></i>
+      <i class="i-icon-arrow-right" :class="{rotate:boxshow}"></i>
     </div>
      <!-- v-show="boxshow" -->
     <transition name="slide-fade">

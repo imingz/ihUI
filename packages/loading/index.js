@@ -5,7 +5,7 @@ import mLoading from './index.vue'
 const obj = reactive({
   show: false,
   text: '加载中...',
-  icon:"m-icon-loading1",
+  icon:"i-icon-loading1",
   img:'',
   target:'body',
   textColor:'#fff',
@@ -23,7 +23,7 @@ const Loading = {
       obj.text =data.text!=undefined?data.text:obj.text
       obj.target =data.target!=undefined?data.target:obj.target
       obj.scrollLock =data.scrollLock!=undefined?data.scrollLock:obj.scrollLock
-      obj.icon = data.icon!=undefined?(data.icon=='m-icon-loading1'||data.icon=='m-icon-loading2'||data.icon=='m-icon-loading3'||data.icon=='m-icon-loading4'||data.icon=='m-icon-loading5'||data.icon=='m-icon-loading6')?data.icon:obj.icon:obj.icon;
+      obj.icon = data.icon!=undefined?(data.icon=='i-icon-loading1'||data.icon=='i-icon-loading2'||data.icon=='i-icon-loading3'||data.icon=='i-icon-loading4'||data.icon=='i-icon-loading5'||data.icon=='i-icon-loading6')?data.icon:obj.icon:obj.icon;
       obj.textColor =data.textColor!=undefined?data.textColor:obj.textColor;
       obj.bgColor =data.bgColor!=undefined?data.bgColor:obj.bgColor
       obj.showIcon =data.showIcon!=undefined?data.showIcon:obj.showIcon;

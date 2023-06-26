@@ -18,7 +18,7 @@
         >
         <i-button
           round
-          icon="m-icon-github"
+          icon="i-icon-github"
           style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
           @click="goGuthub"
           >Github</i-button

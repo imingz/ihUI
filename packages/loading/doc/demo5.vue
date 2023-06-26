@@ -9,7 +9,7 @@
   const openLoading = () => {
     Loading.show({
       text:'正在加载ih-ui...',
-      icon:'m-icon-loading3',
+      icon:'i-icon-loading3',
       scrollLock:true,
       textColor:'#333',
       bgColor:"rgba(248,253,255,.9)",

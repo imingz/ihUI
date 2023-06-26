@@ -33,7 +33,7 @@ const state = reactive({
         type: "String",
         red: "自定义icon图标",
         sel: "参考图标库",
-        def: "m-icon-warning",
+        def: "i-icon-warning",
       },
       {
         attr: "confirmText",

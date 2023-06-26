@@ -23,14 +23,14 @@
         <template #action="item">
           <i-button
             type="text"
-            leftIcon="m-icon-edit"
+            leftIcon="i-icon-edit"
             size="small"
             :disabled="item.scope.rowIndex % 2 == 0"
             >编辑</i-button
           >
           <i-button
             type="text"
-            leftIcon="m-icon-ashbin"
+            leftIcon="i-icon-ashbin"
             style="color: #ec3437"
             size="small"
             >删除</i-button
@@ -113,10 +113,10 @@ const state = reactive({
     ],
   },
   dorpoptions1: [
-    { label: "放羊娃", icon: "m-icon-file" },
-    { label: "徒弟", icon: "m-icon-keyboard-9" },
-    { label: "农民", icon: "m-icon-link" },
-    { label: "妖精", icon: "m-icon-file" },
+    { label: "放羊娃", icon: "i-icon-file" },
+    { label: "徒弟", icon: "i-icon-keyboard-9" },
+    { label: "农民", icon: "i-icon-link" },
+    { label: "妖精", icon: "i-icon-file" },
   ],
 });
 const dropchange1 = (item, index) => {

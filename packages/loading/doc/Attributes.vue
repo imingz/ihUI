@@ -15,7 +15,7 @@ const state = reactive({
     ],
     datas:[
       {attr:'text',type:'String',red:'加载文字',sel:'——',def:"加载中..."},
-        {attr:'icon',type:'String',red:'加载状态图标',sel:'m-icon-loading1 / m-icon-loading2 / m-icon-loading3 / m-icon-loading4 / m-icon-loading5 / m-icon-loading6',def:"m-icon-loading1"},
+        {attr:'icon',type:'String',red:'加载状态图标',sel:'i-icon-loading1 / i-icon-loading2 / i-icon-loading3 / i-icon-loading4 / i-icon-loading5 / i-icon-loading6',def:"i-icon-loading1"},
         {attr:'img',type:'String',red:'自定义加载图片，设置后icon将失效',sel:'——',def:"——"},
         {attr:'target',type:'String',red:'绑定区域元素（class或id）,默认body不需要传',sel:'——',def:"body"},
         {attr:'textColor',type:'String',red:'文本颜色',sel:'——',def:"#ffffff"},

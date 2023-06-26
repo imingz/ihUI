@@ -7,7 +7,7 @@
     multiple
     size="big"
     drop
-    icon="m-icon-shangchuan"
+    icon="i-icon-shangchuan"
   >
   </i-optfile>
 </template>

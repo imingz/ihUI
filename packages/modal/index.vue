@@ -8,7 +8,7 @@
               <slot name="header" v-if="$slot['header']"></slot>
               <span v-else>{{title}}</span>
             </p>
-            <i class="ih-modal-close m-icon-close" @click="close" v-if="showClose"></i>
+            <i class="ih-modal-close i-icon-close" @click="close" v-if="showClose"></i>
           </div>
           <div class="ih-modal-content">
             <slot name="content"></slot>

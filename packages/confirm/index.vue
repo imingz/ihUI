@@ -4,7 +4,7 @@
       <div class="ih-wrapper">
         <div class="ih-header">
           <h3>{{title}}</h3>
-          <a href="JavaScript:;" class="m-icon-close" @click="cancelCallback" v-if="closeShow"></a>
+          <a href="JavaScript:;" class="i-icon-close" @click="cancelCallback" v-if="closeShow"></a>
         </div>
         <div class="ih-body">
           <i :class="['icon-warning',icon]"></i>
@@ -34,7 +34,7 @@ const props = defineProps({
   },
   icon:{
     type:String,
-    default:"m-icon-warning"
+    default:"i-icon-warning"
   },
   confirmText:{
     type:String,
