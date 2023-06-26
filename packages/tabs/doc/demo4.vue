@@ -14,7 +14,7 @@
 <script setup>
   import {h} from "vue"
   const label=h("span",{},[
-      h("i",{class:"m-icon-folder-close"}),
+      h("i",{class:"i-icon-folder-close"}),
       "选项卡一"
     ])
 </script>

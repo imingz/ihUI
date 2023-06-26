@@ -3,7 +3,7 @@
     <li>
        <!-- :style="{'padding-left':index*15+'px'}" -->
       <div :class="['ih-tree-lable-box',{'label-active':tabIndexs === items.key,'ih-tree-lable-disabled':items.disabled}]" @click.stop.prevent="toggle(items)" :data-key="dataKey" :style="{'padding-left':index*15+'px'}">
-        <span :class="[{rotate:icon!='m-icon-arrow-right-filling'?false:items.isOpen},'ih-tree-lable-span']"><i :class="[{'m-icon-arrow-right-filling':items.children&&items.children.length}]"></i></span>
+        <span :class="[{rotate:icon!='i-icon-arrow-right-filling'?false:items.isOpen},'ih-tree-lable-span']"><i :class="[{'i-icon-arrow-right-filling':items.children&&items.children.length}]"></i></span>
         <span :class="['ih-tree-label-select-span',{'ih-tree-label-select-span-active':items.isSelected,'ih-tree-label-select-span-active-1':items.semiSelected}]" @click.stop="selectClick(items,index)" v-if="multiple"></span>
         <span class="ih-tree-label">{{items.label}}</span>
       </div>
@@ -28,7 +28,7 @@ const props = defineProps({
   index:Number,
   icon:{
     type:String,
-    default:"m-icon-arrow-right-filling"
+    default:"i-icon-arrow-right-filling"
   },
   defaultOpenNodes:{
     type:Array,

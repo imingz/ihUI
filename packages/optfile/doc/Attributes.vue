@@ -61,7 +61,7 @@ const state = reactive({
         type: "String",
         red: "自定义图标",
         sel: "参考图标库",
-        def: "m-icon-add-bold",
+        def: "i-icon-add-bold",
       },
       {
         attr: "showFileList",

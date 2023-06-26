@@ -68,18 +68,18 @@ const isIconClass = computed(() => {
     "iconfont",
     props.leftIcon || props.rightIcon,
     props.localing
-      ? props.leftIcon == "m-icon-loading1" ||
-        props.leftIcon == "m-icon-loading2" ||
-        props.leftIcon == "m-icon-loading3" ||
-        props.leftIcon == "m-icon-loading4" ||
-        props.leftIcon == "m-icon-loading5" ||
-        props.leftIcon == "m-icon-loading6" ||
-        props.rightIcon == "m-icon-loading1" ||
-        props.rightIcon == "m-icon-loading2" ||
-        props.rightIcon == "m-icon-loading3" ||
-        props.rightIcon == "m-icon-loading4" ||
-        props.rightIcon == "m-icon-loading5" ||
-        props.rightIcon == "m-icon-loading6"
+      ? props.leftIcon == "i-icon-loading1" ||
+        props.leftIcon == "i-icon-loading2" ||
+        props.leftIcon == "i-icon-loading3" ||
+        props.leftIcon == "i-icon-loading4" ||
+        props.leftIcon == "i-icon-loading5" ||
+        props.leftIcon == "i-icon-loading6" ||
+        props.rightIcon == "i-icon-loading1" ||
+        props.rightIcon == "i-icon-loading2" ||
+        props.rightIcon == "i-icon-loading3" ||
+        props.rightIcon == "i-icon-loading4" ||
+        props.rightIcon == "i-icon-loading5" ||
+        props.rightIcon == "i-icon-loading6"
         ? "ih-icon-loading"
         : ""
       : "",

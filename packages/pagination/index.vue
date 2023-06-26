@@ -4,13 +4,13 @@
       <div class="ih-pagination-pagebox">
         <span class="ih-total" v-if="showTotal">共 {{total}} 条</span>
         <span :class="['ih-prev-text-text',{'ih-prev-text-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText!=''">{{prevText}}</span>
-        <span :class="['ih-prev-text ih-text-box',{'ih-prev-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText==''||prevText==undefined"><i class="m-icon-arrow-left-bold"></i></span>
+        <span :class="['ih-prev-text ih-text-box',{'ih-prev-text-disabled':currentPage<=1}]" @click="prevChange" v-if="prevText==''||prevText==undefined"><i class="i-icon-arrow-left-bold"></i></span>
         <div class="ih-block-box" :style="{'width':(pageSize<=10&&Math.ceil(total/pageSize)<=10)?'auto':((size=='small'?32:36)*maxSize+'px')}">
           <div class="ih-block-margin-box" :style="{'width':(pageSize<=10&&Math.ceil(total/pageSize)<=10)?'auto':((size=='small'?32:36)*Math.ceil(total/pageSize)+'px'),'margin-left':marginLeft+'px'}">
             <li :class="['ih-block-li',{'ih-block-li-active':currentPage-1==index}]" v-for="(item,index) in Math.ceil(total/pageSize)" :key="index" @click="change(index+1)">{{index+1}}</li>
           </div>
         </div>
-        <span :class="['ih-next-text ih-text-box',{'ih-next-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText==''||nextText==undefined"><i class="m-icon-arrow-right-bold"></i></span>
+        <span :class="['ih-next-text ih-text-box',{'ih-next-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText==''||nextText==undefined"><i class="i-icon-arrow-right-bold"></i></span>
         <span :class="['ih-next-text-text',{'ih-next-text-text-disabled':currentPage>=total/pageSize}]" @click="nextChange" v-if="nextText!=''">{{nextText}}</span>
         <div class="to-next-page-box" v-if="jumper">
           <span>跳至</span>

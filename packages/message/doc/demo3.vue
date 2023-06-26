@@ -40,7 +40,7 @@ const openCustom = () => {
   iMessage({
     type: "custom",
     text: "自定义消息弹窗样式",
-    icon: "m-icon-file-common",
+    icon: "i-icon-file-common",
     textColor: "#000",
     bgColor: "#e19af3",
   });

@@ -9,7 +9,7 @@
               <img :src="item.preImgUrl" alt="">
               <div class="customArea">
                 <slot v-if="$slot['defalut']"></slot>
-                <i class="customIcon m-icon-ashbin" v-else @click="deleteImg(index)"></i>
+                <i class="customIcon i-icon-ashbin" v-else @click="deleteImg(index)"></i>
               </div>
             </div>
           </div>
@@ -31,9 +31,9 @@
         <transition-group name="list">
           <li v-for="(item,index) in FileList" :key="index">
             <div>
-              <i class="file-icon m-icon-file"></i>
+              <i class="file-icon i-icon-file"></i>
               <span>{{item.name}}</span>
-              <i class="delete m-icon-ashbin" @click="deleteImg(index)"></i>
+              <i class="delete i-icon-ashbin" @click="deleteImg(index)"></i>
             </div>
           </li>
         </transition-group>
@@ -68,7 +68,7 @@ const props = defineProps({
   },
   icon:{
     type:String,
-    default:'m-icon-add-bold'
+    default:'i-icon-add-bold'
   },
   fileList:{
     type:Array,

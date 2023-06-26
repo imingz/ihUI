@@ -18,7 +18,7 @@
         >
         <i-button
           round
-          icon="m-icon-github"
+          icon="i-icon-github"
           style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
           @click="goGuthub"
           >Github</i-button
@@ -79,7 +79,12 @@ const state = reactive({
     {
       name: "mingz-wang",
       github: "https://github.com/mingz-wang",
-      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
+      img: "https://avatars.githubusercontent.com/u/57054141?v=4",
+    },
+    {
+      name: "oWeiyi",
+      github: "https://github.com/oWeiyi",
+      img: "https://avatars.githubusercontent.com/u/126678231?v=4",
     },
     {
       name: "Luffy-cy",
@@ -87,14 +92,9 @@ const state = reactive({
       img: "https://avatars.githubusercontent.com/u/53420956?v=4",
     },
     {
-      name: "mingz-wang",
-      github: "https://github.com/mingz-wang",
-      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
-    },
-    {
-      name: "mingz-wang",
-      github: "https://github.com/mingz-wang",
-      img: "https://avatars.githubusercontent.com/u/57054141?s=400&u=8bdb1f6f92bec650efad2c8d44237d5feb11ed65&v=4",
+      name: "lannoooooo",
+      github: "https://github.com/lannoooooo",
+      img: "https://avatars.githubusercontent.com/u/97206607?s…00&u=87a736db66183cc5af52b533e3baee20afdfdb04&v=4",
     },
   ],
 });

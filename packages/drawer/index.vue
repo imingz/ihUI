@@ -7,7 +7,7 @@
       <div class="ih-drawer-contain-box">
         <div class="ih-drawer-contain-box-header" :style="{'padding':showClose?'0 20px 0 45px':'0 20px 0 20px'}" v-if="showHeader">
           <slot name="header" v-if="$slot['header']"></slot>
-          <i class="m-icon-close" v-if="showClose" @click="close"></i>
+          <i class="i-icon-close" v-if="showClose" @click="close"></i>
           <span v-if="!$slot['header']">{{title}}</span>
           <div class="ih-drawer-header-btn" v-if="!$slot['header']">
             <i-button size="small" :style="{'margin-right':confirmShow?'10px':'0'}" v-if="cancelShow" @click="cancelBtn">{{cancelText}}</i-button>

@@ -115,8 +115,8 @@ const itemLiStyle = computed(() => {
 });
 const iconClass = computed(() => {
   return {
-    "m-icon-arrow-down-bold": props.index == 0,
-    "m-icon-arrow-right": props.index != 0,
+    "i-icon-arrow-down-bold": props.index == 0,
+    "i-icon-arrow-right": props.index != 0,
     menuIconRotate: props.index == 0 && meunIconRotate.value,
     menuItemIconRotate: props.index != 0 && meunIconRotate.value,
   };

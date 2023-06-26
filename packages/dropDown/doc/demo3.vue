@@ -8,10 +8,10 @@
 import { reactive } from "vue";
 const state = reactive({
   dorpoptions: [
-    { label: "菜单1", icon: "m-icon-file" },
-    { label: "菜单2", icon: "m-icon-keyboard-9" },
-    { label: "菜单3", icon: "m-icon-link" },
-    { label: "菜单4", icon: "m-icon-file" },
+    { label: "菜单1", icon: "i-icon-file" },
+    { label: "菜单2", icon: "i-icon-keyboard-9" },
+    { label: "菜单3", icon: "i-icon-link" },
+    { label: "菜单4", icon: "i-icon-file" },
   ],
 });
 const { dorpoptions } = state;

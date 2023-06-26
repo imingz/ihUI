@@ -30,25 +30,25 @@ const props = defineProps({
 const state = reactive({
   style: {
     info: {
-      icon: props.icon || 'm-icon-prompt-filling',
+      icon: props.icon || 'i-icon-prompt-filling',
       color: '#505050',
       backgroundColor: 'rgb(229 227 224)',
       borderColor: 'rgb(229 227 224)'
     },
     warn: {
-      icon: props.icon || 'm-icon-warning',
+      icon: props.icon || 'i-icon-warning',
       color: '#f57b29',
       backgroundColor: 'rgb(243 233 220)',
       borderColor: 'rgb(243 233 220)'
     },
     error: {
-      icon: props.icon || 'm-icon-delete-filling',
+      icon: props.icon || 'i-icon-delete-filling',
       color: '#ec3437',
       backgroundColor: 'rgb(251 228 228)',
       borderColor: 'rgb(251 228 228)'
     },
     success: {
-      icon: props.icon || 'm-icon-success',
+      icon: props.icon || 'i-icon-success',
       color: '#09b63d',
       backgroundColor: 'rgb(223 243 212)',
       borderColor: 'rgb(223 243 212)'

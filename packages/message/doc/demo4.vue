@@ -12,13 +12,13 @@ import iMessage from "../index.js"; //此处为本地示例，请使用import {i
 const openMsg1 = () => {
   iMessage({
     text: "自定义Icon！",
-    icon: "m-icon-collection_fill",
+    icon: "i-icon-collection_fill",
   });
 };
 const openMsg2 = () => {
   iMessage({
     text: "5秒后消失！",
-    icon: "m-icon-good",
+    icon: "i-icon-good",
     timeout: 5000,
   });
 };
