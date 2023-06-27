@@ -3,7 +3,7 @@
   <i-space>
     <i-dropdown title="下拉菜单" :options="dorpoptions">
       <template #Img>
-        <img src="src/assets/logo.png" alt="" />
+        <img src="https://ihui.codeym.com/head.png" alt="" />
       </template>
     </i-dropdown>
 
@@ -14,7 +14,7 @@
       size="small"
     >
       <template #Img>
-        <img src="src/assets/logo.png" alt="" />
+        <img src="https://ihui.codeym.com/head.png" alt="" />
       </template>
     </i-dropdown>
 
@@ -25,7 +25,7 @@
       size="mini"
     >
       <template #Img>
-        <img src="src/assets/logo.png" alt="" />
+        <img src="https://ihui.codeym.com/head.png" alt="" />
       </template>
     </i-dropdown>
   </i-space>
