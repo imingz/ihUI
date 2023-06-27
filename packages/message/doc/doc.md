@@ -7,7 +7,7 @@ import Attributes from './Attributes.vue'
 import preview from '@/components/preview.vue'
 </script>
 
-# Message 消息提示
+# iMessage 消息提示
 
 #### 常用于交互反馈提示场景
 
