@@ -124,8 +124,8 @@ export default [
     'title-en': 'interactive',
     list: [
       {
-        'title-cn': 'iMessage 消息提示',
-        'title-en': 'iMessage',
+        'title-cn': 'Message 消息提示',
+        'title-en': 'Message',
         path: '/ihui/message'
       },
       {
