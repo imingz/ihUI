@@ -1,7 +1,7 @@
 {
   "name": "ih-ui",
   "author": "...",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "private": false,
   "main": "./dist/ih-ui.umd.js",
   "module": "./dist/ih-ui.es.js",
