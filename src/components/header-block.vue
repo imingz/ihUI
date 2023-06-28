@@ -2,7 +2,7 @@
   <div class="header-block-box">
     <div class="logoBox">
       <img src="../assets/logo.png" alt="ih-ui" @click="toHome" />
-      <i-badge type="primary" value="V 0.9.0">
+      <i-badge type="primary" value="V 0.9.1">
         <a href="javascript:;" @click="toHome">ih UI</a>
       </i-badge>
     </div>
